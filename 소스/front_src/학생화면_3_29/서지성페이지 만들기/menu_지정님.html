@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="lineColor.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #whole{
+            width:1000px;
+            height:auto;
+            margin:auto;
+            
+        }
+        input{
+            height:20px;
+        }
+        .sign_in{           
+            width:450px;
+            height:auto;
+            margin:auto;  /*가운데 오게 양쪽마진을 같게 조정함  */
+            margin-top:50px;
+        }
+        
+        #menu{
+            width:1000px;
+            height: auto;
+            margin:auto;
+            margin-top:100px;
+        }
+        #list{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #list>li{
+            width:220px;
+            height:300px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+        }
+        img{
+            width:200px;
+            height:150px;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- header-->
+    <div id="whole">
+        <div class="sign_in">
+             ID<input type="text">
+             비밀번호<input type="password">
+        </div>
+    </div>
+
+    <!-- 내용영역 , 상품리스트 -->
+    <div id="menu">
+        <ul id="list">
+            <li id="line1">
+                <img src="images/1호선.jpg">
+                <p>1호선</p>
+            </li>
+            <li id="line2">
+                <p>2호선</p>2호선
+            </li>
+            <li id="line3"><p>3호선</p></li>
+            <li id="line4"><p>4호선</p></li>
+            <li id="line5"><p>5호선</p></li>
+            <li id="line6"><p>6호선</p></li>
+            <li id="line7"><p>7호선</p></li>
+            <li id="line8"><p>8호선</p></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

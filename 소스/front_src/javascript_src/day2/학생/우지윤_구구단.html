@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function gugudan(su1){
+            let i=1;
+            let j=1;
+            let su2;
+            
+
+            for(i=su1;i<=su1;i++){
+                if(isNaN(su1)||su1 > 19){
+                     while(true){
+                     su2 = prompt("1~19까지의 수를 입력해 주세요");
+                     if(su2 >= 1 && su2 <=19 ){
+                         break;
+                     }
+                   }
+                    for(j=1;j<=9;j++){
+                    document.write("<br>");
+                    document.write(su2 + 'X' + j + '=' + su2*j);
+                    document.write("<br>"); 
+                }
+                break;
+                }
+                    
+                
+                for(j=1;j<=9;j++){
+                    document.write("<br>");
+                    document.write(i + 'X' + j + '=' + i*j);
+                    document.write("<br>"); 
+                }
+
+            }
+
+        }
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+    원하는 단 입력받아서 출력
+    <script>
+        let su1 = prompt("수를 입력해 주세요");
+        let info = gugudan(su1);
+        alter(info);
+
+    </script>
+
+
+    
+</body>
+</html>

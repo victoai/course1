@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height: 100px;
+        }
+        body{
+            background-color: rgb(37, 77, 122);
+        }
+        #Main{
+            display: flex;
+        }
+        #profile{
+            width: 200px;
+            height: 500px;
+            background-color:rgb(148, 199, 233);
+            position: relative;
+            padding: 10px;
+        }
+        .inner{
+            width: 200px;
+            height: 500px;
+            border: 1px solid rgb(0, 67, 167);
+            position: absolute;
+        }
+        #image{
+            
+            width: 170px;
+            height:170px;
+            background-image: url('https://w.namu.la/s/f2c80deb75356631b8ed9c79bcad740be23a428529addc788276b39993d5fcd40dae60a73781105266d5e870b2cac0dac95e9d3119bc422a127504d9f9d4a2da7854ba42affeddeb9e7e0287410d47ea01145b61f0908536049feee9c3903dc468c44e495cfe903b4581c5962d04e490');
+            background-size: cover;
+            margin:auto;
+            margin-top:10px;
+            
+        }
+        .inner p{
+            text-align: center;
+            margin:auto;
+            margin-bottom: 10px;
+        }
+        #article{
+            margin-left: 20px;
+            padding-left: 20px;
+            background-color: rgb(186, 231, 231);
+        }
+        .whole > li{
+            margin:30px 0px;
+        }
+        .lower > li{
+            margin:10px 0px;
+        } 
+    </style>
+    
+</head>
+    <header>
+
+    </header>
+<body>
+    <div id="Main">
+       
+        <div id="profile">
+            <div class="inner">
+                <div id = image>
+                    
+                </div>
+                <p>서지성</p>
+                <p>4호선 484편성</p>
+            </div>
+            
+
+
+        </div>
+        <div id="article">
+            <h3>Who am I?</h3>
+            <p>어렸을 때 지하철을 좋아함</p>
+            ___________________________________________________<br>
+            <ul class="whole">
+                <li>업무종류
+                    <ul class="lower">
+                        <li>업무내용</li>
+                        <li>업무내용</li>
+                        <li>업무내용</li>
+                    </ul>
+                </li>
+                <li>업무종류
+                    <ul class="lower">
+                        <li>업무내용</li>
+                        <li>업무내용</li>
+                        <li>업무내용</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

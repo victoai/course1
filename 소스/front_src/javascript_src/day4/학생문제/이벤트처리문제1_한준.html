@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function emFont1(){
+            let l1 = document.getElementById("li1");
+            l1.style.fontSize="1.3em";
+        }
+        function emFont2(){
+            let l2 = document.getElementById("li2");
+            l2.style.fontSize="1.3em";            
+        }
+        function emFont3(){
+            let l3 = document.getElementById("li3");
+            l3.style.fontSize="1.3em";            
+        }
+        function emFont4(){
+            let l4 = document.getElementById("li4");
+            l4.style.fontSize="1.3em";            
+        }
+    </script>
+</head>
+<body>
+    <h3>각 메뉴를 클릭했을 때 글자크기를 크게 1em, 1.3em</h3>
+    <p>객체.style.fontSize="1.3em"</p>
+    <p>점심에 먹고 싶은 메뉴</p>
+    <ul>
+        <li id="li1" onclick="emFont1()">김밥</li>
+        <li id="li2" onclick="emFont2()">스파게티</li>
+        <li id="li3" onclick="emFont3()">스시</li>
+        <li id="li4" onclick="emFont4()">콩나물해장국</li>
+    </ul>
+</body>
+</html>

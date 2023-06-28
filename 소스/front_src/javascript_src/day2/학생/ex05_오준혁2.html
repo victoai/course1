@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex-wrap: nowrap;
+        }
+        .blocks1{
+            width:150px;
+            height:30px;
+            font-size:20px;
+            font-weight: bold;
+            padding:10px;
+            border: 1px solid black;
+            background-color: red;
+            text-align: center;
+            list-style: none;
+            margin:5px;
+        }
+        .blocks2{
+            width:150px;
+            height:30px;
+            font-size:20px;
+            font-weight: bold;
+            padding:10px;
+            border: 1px solid black;
+            background-color: green;
+            text-align: center;
+            list-style: none;
+            margin:5px;
+        }
+        .blocks3{
+            width:150px;
+            height:30px;
+            font-size:20px;
+            font-weight: bold;
+            padding:10px;
+            border: 1px solid black;
+            background-color: blue;
+            text-align: center;
+            list-style: none;
+            margin:5px;
+        }
+        .mader{
+            padding:10px;
+            border: 1px solid black;
+            background-color: yellow;
+            display: none;
+        }
+        .blocks1:hover .mader{
+            display:block;
+        }
+        .blocks2:hover .mader{
+            display:block;
+        }
+        .blocks3:hover .mader{
+            display:block;
+        }
+
+        .mader li{
+            width:105px;
+            height:20px;
+            font-size:15px;
+            font-weight: bold;
+            padding:10px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+            list-style: none;
+        }
+    </style>
+    <script>
+        let note = prompt("숫자의 합을 구하려고 하니 1 부터 합칠 숫자(최대100)를 입력하시오!");
+        let time = parseInt(note);
+        if(isNaN(note) || time<0 || time>100){
+            alert("잘못 입력했습니다.");
+        }else{
+            let sum1 = 0;
+            let sum2 = 0;
+            let sum3 = 0;
+
+            for(let x=1; x<=time; x++){
+                sum1 += x;
+                sum2 += x*x;
+                sum3 += x*x*x;
+            }
+            document.write('<li class="blocks1">'+sum1);
+            document.write('<ul class="mader">');
+            for(let x=1; x<=time; x++){
+                document.write('<li>'+x+'</li>');
+            }
+            document.write('</ul></li>');
+            
+            document.write('<li class="blocks2">'+sum2);
+            document.write('<ul class="mader">');
+            for(let x=1; x<=time; x++){
+                document.write('<li>'+(x*x)+'</li>');
+            }
+            document.write('</ul></li>');
+            
+            document.write('<li class="blocks3">'+sum3);
+            document.write('<ul class="mader">');
+            for(let x=1; x<=time; x++){
+                document.write('<li>'+(x*x*x)+'</li>');
+            }
+            document.write('</ul></li>');
+        }
+        
+
+    </script>
+</head>
+<body>
+</body>
+</html>

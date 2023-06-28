@@ -1,0 +1,106 @@
+
+1. 웹문서의 목차 정보를 두기에 바람직한 태그는?
+
+footer
+header
+section
+nav
+
+
+ 2. 검색엔진이  저작권 정보를 웹페이지 내에서 검색할 때 어떤 태그를 검색하면 좋을지 선택하싱
+footer  header  section nav
+
+3.  html5표준에 명시된 것으로  html페이지에 반드시 있어야 하는 것이 아닌것을 선택하시오
+
+<head>
+<img>
+<body>
+<!DOCTYPE html>
+
+
+4.  박스모델에 관해 틀린 설명은?
+모든 html 태그는 박스모델의 적용을 받는다
+여백 색은  지정할 수 없고 부모태그의 색이 비춰 출력된다
+패딩색은 태그의 배경색과 같다
+테두리는 실선으로만 가능하다
+
+5. 다음중 셀렉터로 적합하지 않은 것은
+1. #div  2. ul >li  3. ul li  4.  ul : li
+
+
+6. css스타일 시트 작성이 잘못된 것을 선택하시오
+1. body{ background-color: blue; }
+2. <h3>{ color: purple ; }
+3. span { font-size:20px; }
+4. ul { list-style:none; }
+ 
+7. 자바스크립트 언어로 할 수 없는 것은?
+  사용자로부터 마우스나 키 입력을 처리할 수 있다
+  새브라우저 윈도우를 생성할 수 있다
+  로컬 컴퓨터의 파일을 삭제할 수 있다
+  css프로퍼티 값을 변경하여 html 태그의 모양을 동적으로 바꿀 수 있다
+
+
+
+8자바스크립트 언어의 구문이 아닌것은?
+while , for , continue ,  loop
+
+
+9자바스크립트 객체를 생성할 때 사용하는 키워드는?
+create ,  +  , new  , make
+
+10 다음중 "jan" , "feb" , "march" 배열로 바르게 선언한 것을 선택하시오
+
+1.var values  =[ "jan", "feb", "march" ] ;
+2.var values[]  =[ "jan", "feb", "march" ] ;
+3.var values[]  ={ "jan", "feb", "march"} ;
+4.var values  ={ "jan", "feb", "march" } ;
+
+
+11다음중 DOM 객체는
+window객체
+navigator객체
+event 객체
+html 객체
+
+12. html dom 트리에 대해 잘못 말한 것은?
+브라우저에 의해 만들어진다
+html문서가 로드되면 만들어진다
+html 태그의 포함관계에 의해 dom객체들 사이에 부모 자식관계가 형성된다
+dom 트리에서 dom객체를 찾는 기능은  window.getElementById()이다
+
+[문항2] 다음 객체들 중 특징이 다른 하나를 선택하시오					
+					
+1) header					
+2) navigator					
+3) div					
+4) span					
+					
+[문항3] 다음 중 레이아웃을 위해 HTML5에 추가된 요소가 아닌 것은?	
+	
+1) header	
+2) p	
+3) nav	
+4) section	
+
+[문항11] html 문서내에서 직접 css 문서를 링크하는 올바른 방법을 선택하시오
+	
+1) @import =""	
+2) <link href=""  rel="stylesheet">	
+3) <script src="">	
+4) @font-load	
+
+[문항17] 다음중  document객체의 메소드 이름이 잘못된 것은?	
+	
+1) print()
+2) getElementsByTagName()	
+3) getElementById() 	
+4) getElementsByClassName()	
+
+
+[문항18] 자바스크립트 이벤트에 대한 설명으로 틀린 것은?	
+	
+1) 이벤트는 반드시 이벤트 타겟 객체에서만 처리된다
+2) 이벤트를 발생시킨 DOM 객체를 이벤트 타겟이라고 부른다	
+3) 마우스를 클릭하면 이벤트가 발생한다	
+4) 발생한 이벤트에 관한 정보를 가진 객체를 이벤트 객체라고 부른다	

@@ -1,0 +1,60 @@
+nav{
+        height: 40px;
+        margin: 0px 80px;
+        background-color:rgb(165, 164, 164);
+       }
+
+       .nav_menu {
+            display: flex;
+            list-style: none;
+       }
+       
+       .nav_menu li{
+           width: 20%;
+           height: 40px;
+           line-height: 40px;
+
+           text-align: center;
+           font-weight: 500;
+       }
+
+       .nav_menu .menu1 li{
+        width: 200px;
+        height: 40px;
+        line-height: 20px;
+
+        padding-top: 10px;
+        margin: 0px auto;
+
+        text-align: center;
+        font-weight: 400;
+        font-size: 12pt;
+
+        background-color: rgb(127, 165, 214);
+
+    }
+
+
+
+        /* 메뉴창 기능구현 */
+        .nav_menu .menu1:hover ul li{
+            display: block;
+            border-bottom: 0.5pt solid beige;
+            margin-right: 10px;
+        }
+        .nav_menu .menu1 li{
+            display: none;
+        }
+
+
+
+        /* 세부메뉴 사이즈구현  */
+        .nav_menu .menu1:hover ul{
+            width: 300px;
+            height: 80px;
+            line-height: 23px; 
+            border-radius: 10px;    
+
+            padding-top: 10px;
+
+        }

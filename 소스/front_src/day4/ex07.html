@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            width:100px;
+            height: 100px;            
+            display: inline-block;
+            background-color: blueviolet;
+        }
+         
+
+        img{
+            width:100px;
+            height: 100px;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+        }
+
+        .box1{
+             background-color: blue;
+             width:300px;
+             height: 100px;
+        }
+    </style>
+</head>
+<body>    
+    <!--  inline 태그, 크기를 지정할 수 없다- , width, height  사용할 수 없다 -->
+    <a href="http://www.naver.com">네이버</a>
+    <a href="http://www.gmarket.co.kr">G마켓</a>
+    <span> 한줄의 안의 일부공간을 저잘할 때</span>
+    <label>이름표</label>
+    
+
+    <!-- inline-block 태그 -->
+    <!-- 한줄에 같이 나옴, 크기를 가질 수 있다.  width, height 사용가능 -->
+    <img src="../images/cart.png">
+    <input type="text">
+
+
+    <!-- block 태그-->
+    <!-- 한줄 전체 , 크기를 가질수 있다.  width, height 사용가능  -->
+    <p>p태그</p>
+    <h1>h태그 </h1>
+    <div class="box1"> 공간 태그       
+    </div>
+
+     <!-- 공간 영역으로서 사용되는 div의 경우는  flex 사용   -->
+     <!-- 공간안에 들어가는 태그들(가구같은 )인경우 , 
+        한줄로 나오게 하고 크기를 주고싶을때  inline-block ->
+
+</body>
+</html>

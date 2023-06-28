@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <script>
+
+        
+        function createButton()
+        {
+            let wrap= document.getElementById("wrap");
+
+            //버튼객체 생성하기
+            let button = document.createElement("button");
+            //버튼의 내용넣기
+            button.innerHTML="새로운 버튼입니다";    
+            
+            //버튼의 스타일
+            button.style.backgroundColor="yellow";
+            button.style.display="block";
+            button.style.width="300px";
+            button.style.height="50px";
+
+            //자바스크립트에서 생성한 버튼에 이벤트 달기
+            button.addEventListener( "click", function(){
+               // alert("반가워~ 클릭되었어");
+                this.parentElement.removeChild(this);
+            });
+            
+            wrap.appendChild(button);
+            
+        }
+    </script>
+</head>
+<body>    
+
+    <div id="wrap">
+        <a href="javascript:createButton();">button 생성</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // 숫자로구성된 문자열"123"  => 실제 숫자로 변경해주는 함수
+        // parseInt("123") =>123
+        /*
+         모든입력은 기본이 문자열입니다.
+         1  ,"1"  이 둘은 다르다.
+         "1" , "2" , "3" =>문자열
+        */
+        let menu=prompt("숫자입력해주세요");
+        menu = parseInt(menu);             
+         //  "1" 와   1  비교 
+        switch(menu){
+            case 1:
+                alert("입력합니다");
+                break;
+            case 2:
+                alert("조회합니다");
+                break;
+            case 3:
+                alert("삭제합니다");
+                break;
+            case 4:
+                alert("변경합니다");
+                break;
+            default:
+                alert("잘못된 입력");
+        }        
+
+    </script>
+</head>
+<body>
+    
+
+</body>
+</html>

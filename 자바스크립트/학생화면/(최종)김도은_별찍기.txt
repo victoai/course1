@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* 
+        //콘솔로 찍으려고 했는데 옆으로 안찍힘
+            for(let j=0; j<i; j++){
+                console.log("*");
+            }
+
+            alert("별을 출력했습니다"); */
+    </style>
+
+
+    <script>
+        let num =prompt("숫자를 입력하시오");
+
+        if(isNaN(num)){
+            alert("숫자가 아닙니다");
+        }else{
+            document.write(">> 한줄 출력<br>");
+            for(let j=0; j<num; j++){
+                document.write("*");
+            }
+
+            document.write("<br>>> 사각형 출력");
+            for(let i=0; i<num; i++){
+                document.write("<br>");
+                for(let j=0; j<num; j++){
+                    document.write("*");
+                }
+            }
+
+            document.write("<br>>> 왼쪽 삼각형 출력");
+            for(let i=0; i<num; i++){
+                document.write("<br>");
+                for(let j=0; j<i+1; j++){
+                    document.write("*");
+                }
+            }
+
+            document.write("<br>>> 왼쪽 위 삼각형 출력");
+            for(let i=0; i<num; i++){
+                document.write("<br>");
+                for(let j=0; j<num-i; j++){
+                    document.write("*");
+                }
+            }
+
+            document.write("<br>>> 오른쪽 위 삼각형 출력");
+            for(let i=0; i<num; i++){
+                document.write("<br>");
+                for(let k=0; k<i; k++){
+                    document.write("&nbsp");
+                }
+                for(let j=0; j<num-i; j++){
+                    document.write("*");
+                }
+            }
+
+
+            document.write("<br>>> 오른쪽 아래 삼각형 출력");
+            for(let i=0; i<num; i++){
+                document.write("<br>");
+                for(let k=0; k<num-i+1; k++){
+                    document.write("&nbsp");
+                }
+                for(let j=0; j<i+1; j++){
+                    document.write("*");
+                }
+            }
+
+            document.write("<br>>> 가운데 삼각형 출력");
+            for(let i=0; i<num; i++){
+                document.write("<br>");
+                for(let k=0; k<num-i; k++){
+                    document.write("&nbsp");
+                }
+                for(let j=0; j<2*i+1; j++){
+                    document.write("*");
+                }
+                for(let k=0; k<num-i; k++){
+                    document.write("&nbsp");
+                }
+            }
+
+            document.write("<br>>> 가운데 아래 삼각형 출력");
+            for(let i=0; i<num; i++){
+                document.write("<br>");
+                for(let k=0; k<i; k++){
+                    document.write("&nbsp");
+                }
+                for(let j=0; j<2*num-2*i-1; j++){
+                    document.write("*");
+                }
+                for(let k=0; k<i; k++){
+                    document.write("&nbsp");
+                }
+            }
+
+            // alert("별을 출력했습니다");
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

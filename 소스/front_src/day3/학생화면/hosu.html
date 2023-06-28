@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Hi Melody', cursive;
+        }
+        header{
+            width:200px;
+            height:50px;
+            margin:auto;
+        }
+
+        main{
+            margin:auto;
+            width:950px;
+            height:800px;
+            border:1px solid black;
+            display:flex;
+            flex-wrap:wrap;
+            position:relative;
+            background-color: rgb(255, 249, 240);
+
+        }
+
+        .img:hover{
+            width:250px;
+            height:250px;
+            top:1px;
+
+        }
+        .asid{
+            width:300px;
+            height:600px;
+            background-color: beige;
+            position:absolute;
+            margin-left:10px;
+            top:10px;
+        }
+        .intro{
+            width:210px;
+            height:300px;
+            border:1px solid black;
+            margin:auto;
+            margin-top:40px;
+            border-radius:10px;
+            background-color: black;
+            box-shadow: 1px 1px 10px 1px;
+        }
+        .name{
+            width:100px;
+            height:50px;
+            text-align:center;
+            line-height: 50px;
+            margin-left:30px;
+            color:white
+        }
+        .img{
+            width:200px;
+            height:200px;
+            background-image: url('https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/13f9/image/FVH_--VOPV2Y3GQP_SgaAPWDkUM.jpg'); 
+            background-position:center;
+            background-size: cover;
+            margin:auto;
+            margin-top:10px;
+            border-radius:10px;           
+            cursor: pointer;
+        }
+        
+        main .mainbox{
+            padding:10px;
+            width:600px;
+            height:580px;
+            position:absolute;
+            top:10px;
+            margin-left:320px;
+            background-color: rgb(238, 220, 220);
+
+        }
+        .name{
+            font-weight: bold;
+            font-size:30px;
+            margin:auto;
+        }
+
+        select{
+            margin-top:10px;
+            font-size:50px;
+        }
+        main .mainfoot{
+            position:absolute;
+            left:20px;
+            bottom:50px;
+            font-weight: bold;
+        }
+        
+        button, input{
+            width:200px;
+            height:30px;
+        }
+        footer{
+            margin-left:265px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>자기소개서</h1>
+
+    </header>
+
+    <main>
+        <div class="asid">
+            <div class="intro">
+                <div class="img"></div>
+                <div class="name">You Ho Su</div>            
+
+            </div>    
+        </div> 
+
+        <div class="mainbox">
+    
+            <div><h1>Who am I?</h1></div>
+            <div class="title">새로운 시작을 꿈꾸고 있습니다.</div>
+            
+            <hr>
+     
+            <section>
+            <h1>Experience</h1>
+              <ul>
+                <li>
+                    <ul><strong>경영지원</strong>
+                        <li> 인사총무 기준 개정 및 제정</li>
+                        <li> 자산관리</li>
+                        <li> 회계 </li>                        
+                    </ul>
+                </li>
+                <li>
+                <ul><p></p><strong>기획</strong>
+                        <li> 그룹웨어 도입</li>
+                        <li> 그룹사 통합계약</li>
+                        <li> 오피스 환경개선(스마트오피스)</li>
+                        <li> 카페설립에 따른 부가업무</li>                        
+                    </ul>
+                </li>
+              </ul>
+
+            </section>
+        </div>
+        
+        <div class="mainfoot">
+            <div><strong>※이력서가 필요할 경우 본인 이메일 작성후 메일 발송해주시면 1~2일내에 즉시 연락드리겠습니다.</strong></div>            
+            <input type="text">
+            <button><strong>메일 발송</strong></button>          
+
+
+        </div>
+             
+    </main>  
+
+    <footer>
+        <select onchange="window.open(this.value)">
+            <option>연결 플랫폼을 선택하세요</option>
+            <option value="http://www.naver.com">네이버</option>            
+            <option value="http://www.google.com">구글</option>
+            <option value="http://www.daum.net">다음</option>
+        </select>
+    </footer>
+</body>
+</html>

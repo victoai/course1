@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function event_big1(){
+            let event = document.getElementById("test");
+            let event2 = event.firstElementChild;
+            let event3 = event2.nextElementSibling;
+
+            event.firstElementChild.addEventListener("click", function(){
+                event.firstElementChild.style.fontSize ="1.3em";
+               
+            })
+            event2.nextElementSibling.addEventListener("click", function(){
+               event2.nextElementSibling.style.fontSize ="1.3em";
+               
+            })
+            event3.nextElementSibling.addEventListener("click", function(){
+               event3.nextElementSibling.style.fontSize ="1.3em";
+                
+            })
+            event.lastElementChild.addEventListener("click", function(){
+               event.lastElementChild.style.fontSize ="1.3em";
+                
+            })
+        }
+        function event_small(obj){
+            obj.addEventListener("click", function(){
+            obj.style.fontSize ="1em";
+                
+            })
+        }
+
+
+    </script>
+
+
+</head>
+<body onload="event_big1();">
+    <h3>각 메뉴를 클릭했을 때 글자크기를 크게 1em, 1.3em</h3>
+    <p>객체 . style . fontsize = "1.3em"</p>
+    <p>점심메뉴</p>
+    <ul id="test">
+        <li  onclick="event_small(this);">김밥</li>
+        <li onclick="event_small(this);">스파게티</li>
+        <li onclick="event_small(this);">스시</li>
+        <li onclick="event_small(this);">국밥</li>
+
+
+
+    </ul>
+
+
+</body>
+</html>

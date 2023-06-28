@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table> 
+        <thead>
+            <tr>
+                <td> 아이디<select    id="id">
+                    <option>hello</option>
+                    <option>hello1</option>
+                    </select>
+                </td>
+                <td> 아이디<select    id="name">
+                    <option>김길동</option>
+                    <option>홍길동</option>
+                    </select>
+                </td>
+                <td> 아이디<select    id="addr">
+                    <option>서울</option>
+                    <option>부산</option>
+                    </select>
+                </td>
+                <td>
+                    <button  onclick="addRow();">등록</button>
+                </td>
+            </tr>
+        </thead >
+
+        <tbody  id="list">              
+            
+        </tbody>           
+</table>
+ 
+
+<script type='text/javascript'> 
+     
+    
+
+ 
+ 
+    function addRow() {      
+    //tbody정도 얻어오기
+     let tbody = document.getElementById("list")  ;
+     //선택된 항목의 값을 가져온다
+    let  id = document.getElementById("id").value;
+    let name =document.getElementById("name").value;
+    let addr = document.getElementById("addr").value;
+    let tr= document.createElement("tr");
+        tr.innerHTML="<td> "+id+"</td>  <td> " + name+" </td>  <td> "+addr+" </td>  <td><button onclick='removeRow(this)''>삭제</button></td>";
+    tbody.appendChild( tr); 
+
+      
+    }
+    
+
+    function removeRow( obj){
+        let tbody = document.getElementById("list")  ;
+        let  tr=  obj.parentElement.parentElement;  // 버튼의 부모의 부모 tr 정보 얻어오기
+        tbody.removeChild(tr);     //tbody의 tr 제거
+    }
+  
+
+    
+  
+  </script>
+</body>
+</html>

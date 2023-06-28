@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lineColor.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+    <style>
+        #title{
+            width:1000px;
+            margin: auto;
+        }
+        #titleImg{
+            margin: auto;
+            width:t;
+            height:200px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        #titleImg img{
+            height: 200px;
+        }
+        #list li{
+           height: 50px;
+        }
+        .sign_in{
+            margin:auto;
+            padding:5px;
+            width: fit-content;
+            height: 50px;
+            
+        }
+        #whole{
+            display: flex;
+            width: 1200px;
+            margin:auto;
+        }
+        #left{
+            width:200px;
+            height:1000px;
+            background-color: rgb(104, 157, 255);
+        }
+        
+        #right{
+            width:800px;
+            height:1000px;
+            background-color: rgb(125, 211, 214);
+            margin-left:50px;
+        }
+        #right img{
+            
+            margin:30px 100px;
+            width:600px; 
+            height:fit-content;
+        }
+        p{
+            width: 600px;
+            line-height: 120%;
+        }
+       
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="titleImg">
+        <img src="images/1호선.jpg">
+        <img src="images/2호선.jpg">
+        <img src="images/3호선.jpg">
+        <img src="images/4호선.jpg">
+    </div>
+    <div class = "sign_in">
+        ID<input type="text"> 비밀번호<input type="password">
+    </div>
+    <div id="whole">
+        <div id="left">
+            <div id = "list">
+                <li id="line1">&nbsp;1호선</li>
+                <li id="line2">&nbsp;2호선</li>
+                <li id="line3">&nbsp;3호선</li>
+                <li id="line4">&nbsp;4호선</li>
+                <li id="line5">&nbsp;5호선</li>
+                <li id="line6">&nbsp;6호선</li>
+                <li id="line7">&nbsp;7호선</li>
+                <li id="line8">&nbsp;8호선</li>   
+            </div>
+        </div>
+        <div id="right">
+                <img src="images/1호선.jpg" >
+                <h1>1호선</h1>
+                <p>
+                    기점:소요산<br>
+                    종점:인천, 광명, 서동탄, 신창<br>
+                </p>
+        </div>
+    </div>
+
+</body>
+</html>
+<!--
+    margin: 10px 30px ;     / *  위아래 10px  왼쪽오른쪽  30px */
+margin: 20px;   /* 네군데 전체가 20px  */
+margin: 10px 20px 30px 40px;  /* 시계방향 */
+
+-->

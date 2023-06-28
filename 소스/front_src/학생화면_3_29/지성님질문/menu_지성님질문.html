@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="lineColor.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title{
+            width:1000px;
+            margin: auto;
+        }
+        #titleImg{
+            margin: auto;
+            width:fit-content;
+            height:200px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            
+        }
+        #titleImg img{
+            height: 200px;
+
+        }
+        #titleImg ul{
+            
+        }
+    
+        #whole{
+            width:1000px;
+            height:auto;
+            margin:auto;
+            
+        } 
+        #maintitle{
+            text-align: center;
+        }
+        .sign_in{
+            width:450px;
+            height:auto;
+            margin:auto;
+            margin-top:50px;
+        }
+        input{
+            height:20px;
+        }
+       
+        
+        #menu{
+            width:1000px;
+            height: auto;
+            margin:auto;
+            margin-top:100px;
+        }
+        #list{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #list>li{
+            width:220px;
+            height:300px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+        }
+        #list>li :hover{
+           border: 2px solid blue;
+        }
+        #list img{
+            margin-top: 10px;
+            margin-left: 10px;
+            width:200px;
+            height:150px;
+            background-size: cover;
+        }
+        footer{
+            height:300px;
+            background-color: darkseagreen;
+        }
+        #align{
+            width: 1000px;
+            margin: auto;
+            height:fit-content;
+            display: flex;
+        }
+        #align>div{
+            margin:10px 10px;
+            background-color: aqua;
+            width: calc(1000px/3 - 30px);
+            height:280px;
+            position: relative;
+        }
+        .end{
+            position: absolute;bottom:0;right:0;
+        }
+        
+ 
+       
+    </style>
+</head>
+<body>
+    <!-- header-->
+    <div id = "title">
+        <h1>서울철덕공사</h1>   
+    </div>
+    <div id="titleImg">
+        <ul>
+            <li><img src="images/1호선.jpg"></li>
+            <li><img src="images/2호선.jpg"></li>
+            <li><img src="images/3호선.jpg"></li>
+            <li><img src="images/4호선.jpg"></li>
+        </ul>
+    </div>
+    <div id="whole">
+        <div class="sign_in">
+            ID<input type="text">
+            비밀번호<input type="password">
+        </div>
+    </div>
+
+    <!-- 내용영역 , 상품리스트 -->
+    <div id="menu">
+        <h1 id = "maintitle">지하철 소개</h1>
+        <ul id="list">
+            <li id="line1">
+                <img src="images/1호선.jpg"/>
+                <a href="line1.html"><p>1호선</p></a>
+            </li>
+                <li id="line2">
+                <img src="images/2호선.jpg"/>
+                <a href="line2.html"><p>2호선</p></a>
+            </li>
+            <li id="line3">
+                <img src="images/3호선.jpg"/>
+                <p>3호선</p>
+            </li>
+            <li id="line4">
+                <img src="images/4호선.jpg"/>
+                <p>4호선</p>
+            </li>
+            <li id="line5">
+                <img src="images/5호선.jpg"/>
+                <p>5호선</p>
+            </li>
+            <li id="line6">
+                <img src="images/6호선.jpg"/>
+                <p>6호선</p>
+            </li>
+            <li id="line7">
+                <img src="images/7호선.jpg"/>
+                <p>7호선</p>
+            </li>
+            <li id="line8">
+                <img src="images/8호선.jpg"/>
+                <p>8호선</p>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div id="align">
+            <div class="doc"> 
+                <div>시작</div>
+                <div class="end">끝</div>
+            </div>
+            <div class="doc"> 
+                <div>시작</div>
+                <div class="end">끝</div>
+            </div>
+            <div class="doc"> 
+                <div>시작</div>
+                <div class="end">끝</div>
+            </div>
+
+        </div>
+        
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="top_header.css" rel="stylesheet">
+    <link href="title.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <style>        
+        
+        main{
+            height: 3200px;
+            margin-top: 20px;
+            
+        }
+        .headline{
+            height: 650px;
+            display: flex;
+        }
+        .image_sector{
+            width: 700px;
+            height: 600px;
+            margin-left: 100px;
+        }
+        .info_sector{
+            width: 800px;
+            height: 600px;
+            margin-left: 100px;
+        }
+        .main_image{
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background-image: url("images/goldy1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+        }
+        .thumbnail{
+            width: 550px;
+            height: 200px;
+            margin: auto;
+            bottom: 1px;
+            display: flex;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+        .thumbnil_img{
+            width: 120px;
+            height: 120px;
+            margin: auto;
+        }
+        .thumbnil_img img{
+            width: 100%;
+            height: 100%;
+        }
+        .item_info{
+            width: 400px;
+            height: 150px;
+
+        }
+        .item_info td{
+            width: 150px;
+            font-size: 18px;
+        }
+        .item_info td select{
+            width: 170px;
+            height: 30px;
+        }
+        .btn_sector{
+            width: 700px;
+            height: 100px;
+            display: flex;
+
+        }
+        .buy_btn{
+            width: 300px;
+            height: 50px;
+            border: 1px solid rgb(34, 111, 255);
+            margin: auto;
+            text-align: center;
+            line-height: 50px;
+            background-color: rgb(34, 111, 255);
+            font-size: 20px;
+            font-weight: bolder;
+            color: rgba(248, 244, 244, 0.842);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cart_btn{
+            width: 300px;
+            height: 50px;
+            border: 1px solid rgb(78, 78, 78);
+            margin: auto;
+            text-align: center;
+            line-height: 50px;
+            background-color: rgb(78, 78, 78);
+            font-size: 20px;
+            font-weight: bolder;
+            color: rgba(247, 241, 241, 0.842);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .heart_btn{
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgb(86, 221, 255);
+            margin: auto;
+            background-image: url("images/heart.png");
+            background-position: center;
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buy_btn:hover{
+            background-color: rgb(27, 93, 214);
+            border: 1px solid rgb(27, 93, 214);
+        }
+        .cart_btn:hover{
+            background-color: rgb(49, 49, 49);
+            border: 1px solid rgb(49, 49, 49);
+        }
+        .heart_btn:hover{
+            background-color: rgb(86, 221, 255);
+            border: 1px solid rgb(86, 221, 255);
+        }
+        .sns_sector{
+            width: 300px;
+            height: 150px;
+
+            margin-top: 50px;
+        }
+        .share{
+            width: 65px;
+            height: 65px;
+
+        }
+        .share img{
+            margin-left: 13px;
+            cursor: pointer;
+        }
+        .ez_login_icon{
+            width: 130px;
+            height: 50px;
+            display: flex;
+
+        }
+        .ez_login_icon div{
+            margin: auto;
+            cursor: pointer;
+        }
+        .photo_zone{
+            width: 1500px;
+            height: 2500px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .photo_zone_img{
+            width: 700px;
+            height: 700px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .photo_zone_img img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <ul class="top_ul">
+            <li><a>로그인</a></li>
+            <li><a>회원가입</a></li>
+            <li><a>주문조회</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="logo"><img class="logo_img" src="images/logo.png"></div>
+        <div class="search_wrap">
+            <input class="search_bar" type="text">
+            <div class="search_btn"></div>
+        </div>
+            <table class="icon_wrap">
+                <tr class="icon_image">
+                    <td><img src="images/board.png"></td>
+                    <td><img src="images/people.png"></td>
+                    <td><img src="images/cart.png"></td>
+                    <td><img src="images/heart.png"></td>
+                </tr>
+                <tr class="icon_name">
+                    <td>공지사항</td>
+                    <td>로그인</td>
+                    <td>장바구니</td>
+                    <td>찜바구니</td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+    <hr>
+    <div class="title">
+        <div class="title_name">상세페이지</div>
+    </div>
+    <main>
+        <div class="headline">
+            <div class="image_sector">
+                <div class="main_image"></div>
+                <div class="thumbnail">
+                    <div class="thumbnil_img">
+                        <img src="images/goldy2.png">
+                    </div>
+                    <div class="thumbnil_img">
+                        <img src="images/goldy3.png">
+                    </div>
+                    <div class="thumbnil_img">
+                        <img src="images/goldy4.png">
+                    </div>
+                    <div class="thumbnil_img">
+                        <img src="images/goldy5.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info_sector">
+                <div><h1>금붕어 2마리 [랜덤]</h1></div>
+                <table class="item_info">
+                    <tr>
+                        <td><h3>판매가</h3></td>
+                        <td>7000원</td>
+                    </tr>
+                    <tr>
+                        <td><h3>구매수량</h3></td>
+                        <td>
+                            <select>
+                                <option>수량을 선택하세요</option>
+                                <option>2마리 7000원</option>
+                                <option>4마리 14000원</option>
+                                <option>6마리 21000원</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div class="btn_sector">
+                    <div class="buy_btn">바로구매</div>
+                    <div class="cart_btn">장바구니</div>
+                    <div class="heart_btn"></div>
+                </div>
+                <div class="sns_sector">
+                    <div class="share">공유하기
+                        <div><img src="images/kakaotalk.png"></div>
+                    </div>
+                    <div class="ez_login">간편 로그인</div>
+                    <div class="ez_login_icon">
+                        <div><img src="images/naver_login.png"></div>
+                        <div><img src="images/kakaotalk_login.png"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="photo_zone">
+            <div><h1>랜덤 금붕어 특대</h1></div>
+            <div><h3>약 10cm급 이상</h3></div>
+            <div style="color: red;">※ 사이즈는 생물특성상 측정방법에 따라 약간씩 차이가 날 수 있으며 몸의 무늬나 색상은 랜덤으로 발송됩니다 ※</div>
+            <div class="photo_zone_img"><img src="images/goldy5.png"></div>
+            <div class="photo_zone_img"><img src="images/goldy4.png"></div>
+            <div class="photo_zone_img"><img src="images/goldy2.png"></div>
+        </div>
+    </main>
+    <hr>
+    <div class="title">
+        <div class="title_name">고객문의
+        </div>    
+    </div>
+    <footer>
+        <div class="center">
+            <p class="footer_name">고객센터</p>
+            <p class="footer_info">
+                010-0000-0000<br>
+                000-000-0000<br>
+                000-000-0000 (팩스)<br>
+                1:1 문의 게시판<br>
+                abcdefg@naver.com<br>
+                카카오톡 abcdefg1234
+            </p>
+        </div>
+        <div class="account">
+            <p class="footer_name">입금계좌</p>
+            <p class="footer_info">
+                예금주 마카롱아쿠아플래닛<br>
+                우리은행 0000-000-0000000<br>
+                국민은행 0000-000-0000000<br>
+                농협은행 0000-000-0000000<br>
+                기업은행 0000-000-0000000
+            </p>
+        </div>
+        <div class="company_info">
+            <p class="footer_name">업체정보</p>
+            <p class="footer_info">
+                상호 마카롱아쿠아플래닛<br>
+                대표자 홍길동<br>
+                사업자등록번호 000-00-000000<br>
+                영업소재지 서울특별시 00구 00동 00번지
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

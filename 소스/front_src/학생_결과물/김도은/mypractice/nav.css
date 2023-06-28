@@ -1,0 +1,64 @@
+/* 전체 크기 및 위치구현 */
+nav{
+    height: 40px;
+    padding: 0px 80px;
+    background-color:rgb(165, 164, 164);
+    /* 사이트 대표글꼴 */
+    font-family: 'Do Hyeon', sans-serif;
+
+   }
+/* 메뉴바 크기 및 위치구현 */
+   .nav_menu {
+        display: flex;
+        list-style: none;
+        /* 메뉴바폰트사이즈 */
+        font-size: 15pt;
+
+        
+   }
+   /* 메뉴 크기 및 위치구현 */
+   .nav_menu li{
+       width: 20%;
+       height: 40px;
+       line-height: 40px;
+
+       text-align: center;
+       font-weight: 500;
+   }
+
+   /* 하위메뉴 크기 및 위치구현 */
+   .nav_menu .menu1 li{
+    width: 200px;
+    height: 40px;
+    line-height: 20px;
+
+    padding-top: 10px;
+    margin: 0px auto;
+
+    text-align: center;
+    font-weight: 300;
+    font-size: 14pt;
+
+    background-color: rgb(127, 165, 214);
+
+}
+
+
+
+    /* 메뉴창 기능구현 */
+    /* 하위메뉴 숨기기 */
+    .nav_menu .menu1:hover ul li{
+        display: block;
+        border-bottom: 0.5pt solid beige;
+        margin-left: 30px;
+    }
+    .nav_menu .menu1 li{
+        display: none;
+    }
+
+
+     /*하위메뉴 사이즈구현*/
+    .nav_menu .menu1:hover ul{  
+        position: absolute;
+        z-index: 1000;      
+    } 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function createTag(){
+            //버튼태그 생성
+            let b=document.createElement("button");
+            b.innerHTML="새로운버튼";
+            
+            //추가할 부모를 선택한다.
+            let parent = document.getElementById("wrap");
+            parent.append(b);           
+
+            document.getElementsByTagName
+        }
+    </script>
+</head>
+<body>
+
+    
+    <div id="wrap">
+
+    </div>
+
+     <button onclick="createTag()">클릭</button>
+</body>
+</html>

@@ -1,0 +1,174 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <style>
+      *{
+          padding:0px;
+          margin:0px;
+      }
+        a{
+
+            text-decoration: none;
+        }
+
+        table{
+            width:900px;
+            margin:  auto;
+           
+            font-size:12px;
+        }
+
+        table td, th, tr {
+            border:0.1px solid gray;
+            
+        }
+
+        table td{
+            width:150px;
+            text-align:right;
+        }
+
+        table tr{
+           height:40px;
+        }
+ 
+        #order{
+            background-color: red;
+            text-align:center;
+            color:white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        table caption{
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        input[type="text"]{
+            width:100px;
+            border:0px;
+            outline:none;
+        }
+
+        #cart{
+
+            margin-top:100px;
+        }
+        
+        .img{
+         width:50px;
+         height:50px;
+        }
+        
+       
+
+
+
+
+    </style>
+
+    <script>
+
+     window.onload=     calcSum;    // 페이지가 완전히 로드될 때 발생하는 이벤트리스너에  호출할 함수 지정
+         
+
+     //전체합계구하기
+     function calcSum() {    
+        const table = document.getElementById('cart');             
+        let sum = 0;
+    
+        for(let i = 1; i < table.rows.length; i++)  {            
+            sum += parseInt(table.rows[i].cells[4].innerHTML);
+        }
+        
+        if(isNaN(sum))sum=0;
+       // 합계 출력
+        document.getElementById('sum').innerText = sum;    
+    }
+
+
+    function  itemCalc( obj, index , event){ 
+        
+        
+        const table = document.getElementById('cart');       
+        let unit = parseInt(table.rows[index].cells[2].innerHTML);  
+    
+        let  qty = parseInt( obj.value);         
+       
+        if( isNaN(qty)) qty=0;
+        let amt = unit * qty;              
+        table.rows[index].cells[4].innerHTML = amt;        
+        document.frm.qty.value = qty;
+
+        //하나의 아이템의 금액이 바뀔 때 마다 전체합계 다시 계산
+        calcSum();
+
+    }
+
+ 
+
+    function order(){
+    	// 주문정보 저장하기 
+    	
+    	document.frm.action="cart_update.jsp";
+    	document.frm.submit();
+      //  let sum = parseInt(document.getElementById("sum").innerHTML);
+       // location.href="order.html?sum=" + sum ;
+        
+    }
+    
+    
+    
+
+    </script>
+</head>
+<body>
+    
+   
+
+<form name="frm"  >
+    <table  id="cart">
+        <caption> CART LIST               </caption>
+        <tr>
+            <th>주문날짜</th>
+            <th>제품명</th>
+            <th>단가</th>
+            <th>수량</th>
+            <th>금액</th>  
+               <th>삭제</th>            
+        </tr>
+        
+       
+        <tr>
+            <td>  </td>
+            <td> </td>
+            <td>5000   </td>
+            <td> <input type="text" value="2"  name="qty" onkeyup="itemCalc( this,1 )"></td>
+            <td>    </td>  
+             <td>  삭제 </a>  </td>  
+            <td>
+             
+           
+            </td>
+            
+           </tr>
+           
+      
+         
+    </table>
+    </form>
+
+    <table>
+        <tr>
+            <td colspan="4"  id="sum">   </td>
+            <td  id="order"  onclick="order()" >   주문하기   </td>
+        </tr>
+    </table>
+</body>
+
+
+ 

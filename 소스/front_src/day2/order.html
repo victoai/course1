@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            font-family: 'Nanum Brush Script', cursive;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .wrap{
+            width:500px;
+            height: 800px;
+            border:1px solid red;
+            margin:auto;
+            margin-top:100px;
+            font-family: 'Nanum Brush Script', cursive;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .goods_info{
+            width:350px;
+            height:350px ;           
+            margin:auto;
+            margin-top:50px;
+        }
+
+        .goods_img{
+            width:300px;
+            height: 200px;
+            
+            margin:auto;
+            background-image: url("../images/Fitness.jpg");
+            background-repeat: cover;
+            background-position: center;
+        }
+
+        .order_info{
+            width:450px;   
+            border:1px solid red; 
+            margin:auto;
+            margin-top:20px;
+        }
+
+        .input_item{
+            width:400px;
+            height: 60px;
+            margin:auto;           
+        }
+
+        input{
+            width:98%;
+            height: 30px;
+        }
+        select{
+            width:98%;
+            height: 30px;
+        }
+
+        .btn{
+            width:100%;
+            height: 50px;
+            background-color: antiquewhite;
+            font-size:20px;
+            color:red;
+            border-radius: 5px ;
+            margin-top:5px;
+            border:0px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="goods_info">
+
+            <div class="goods_img">이미지</div>
+            <div>
+                <h2>대관령황태</h2>
+                <p>이 황태는 겨울내내</p>
+                <p>가격: 3000원</p>
+            </div>
+        </div>
+
+        <div class="order_info">
+            <div class="input_item">-- 주문내역 --</div>
+            <div class="input_item">주문자 이름 <input type="text"></div>
+            <div class="input_item">수량
+            <select  >
+                <option>수량을 선택하세요</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+           </div>
+           <div class="input_item">주문금액 <input type="text"></div>
+           <div class="input_item">전화번호 <input type="text"></div>
+           <div class="input_item"><button class="btn">order</button></div>           
+        </div>
+
+    </div>
+</body>
+</html>

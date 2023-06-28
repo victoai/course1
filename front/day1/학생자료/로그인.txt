@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .wrap{
+        width : 400px;
+        height : 430px;
+        border : 2px;
+        margin : auto;
+        margin-top : 100px;
+        }      
+
+        .img_div{
+            width :600px;
+            height: 700px;
+            border : 1px solid  yellow;
+            margin : auto;
+            margin-top : 5px;
+            background-image: url(https://img.hani.co.kr/imgdb/resize/2018/0608/152834735078_20180608.JPG);
+
+        }
+
+        .info_div{
+            width:300px;
+            height :  200px;
+            border : 1px;
+            margin: auto;
+            margin-top : 10px;
+         }
+
+        input{
+                width : 100px;
+                height : 20px;
+         }
+
+        button{
+                    margin-top : 50px;
+                    width: 40px;
+                    height: 20px;
+                    background-color : yellow;
+                    border-radius : 10px;
+        }
+
+</style>
+</head>
+<body>
+
+
+    <!--전체영역-->
+
+    <div class="wrap">
+    <!--이미지영역-->
+    <div class="img_div"></div> 
+    <!--로그인정보영역-->
+    <div class="info_div"></div>
+
+    <div>
+    Id : <input type="next"> <br>
+    pw : <input type="password"><br>
+    <button>로그인</button>
+    </div>
+</div>
+
+
+</style>
+</head>
+<body>
+
+    </body>
+    </html>

@@ -1,0 +1,17 @@
+.main .intro{
+    height: 8%;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.main .experience{
+    height:92%;
+    margin-left: 20px;
+}
+ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr{
+    margin : 50px;
+}

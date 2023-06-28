@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .logo{
+            font-family: 'Nanum Myeongjo', serif;
+            font-size: 30px;
+            width: 115px;
+            display: block;
+            margin: auto;
+            margin-top: 70px;
+            color: rgb(94, 105, 155);
+            text-decoration: none;
+        }
+
+        /* main */
+        ul{
+            list-style: none;
+        }
+        ul li{
+            padding-top: 10px;
+        }
+        input{
+            height: 20px;
+        }
+        label{ /* inline : 크기를 지정할 수 없다 */
+            width: 40px;
+            display: inline-block;
+            text-align: center;
+            font-size: 14px;
+        }
+        fieldset{
+            width: 440px;
+            height: 140px;
+            margin: auto;
+            margin-top: 40PX;
+            display: flex;
+            border-radius: 5px;
+            border: 1px solid rgb(212, 212, 212);
+        }
+        .login_btn{
+            width: 100px;
+            height: 64px;
+            margin-top: 24px;
+            margin-left: 20px;
+            border: 0;
+            border-radius: 5px;
+            background-color: rgb(94, 105, 155);
+            color: white;
+            cursor: pointer;
+        }
+        .find_wrap{
+            width: 400px;
+            margin: auto;
+        }
+        .find_wrap ul li{
+            list-style: none;
+            float: left;
+            margin-left: 20px;
+            font-size: 12px;
+            color: rgb(161, 161, 161);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo_area" >
+            <h1>
+                 <a class="logo" href="bookhome.html">지구문고</a>
+            </h1>
+        </div>
+    </header>
+    <tbody>
+        <form action="">
+            <fieldset>
+                <legend>Login</legend>
+            
+                <ul>
+                    <li> <label for="user_id">ID</label> <input id="user_id" type="text"></li>
+                    <li> <label for="user_pw">PW</label> <input id="user_pw" type="password"></li>
+                </ul>
+                <button class="login_btn">Login</button>
+            </fieldset>
+        </form>
+        <div class="find_wrap">
+            <ul>
+                <li>비밀번호찾기</li>
+                <li>|</li>
+                <li>아이디찾기</li>
+                <li>|</li>
+                <li>회원가입하기</li>
+            </ul>
+        </div>
+    </tbody>
+</body>
+</html>

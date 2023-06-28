@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //동적으로 li(document.getElementByTagName("li"))
+            //대상.addEventListner("click",    );
+
+        function changeFontSize1(){
+            
+            let li1 = document.getElementById("li1");
+            //alert("글씨가 커집니다.");
+            li1.addEventListener("click", function changeFontSize(){
+                li1.style.fontSize="1.3em";
+            });   
+        }
+
+        function changeFontSize2(){
+            
+            let li2 = document.getElementById("li2");
+            //alert("글씨가 커집니다.");
+            li2.addEventListener("click", function changeFontSize(){
+                li2.style.fontSize="1.2em";
+            });   
+        }
+        function changeFontSize3(){
+            
+            let li3 = document.getElementById("li3");
+            //alert("글씨가 커집니다.");
+            li3.addEventListener("click", function changeFontSize(){
+                li3.style.fontSize="2em";
+            });   
+        }
+        function changeFontSize4(){
+            
+            let li4 = document.getElementById("li4");
+            //alert("글씨가 커집니다.");
+            li4.addEventListener("click", function changeFontSize(){
+                li4.style.fontSize="3em";
+            });   
+        }
+    </script>
+</head>
+<body>
+    <h3>각 메뉴를 클릭했을 때, 글자크기를 크게 1em, 1.3em</h3>
+    <p>객체.style.fontsize="1.3em";</p>
+    <p>점심에 먹고싶은 메뉴</p>
+    <ul>
+        <li id="li1" onclick="changeFontSize1()">김밥</li>
+        <li id="li2" onclick="changeFontSize2()">스파게티</li>
+        <li id="li3" onclick="changeFontSize3()">스시</li>
+        <li id="li4" onclick="changeFontSize4()">콩나물 해장국</li>
+    </ul>
+
+</body>
+</html>

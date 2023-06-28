@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function a(){
+            let gimbap = document.getElementById("gimbap");
+            let pasta = document.getElementById("pasta");
+            let sushi = document.getElementById("sushi");
+            let soup = document.getElementById("soup");
+            
+            gimbap = gimbap.style.fontSize="1em"
+            pasta = pasta.style.fontSize="1.3em"
+            sushi = sushi.style.fontSize="1em"
+            soup = soup.style.fontSize="1.3em"
+        }
+    </script>
+</head>
+<body>
+    
+    <h3> 각 메뉴를 클릭했을 때 글자크기를 크게 1em , 1.3em </h3> <!-- em = ~배 -->
+    <p> 자바스크립트에서 글자크기 변경할 때 / 객체.style.fontSize="1.3em" </p>
+    <p>점심에 먹고싶은 메뉴</p>
+    <ul>
+        <li id="gimbap" onclick="a();" >김밥</li>
+        <li id="pasta" onclick="a();" >스파게티</li>
+        <li id="sushi" onclick="a();" >스시</li>
+        <li id="soup" onclick="a();" >콩나물해장국</li>
+    </ul>
+</body>
+</html>

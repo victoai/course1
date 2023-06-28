@@ -1,0 +1,52 @@
+body{
+    padding:0px;
+    background-color: white;
+    margin:auto;
+}
+.menu{
+    width:742px;
+    height:80px;
+    padding:0px;
+    border:2px solid black;
+    margin:auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.music{
+    width:335px;
+    height:78px;
+    background-color: rgb(241,243,244);
+    border:1px solid black;
+    position:relative;
+}
+.musics{
+    position:absolute;
+    top:12px;
+    left:12px;
+}
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    margin:auto;
+}
+.center{
+    width:400px;
+    height:70px;
+    border:1px solid black;
+    background-color: rgb(224,224,224);
+    padding-left: 10px;
+    padding-top:8px;
+}
+.title{
+    font-size:14px;
+    font-weight: bold;
+    line-height: 10px;
+    color:rgb(72,48,96);
+}
+p{
+    font-size:12px;
+    font-weight: bold;
+    line-height: 5px;
+    color:rgb(96,48,72);
+
+}

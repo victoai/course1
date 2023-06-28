@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+
+        function init(){
+            alert("ddd");
+            let li1 = document.getElementById("li1");
+            alert( li1);
+            li1.addEventListener("click", function(){
+                alert("size");
+                this.style.fontSize="1.3em";
+                alert("font");
+                this.style.color="red";
+                alert("color");
+            });
+
+            
+
+        }
+    </script>
+</head>
+<body onload="init()">
+    <p>메뉴</p>
+    <ul>
+        <li id="li1" >김밥</li>
+        <li onclick="larger(this);">스파게티</li>
+        <li onclick="larger(this);">스시</li>
+        <li onclick="larger(this);">콩나물해장국</li>
+    </ul>
+    
+</body>
+</html>

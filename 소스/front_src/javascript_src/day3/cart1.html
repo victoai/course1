@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width:600px;
+            border:1px solid black;
+        }
+
+        td{
+            width:200px;
+            border:1px solid black;
+        }
+    </style>
+    <script>
+
+        function calcPrice(){
+           // alert("call");
+           let tbody  =document.getElementById("cart");
+           let rows  = tbody.getElementsByTagName("tr");
+           alert( rows.length);
+
+           let tr = rows[0];  // 첫번째 줄
+           // 각각의 칸(td) 얻어오기
+                      
+           let priceTd = tr.firstElementChild;
+         //  alert( "td1" + priceTd);
+
+           
+           let qtyTd = priceTd.nextElementSibling;                        
+           //alert( "td2" + qtyTd );
+           let amtTd = qtyTd.nextElementSibling;
+        //   alert( "td3" + amtTd);
+
+
+           let price =  parseInt(priceTd.innerHTML);
+        //   alert(price);
+           let qty_input = qtyTd.firstElementChild;  // 2칸의 자식 input 태그 
+           let qty = qty_input.value;   //input 태그의 value 속성, 값을 얻어오기
+
+       //    alert( qty);
+           
+
+           let amt = price *qty;
+         //  alert( amt);
+           amtTd.innerHTML= amt;                      
+
+        }
+
+    </script>
+</head>
+<body onload="calcPrice();">
+
+    
+
+<table>
+    <tbody id="cart">
+        <tr>
+            <td>3000</td>
+            <td><input type="text" onkeyup="calcPrice();"></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+    
+ 
+</body>
+</html>

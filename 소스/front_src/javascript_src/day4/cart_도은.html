@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+
+            width: 500px;
+            border: 1px solid black;
+            border-collapse: collapse;
+
+            margin: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        th{
+            width: 10%;
+        }
+    </style>
+
+    <script>
+        let count=0;
+        function additem(){
+            //한줄 생성 후 부모에 넣기
+            let tr = document.createElement("tr");
+            tr.innerHTML = "<th id='num'></th><td></td><td></td><td><input type='text' onkeyup='calcPrice()'></td><td></td>"
+            
+            let parent = document.getElementById("cart_info");
+            parent.append(tr);
+
+
+            //하나씩 채워넣기
+            count++;
+            tr.firstElementChild.innerHTML=count;
+
+            tr.children[1].innerHTML = prompt("상품명을 입력하시오");
+
+            tr.children[2].innerHTML = prompt("단가를 입력하시오");
+
+            tr.children[3].firstChild.value = 1 ;
+
+            tr.children[4].innerHTML = tr.children[2].innerHTML;
+        }
+
+
+
+
+        function calcPrice(){
+
+            let cart_info = document.getElementById("cart_info");
+            let items = cart_info.getElementsByTagName("tr"); // 배열
+            let sum = 0;
+                for(let i = 0 ; i <items.length ; i++){
+
+                    let item = items[i];
+
+
+                    let price = item.children[2].innerHTML;
+                    let qty = item.children[3].firstElementChild.value;
+                    let amt = price * qty;
+                    let amtTd = item.lastElementChild;
+                    amtTd.innerHTML = amt;
+
+                    sum += amt;
+                }
+            
+            let total = document.getElementById("order_price");
+            total.innerHTML = sum;
+            
+
+
+            // alert(1);
+            // let countTd = count.parentElement;
+            // alert(2);
+            // alert(count);
+            // alert(countTd.innerHTML);
+            // alert(countTd.nextElementSibling);
+            // alert(count.value);
+            // countTd.nextElementSibling.innerHTML = countTd.preElementSibling.innerHTML * count.value;
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <button onclick="additem()">상품등록</button>
+    <table >
+        <thead>
+            <th>일련번호</th>
+            <td>상품명</td>
+            <td>단가</td>
+            <td>수량</td>
+            <td>금액</td>
+        </thead>
+        <tbody id="cart_info">
+        </tbody>
+    </table>
+
+    <p>합계 : <span id="order_price">0</span>원</p>
+</body>
+</html>

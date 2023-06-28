@@ -1,0 +1,33 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .black{
+           background-color: black;
+           color:white;
+        }
+        .white{
+            background-color: white;
+            color:black;
+        }
+    </style>
+
+    <script>
+        function changeColor( p_color)
+        {
+            alert(p_color);
+            var t= document.getElementById("target");                    
+            t.className=p_color;
+    
+        } 
+    </script>
+</head>
+<body id="target"> 
+    <input type="button" value="black" onclick="changeColor('black')">
+    <input type="button"  value="white" onclick="changeColor('white')">
+    <br>
+    javaScript
+</body>
+ </html>

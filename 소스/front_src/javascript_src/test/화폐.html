@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+      
+       let amount=351200;
+       let count=[];
+       let pay=[50000,10000,5000,1000,500,100,50,10];
+       let tmpAmount = amount;
+       for( i=0; i<8; i++){
+           count[i]= parseInt (tmpAmount/ pay[i]) ;
+           tmpAmount = tmpAmount % pay[i] ;        
+       }
+       alert( count[0] +" "+ count[1] +" " + count[2] + count[3] + count[4] + count[5] + count[6] + count[7]);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

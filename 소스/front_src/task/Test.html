@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 80%;
+            height: 100px;
+            text-align: center;
+            margin: auto;
+        }
+        tr {
+            height: 48px;
+        }
+        #order {
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        table, td, th {
+            border: 0.1px solid gray;
+        }
+
+        th {
+            background-color: aqua;
+        }
+        caption {
+            color: brown;
+            font-size: 30px;
+        }
+
+        button {
+            background-color: white;
+            border: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <button><img src=abc.webp>홈으로</button>
+    <table>
+        <caption>장바구니<img src="abc.webp"></caption>
+        <thead>
+            <tr>
+                <th>주문날짜</th>
+                <th>제품명</th>
+                <th>단가</th>
+                <th style="width: 300px;">수량</th>
+                <th>금액</th>
+                <th>삭제</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input style="background-color: gray; margin-left: 0%; margin-right: 0%;" type="number"></td>
+                <td></td>
+                <td>삭제</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"></td>
+                
+                
+                <td id="order">주문하기</td>
+            </tr>
+        </tfoot>
+
+
+
+
+
+    </table>
+</body>
+</html>

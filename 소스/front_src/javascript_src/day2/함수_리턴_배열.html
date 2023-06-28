@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         function getDan( dan){
+            let result=[] ;// 배열선언
+            for( let i=0; i<9; i++){
+                result[i]  = dan *(i+1);
+            }
+            return result;
+         }
+    </script>
+</head>
+<body>
+    
+    <script>        
+        let dan= prompt("원하는 단을 입력하세요");
+        let dans  = getDan(dan);
+        for( let i=0; i < dans.length ; i++){
+            document.write( dans[i] +"<br>");
+        }
+    </script>
+</body>
+</html>

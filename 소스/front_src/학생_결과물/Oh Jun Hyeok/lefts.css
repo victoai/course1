@@ -1,0 +1,84 @@
+.co-ops{
+    width:256px;
+    height:192px;
+    display: block;
+    background-image:url("co-ops.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.muta{
+    width:256px;
+    height:91px;
+    display: block;
+    background-image:url("mutation.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top:1px;
+}
+.anis{
+    width:256px;
+    height:191px;
+    display: block;
+    background-image:url("anis.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top:1px;
+}
+.others{
+    width:256px;
+    height:111px;
+    display:block;
+    background-image:url("tv.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top:1px;
+    display:flex;
+    flex-wrap: nowrap;
+}
+.other1{
+    width:127px;
+    height:111px;
+    margin-right:1px;
+    background-color:rgba(0,0,0,0);
+}
+.other1:hover{
+    background-image:url("other1.jpg");
+}
+.other3{
+    width:127px;
+    height:111px;
+    margin-left:1px;
+    background-color:rgba(0,0,0,0);
+}
+.other3:hover{
+    background-image:url("other3.jpg");
+}
+
+
+.search{
+    width:254px;
+    height:48px;
+    position: absolute;
+    bottom: 0px;
+    border:1px solid black;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.nothing{
+    text-align: center;
+    height:44px;
+    width:204px;
+    border:1px solid black;
+    font-size:40px;
+}
+.not{
+    width:44px;
+    height:46px;
+    display: block;
+    border:1px solid black;
+    background-color: blue;
+}
+.not:hover{
+    background-color: red;
+}

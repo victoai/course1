@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+     function child(){     
+
+        let house = document.getElementById("woo");    
+        let p1  = house.firstElementChild;     
+        let p2  = p1.nextElementSibling;   
+        let p3  = p2.nextElementSibling;
+        let p4  = p3.nextElementSibling;
+        let p5  = house.lastElementChild;
+       // let p5 = p4.nextElementSibling;
+
+
+
+        alert( p1.innerHTML);
+        alert( p2.innerHTML);
+        alert( p3.innerHTML);
+        alert( p4.innerHTML);
+        alert( p5.innerHTML);
+
+
+
+       alert(  p1.parentElement.innerHTML);
+       alert(  p2.parentElement.innerHTML);
+       alert(  p3.parentElement.innerHTML);
+       alert(  p4.parentElement.innerHTML);
+       alert(  p5.parentElement.innerHTML);
+
+
+      // alert(  p5.parentElement.innerText);
+     }
+
+    </script>
+</head>
+<body>    
+
+    <div id="woo">
+        우씨집안 자식들
+        <p>1큰딸</p>
+        <p>2둘째딸</p>
+        <p>3셋째딸</p>
+        <p>4넷째아들</p>
+        <p>5막내딸</p>
+    </div>
+
+
+    <button  onclick="child()">div의 자식요소 선택하기</button>
+</body>
+</html>

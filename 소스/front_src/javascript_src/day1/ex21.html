@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 함수 만들기 
+        function check( ){
+            let input  = document.getElementById("userId");
+            let input_value  = input.value;
+            if( input_value==""){
+                alert("아이디를 입력해 주세요");
+                input.focus();
+            }            
+        }
+    </script>
+</head>
+
+<body>  
+    <input id="userId" type="text">
+    <button  onclick="check()" >버튼</button>
+     이벤트  :클릭, 키를 누르는것  , mouseover ...  이벤트정의되어 있음 
+     이벤트리스너 : 이벤트를 기다리는것 
+     이벤트핸들러 : 이벤트를 처리하는것 
+</body>
+</html>

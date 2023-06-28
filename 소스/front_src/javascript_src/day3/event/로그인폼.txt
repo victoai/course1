@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 사용자에게 입력받는 형식을 '폼'이라고 한다 */
+        table{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+
+            margin: 30px auto;
+        }
+        table caption{
+            padding-bottom: 10px ;
+        }
+        td{
+            border: 1px solid black;
+        }
+        td input{
+            width:95%;
+            margin: auto;
+            
+        }
+        td:nth-child(1){
+            text-align: center;
+        }
+    </style>
+
+
+    <script>
+        function ck(){
+            // alert("asdfasdf");
+
+            // form의 기능
+            let frm = document.frm;
+            let userID = frm.userID;
+            if(userID.value == ""){
+                alert("아이디를 입력하세요")
+                userID.focus();
+                return;
+            }
+
+            let userPW = frm.userPW;
+            if(userPW.value == ""){
+                alert("비밀번호를 입력하세요")
+                userPW.focus();
+                return;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <table>
+            <caption>로그인</caption>
+            <tbody>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" name="userID" id=""></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="userPW"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" onclick="ck()"><button>로그인</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

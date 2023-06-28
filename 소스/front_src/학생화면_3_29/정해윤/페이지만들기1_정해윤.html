@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span{
+            font-size: 80px;
+            font-weight: bold;
+            letter-spacing: -7px;
+        }
+        span:nth-child(1){
+            color: rgb(234 67 53);;
+        }
+        span:nth-child(2){
+            color: orange;
+        }
+        span:nth-child(3){
+            color: rgb(52 168 83);
+        }
+        span:nth-child(4){
+            color: rgb(66 133 244);
+        }
+        span:nth-child(5){
+            color: palevioletred;
+        }
+        span:nth-child(6){
+            color: green;
+        }
+        span:nth-child(7){
+            color: rgb(251 188 5);
+        }
+        span:nth-child(8){
+            color: orangered;
+        }
+
+        .title{
+            width: 300px;
+            margin: auto;
+            display: flex;
+        }
+        .d{
+            height: 150px;
+            position: relative;
+            display: flex;
+            background-color: rgb(233, 232, 201);
+           
+            
+        }
+        .login{
+            width: 70px;
+            height: 30px;
+            background-color: orange;
+            border-radius: 5px;
+            position: absolute;
+            right: 130px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            line-height: 30px;
+            margin-top: 90px;
+            cursor: pointer;
+
+        }
+        .ghl{
+            width: 70px;
+            height: 30px;
+            background-color: orange;
+            border-radius: 5px;
+            position: absolute;
+            right: 50px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            line-height: 30px;
+            margin-top: 90px;
+            cursor: pointer;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+          
+        }
+        ul li{
+            width: 200px;
+            height: 230px;
+            
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+        }
+        ul li{
+            margin: auto;
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+        .menu img:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 10px 0px grey;
+            
+        }
+        .order{
+            display: none;
+        }
+        .menu:hover .order{
+            display: block;
+        }
+        .name{
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 50px;
+        }
+        .price{
+            font-size: 15px;
+            line-height: 10px;
+        }
+        .order{
+            width: 200px;
+            height: 200px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 70px;
+        }
+        .foot{
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 80px;
+
+        }
+        .ooo{
+            width: 700px;
+            height: 270px;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    
+<div class="d">
+    <div class="title">
+        <span>F</span>
+        <span>a</span>
+        <span>s</span>
+        <span>t</span>
+        <span>f</span>
+        <span>o</span>
+        <span>o</span>
+        <span>d</span>
+    </div>
+    <div class="login">로그인</div>
+    <div class="ghl">회원가입</div>
+</div>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <img src="images/hambuger.jpg">
+                <div class="name">햄버거</div>
+                <div  class="price">￦ 5,900</div>
+            </li>
+            <li>
+                <img src="images/햄버거세트.JPG">
+                <div class="name">햄버거세트</div>
+                <div  class="price"p>￦ 7,000</div>
+            </li>
+            <li>
+                <img src="images/coke.jpg">
+                <div class="name">코카콜라</div>
+                <div  class="price">￦ 1,000</div>
+            </li>
+            <li>
+                <img src="images/rkaxnl.jpg">
+                <div class="name">감자튀김</div>
+                <div  class="price">￦ 5,000</div>
+            </li>
+            <li>
+                <img src="images/bread.jpg">
+                <div class="name">스콘</div>
+                <div  class="price">￦ 1,800</div>
+            </li>
+            <li>
+                <img src="images/strcake.jpg">
+                <div class="name">디저트케이크</div>
+                <div  class="price">￦ 6,500</div>
+            </li>
+            <li>
+                <img src="images/주문하기.JPG">
+                <div class="order">주문하기</div>
+            </li>
+        </ul>
+    </div>
+    <div class="ooo">
+
+    </div>
+    <div class="footer">
+        <div class="foot"> <br>
+            <p></p>
+            <p></p>
+            고객센터
+            02-123-4567
+        </div>
+    </div>
+
+</body>
+</html>

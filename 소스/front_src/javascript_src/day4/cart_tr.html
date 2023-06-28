@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width:300px;            
+            border:1px solid black;
+        }
+
+        td{         
+            width: 100px;
+            border:1px solid black;
+        }
+    </style>
+    <script>
+        function calc(){
+            let trs = document.getElementsByTagName("tr");          
+            //한줄에 대해서 금액계산
+            let td1 = trs[0].firstElementChild;
+            let td2 = td1.nextElementSibling;
+            let td3 = td2.nextElementSibling;
+
+            let price = parseInt(td1.innerHTML);
+            let qty =   parseInt(td2.innerHTML);
+            let amt  = price* qty;
+            td3.innerHTML = amt;            
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tbody >
+            <tr>
+                <td>3000</td>
+                <td> 3 </td>
+                <td></td>
+            </tr>
+        </tbody>       
+    </table>
+
+    <button  onclick="calc();">금액계산</button>
+</body>
+</html>

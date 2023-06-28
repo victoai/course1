@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    
+</head>
+<body>
+    <table id="mainTable"> 
+        <thead>
+            <tr>
+                <td>input type="text"></td>
+                <td> <input type="text"></td>
+                <td> <input type="text"></td>
+            </tr>
+        </thead>
+        <tbody>                
+            <tr>
+                <td>input type="text"></td>
+                <td> <input type="text"></td>
+                <td> <input type="text"></td>
+            </tr>
+        </tbody>           
+</table>
+
+
+<button  onclick="addRow();">등록</button>
+<button  onclick="removeRow();">삭제</button>
+
+<script type='text/javascript'>
+  
+
+     
+    var mainTable = document.getElementById('mainTable');   
+    
+    var mainTableBody = mainTable.getElementsByTagName('tbody')[0];    
+    var rowCount = mainTableBody.rows.length;
+    alert( rowCount);
+   
+ 
+    function addRow() {
+       
+      rowCount = rowCount + 1;      
+      // refChild null이어도 마지막 리스트에 추가
+      mainTableBody.insertBefore(mainTableBody.rows[0].cloneNode(true), mainTable.rows[rowCount]); 
+      
+      console.log(rowCount);
+    }
+ 
+    function removeRow() {
+      if(rowCount < 2) {
+        alert("그만 지워");
+      } else {
+        rowCount = rowCount - 1;
+        mainTableBody.deleteRow(rowCount);
+      }
+      console.log(rowCount);
+    }
+
+  
+  </script>
+</body>
+</html>

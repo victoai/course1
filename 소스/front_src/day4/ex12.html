@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .menu1 li{
+             display:none;
+         }
+         .menu1:hover ul li{
+            display:block;
+         }
+         .menubar{
+             display: flex;
+         }
+         .menu1{
+            width:100px;
+            height: 200px;
+            margin:0px 20px;
+         }
+         ul{
+             list-style: none;
+         }
+         .menu1:hover ul{
+             width:100px;
+             height: 200px;
+             background-color: blueviolet;
+         }
+
+    </style>
+</head>
+<body>
+    <ul  class="menubar">
+        <li class="menu1">메뉴1
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>        
+
+        <li class="menu1">메뉴2
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+    </ul>    
+</body>
+</html>

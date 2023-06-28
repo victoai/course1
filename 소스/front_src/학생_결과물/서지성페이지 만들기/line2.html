@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lineColor.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+    <style>
+        #title{
+            width:1000px;
+            margin: auto;
+        }
+        #titleImg{
+            margin: auto;
+            width:fit-content;
+            height:200px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        #titleImg img{
+            height: 200px;
+        }
+        #list li{
+           height: 50px;
+           list-style: none;
+        }
+        .sign_in{
+            margin:auto;
+            padding:5px;
+            width: fit-content;
+            height: 50px;
+            
+        }
+        #whole{
+            display: flex;
+            width: fit-content;
+            margin:auto;
+        }
+        #left{
+            width:200px;
+            height:1000px;
+            background-color: rgb(104, 157, 255);
+        }
+        
+        #right{
+            width:800px;
+            height:1000px;
+            background-color: rgb(125, 211, 214);
+            margin-left:50px;
+        }
+        #right img{
+            
+            margin:30px 100px;
+            width:600px; 
+            height:fit-content;
+        }
+        p{
+            margin-left: 100px;
+            width: 600px;
+            line-height: 120%;
+        }
+        footer{
+            height:100px;
+            background-color: darkseagreen;
+        }
+        #align{
+            width: fit-content;
+            margin: auto;
+            height:fit-content;
+            text-align: center;
+        }
+        #upperTitle{
+            margin-left:100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button><a href="menu.html">메인으로</a></button>
+    </header>
+    <div id = "title">
+        <h1>서울철덕공사</h1>   
+    </div>
+    <div id="titleImg">
+        <img src="images/1호선.jpg">
+        <img src="images/2호선.jpg">
+        <img src="images/3호선.jpg">
+        <img src="images/4호선.jpg">
+    </div>
+    <div class="sign_in">
+        <div class="sign_in">
+            ID<input type="text">
+            비밀번호<input type="password">
+            <button>로그인</button>
+            <button>회원가입</button>
+        </div>
+   </div>
+    <div id="whole">
+        <div id="left">
+            <div id = "list">
+                <li id="line1">&nbsp;<a href="line1.html">1호선</a></li>
+                <li id="line2">&nbsp;<a href="line2.html">2호선</a></li>
+                <li id="line3">&nbsp;<a href="line3.html">3호선</a></li>
+                <li id="line4">&nbsp;<a href="line4.html">4호선</a></li>
+                <li id="line5">&nbsp;<a href="line5.html">5호선</a></li>
+                <li id="line6">&nbsp;<a href="line6..html">6호선</a></li>
+                <li id="line7">&nbsp;<a href="line7..html">7호선</a></li>
+                <li id="line8">&nbsp;<a href="line8.html">8호선</a></li>  
+                    
+            </div>
+        </div>
+        <div id="right">
+                <img src="images/2호선.jpg" >
+                <h1 id="upperTitle">2호선</h1>
+                <p>
+                    순환<br>
+                    성수지선<br>
+                    신정지선</br>
+                    서울 지하철 2호선(서울 地下鐵 2號線) 혹은 수도권 전철 2호선
+                    (首都圈 電鐵 2號線)은 대한민국 서울 지하철 노선이자, 수도권
+                     전철의 운행 계통이다. 서울 주요 지역을 순환하는 을지로순환
+                     선, 성수역과 신설동역을 잇는 성수지선[내용주 1], 신도림역
+                     과 까치산역을 잇는 신정지선으로 구성된다.
+                     운행 계통은 을지로순환선을 시계 방향과 반대 방향으로 순환하는
+                      내선순환, 외선순환과 성수지선, 신정지선을 왕복하는 운행 계통
+                      이 있다. 노선 안내 등에 사용되는 색상은 ■녹색이고, 색의 뜻은
+                       환경이다.
+
+                     2012년 기준으로 서울 지하철 2호선은 대한민국에서 가장 붐비는
+                      노선으로 서울 지하철 전체 이용 승객의 31%인 일평균 204만 
+                      8000명이 이 노선을 이용하고 있다.[2] 전 구간을 서울교통공사가
+                       담당한다. 통행방향은 어디서든 우측통행이다.
+                </p>
+        </div>
+    </div>
+    <footer>
+        <div id="align">
+            <p>지하철 연혁 | 철도를 좋아하게 된 계기 | <a href="http://www.seoulmetro.co.kr/kr/index.do?device=PC#3rdPage">
+            서울교통공사 홈페이지</a>
+            | 개인정보처리방침 </p>
+
+        </div>
+        
+        
+    </footer>
+
+</body>
+</html>
+<!--
+    margin: 10px 30px ;     / *  위아래 10px  왼쪽오른쪽  30px */
+margin: 20px;   /* 네군데 전체가 20px  */
+margin: 10px 20px 30px 40px;  /* 시계방향 */
+
+-->

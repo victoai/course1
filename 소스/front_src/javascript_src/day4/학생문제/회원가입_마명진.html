@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 250px;
+        }
+        #title{
+            font-size: 25px;
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+        .box1{
+            border: 1px solid red;
+            margin:auto;
+            line-height: 50px;
+        }
+        .td1{
+            border: 1px solid blue;
+            text-align: center;
+            ;
+        }
+        .td2{
+            border: 1px solid black;
+        }
+        .profil_btn1{
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            right: 200px;
+            top: 700px;
+            border: 1px solid black;
+            border-radius: 10px;
+            
+            
+        }
+        .btn2{
+            height: 25px;
+            border: 0.5px solid black;
+            border-radius: 5px;
+              
+        }
+        .pw_text{
+            font-size: 11px;
+            text-decoration: underline;
+            
+        }
+    </style>
+    <script>
+         function doubleCheck(){
+            alert("중복확인 되었습니다");
+        }
+
+        function check(){
+            let userFirstName = document.frm.userFirstName;
+            let userId =document.frm.userId;
+            let userPW = document.frm.userPW;
+            let userDoublePW = document.frm.userDoublePW;
+            let userAddress = document.frm.userAddress;
+
+            if(userFirstName.value ==""){
+                alert("이름을 입력하세요.");
+                userFirstName.focus();
+            }else if(userId.value==""){
+                alert("아이디를 입력하세요.");
+                userId.focus();
+            }else if(userPW.value==""){
+                alert("비밀번호를 입력하세요.");
+                userPW.focus();
+            }else if(userDoublePW.value==""){
+                alert("비밀번호를 다시 입력하시고 확인하세요.");
+                userPW.focus();
+            }else if(userAddress.value==""){
+                alert("이메일 주소를 입력하세요.");
+                userAddress.focus(); 
+            }else{
+                //정상적인 입력
+                alert("가입이 완료되었습니다.");
+            }
+                
+           
+        }
+        
+       
+    </script>
+</head>
+<body>
+    
+    <form name="frm">
+        
+        <h3 id="title">회원정보 입력</h3>
+        <table class="box1">
+            <tbody class="box2">
+                <tr>
+                    <td class="td1">이름</td>
+                    <td class="td2"><input type="text" name = "userFirstName" placeholder="이름 입력" ></td>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        아이디
+                    </td>
+                    <td class="td2">
+                        <input type="text" name = "userId" placeholder="아이디 입력">
+                        <button class="btn2" type="button" onclick="doubleCheck()">중복확인</button></td>
+                </tr>
+                
+                <tr>
+                    <td class="td1">
+                        비밀번호
+                    </td> 
+                    <td class="td2"><input type="password" name ="userPW" placeholder="비밀번호 입력">
+                        <a class="pw_text">*비밀번호는 4-16자 사이로 입력해주세요.</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">비밀번호 확인</td>
+                    <td class="td2"><input type="password" name ="userDoublePW" placeholder="비밀번호 입력"></td>
+                </tr>
+                <tr>
+                    <td class="td1">이메일 주소</td>
+                    <td class="td2">
+                        <input type="text" name = "userAddress" placeholder="주소 입력">
+                        @ <select>
+                            <option>선택하세요</option>
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                            <option>gmail.com</option>
+                            <option>hotmail.com</option>
+                        </select>
+                 </td>
+                    
+                </tr>
+                <tr>
+                    <td class="td1">성별</td>
+                    <td>
+                        <input type="radio" name="radio1" class="radio1">
+                        <label for="radio1">남성</label>
+                        <input type="radio" name="radio1" class="radio1">
+                        <label for="radio1">여성</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="profil_btn1" type="button" onclick="check()">회원가입</button>
+    </form>
+</body>
+</html>

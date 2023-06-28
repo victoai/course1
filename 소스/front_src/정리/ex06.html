@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        // 이벤트를 처리하는 handler 함수
+        // event 객체를 사용 ( 발생한 이벤트에 대한 정보를 객체형태로 제공받습니다.)
+        function search(){   
+
+            //alert( event.keyCode);
+            if( event.keyCode  == 13){
+                alert("검색중..");
+               // window.location.href="/search.do?q=bread";
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    
+    <input type="text" onKeyup="search();"> 
+</body>
+</html>

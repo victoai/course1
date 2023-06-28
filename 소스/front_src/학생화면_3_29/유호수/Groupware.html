@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <title>Groupware</title>
+    <style>
+        *{
+            font-family: 'Hi Melody', cursive;
+            
+        }
+        .wrap{
+            width:1400px;
+            height:1600px;
+            border:1px solid rgb(252, 242, 242);
+            position:relative;
+            background-color: rgba(218, 226, 224, 0.644);
+            margin:auto;
+            position: relative;
+        }
+        .wrap .title{
+            
+            width:700px;
+            height:60px;
+            font-size:50px;
+            margin: 10px auto;
+            text-align: center;
+            border:1px solid black;
+            font-family: 'Arvo', serif;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(243, 132, 132);
+            font-size:30px;
+            text-align: center;
+
+        }
+        ul{
+            list-style: none;
+        }
+        .login{
+            display:flex;
+            position: absolute;
+            right:30px;
+            line-height:70px;
+            width:400px;
+            height:50px;
+            list-style: none; 
+            text-align: center;    
+            
+        }
+        header{
+            background-color: rgba(0, 0, 0, 0.904);
+            color:white;
+        }
+
+        .login li{
+            width:150px;
+            height:50px;
+            margin-left:10px;
+        }
+        header ul li:hover{
+            font-weight: bold;
+            color:red;
+        }
+        header li a:hover{
+            font-weight: bold;
+            color:red;
+        }
+        
+        .in_menu{
+            display: flex;
+            margin-left:0px;
+            width:800px;
+            height:100px;
+
+            
+        }
+        
+        .in_menu li{
+            height:80px;
+            width:330px;
+            font-size:30px;
+            margin-left:30px;
+            line-height: 80px;
+            text-align: center;
+        }
+        fieldset{
+            text-align: center;
+            width:300px;
+            height:400px;
+            background-color: rgba(229, 252, 243, 0.288);
+            margin:auto;
+            border:5px dotted rgb(41, 58, 6);
+        }
+        .home{
+            display:flex;
+            flex-wrap:wrap;
+            font-size:30px;
+            
+        }
+        nav{
+            font-weight: bold;
+            background-color: rgba(193, 204, 218, 0.315);
+        }
+        legend{
+            font-weight: bold;
+        }
+        main{
+            width:1300px;
+            height: 900px;
+            margin:auto;
+        }
+        .home{
+            width:1200px;
+            height:900px;
+            margin:auto;
+            background-color: rgba(246, 246, 252, 0.185);
+        }
+
+        footer{
+            position:absolute;
+            bottom: 0px;
+            width:1300px;
+            height:300px;
+            margin-top:100px;
+            background-color: gray;
+            color:whitesmoke
+            
+        }
+        footer li{
+            line-height:50px;
+        }
+        
+        footer .corp_info>ul{
+            display: flex;
+            
+        }
+        footer .corp_info>ul>li{
+            width:500px;
+            height:200px;
+            
+            
+        }
+        h2{
+            text-align: center;
+            height:20px;
+        }
+        
+        select{
+            width:230px;
+            height:50px;
+            font-size:20px;
+            background-color: rgba(208, 173, 240, 0.404);
+           
+        }
+        
+        .item, .item1, .item2{
+            
+            color:brown;
+        }
+        .i1, .i2, .i3{
+            display:none;
+            width:100px;
+            height:100px;
+            background-color: antiquewhite;
+            position:absolute;
+            z-index:1px;
+        }
+        .item1 a{
+            font-size:20px;
+            text-decoration: underline;
+            display:block;
+            width:300px;
+            height:50px;
+            margin-top:0px;
+            color:rgb(63, 9, 9);
+            font-weight: bold;
+        }
+        .s1:hover .i1{
+            display:block;
+            width:400px;
+            height:50px;
+        }
+        .s2:hover .i2{
+            display:block;
+            width:400px;
+            height:50px;
+        }
+        .s3:hover .i3{
+            display:block;
+            width:400px;
+            height:50px;
+        }
+        .item1 a{
+            display:block;
+            height:5px;
+            
+        }
+        h3{
+            display:block;
+            width:300px;
+            height:50px;
+        }
+        #sch:focus{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <header>
+
+        <div class="title"> Lakey Corp. Groupware</div>
+        <div class="h_form">
+
+        </div>
+        <nav>
+            <div class="info">
+            <ul class="login">
+                <li id="logid"><a href="login.html">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li><input id="sch" type="search"></li>
+                
+            </ul>
+            </div>
+            <div class="menu">
+                <ul class="in_menu">
+                    <li id="menu1"><a href="Groupware.html">홈</a></li>
+                    <li id="menu2"><a href=Board.html>게시판</a></li>
+                    <li id="menu3">메일</li>
+                    <li id="menu3">드라이브</li>
+                    <li id="menu3">조직도</li>
+                    <li id="menu3">일정</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+            <div class="home">
+                <fieldset>
+                    <legend>최신 게시글</legend>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>게시판</legend>
+                      <ol>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                      </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>일정</legend>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>메일</legend>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>조직도</legend>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>드라이브</legend>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </fieldset>
+                
+
+            </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="corp_info">
+            <ul>
+                <li class="item">
+                      <ul><h2>회사정보</h2>
+                        <hr>
+                         <li>주소:서울시 강남구 가나다동 123-2, Lakey빌딩 1층</li>
+                         <li>연락처:000-000-0000</li>
+                         <li>사업자등록번호:000-000-1111</li>
+                         <li>대표이사:Lakey</li>
+                 </ul>
+                </li>
+                <li class="item1">
+                    <ul><h2>채용정보</h2>
+                        <hr>
+                        <li><ul class="s1">수도권 영업1팀 영업사원
+                            <div class="i1">학력무관, 경력무관, 전공무관</div>
+                        </ul></li>
+                        <li><ul class="s2">경영관리본부장
+                            <div class="i2">학력무관, 경영관리 경력15년이상, 경제,경영 등 전공</div>
+                        </ul></li>
+                        <li><ul class="s3">마케팀 팀장
+                            <div class="i3">학력무관, 경영관리 경력5년이상, 마케팅, 디자인과 등 전공</div>
+                        </ul></li>
+                        <li><a href="abcd@lakey.com">=> 이력서 발송주소:"abcd@lakey.com"</a></li>
+                     
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;=>업로드: <input type="file"></h3>
+                 </ul>
+                    </li>
+                <li class="item2">
+                    <ul><h2>관계사</h2>
+                        <hr>
+                        <select>
+                            <option>관계사를 선택해주세요</option>
+                            <option>Sea Corp.</option>
+                            <option>Sky Corp.</option>
+                            <option>Ground Corp.</option>
+                            <option>Ame Corp.</option>
+                        </select>
+                    </ul>
+                    <ul><h2>검색 포털사이트</h2>
+                        <hr>
+                        <select onchange="window.open(this.value)">
+                            <option>검색기</option>
+                            <option value="http://www.naver.com">네이버</option>
+                            <option value="http://www.google.com">구글</option>
+                        </select>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </footer>    
+    </div>
+</body>
+</html>

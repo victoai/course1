@@ -1,0 +1,25 @@
+ while(true){
+                let number=prompt("암호를입력하세요");
+                if(number=="1234"){
+                    break;
+                }
+            } 
+
+
+
+<script>
+        let day=prompt("요일을 입력하세요");
+
+        
+        switch(day){
+            case "월":  case "화": case "수": case "목":
+                alert("출근");
+                break;
+            case "금": case "토": case "일":
+                alert("휴일")
+                break;
+            default:
+                alert("잘못된입력");
+                break;
+        }
+    </script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #th1{
+            background-color: rgb(188, 238, 173);
+        }
+        th{
+            background-color: aqua;
+        }
+        table{
+            width: 300px;
+            height: 300px;
+            margin:auto;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>학원생현황</caption>
+        <thead>
+            <tr>
+                <th>구분</th> <!-- th = 제목 , td = 내용물 -->
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <th id="th1">유치원</th> <!-- id를 넣고 이름을 지정해주면 style에서 #이랑 이름 넣고 원하는 디자인 넣을 수 있음 -->
+                <td>117</td>
+                <td>252</td>
+                <td>5547</td>
+                <td>474</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>304</td>
+                <td>3437</td>
+                <td>86,954</td>
+                <td>6,111</td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>

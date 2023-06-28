@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            //alert("1");
+            let id = document.frm.id;
+            let pw = document.frm.pw;
+            let pw_check = document.frm.pw_check;
+            let name = document.frm.name;
+            let birth = document.frm.birth;
+            let sex = document.frm.sex;
+            let email = document.frm.email;
+            let number = document.frm.number;
+            if(id.value==""){
+                alert("아이디를입력하세요");
+            }
+            else if(pw.value==""){
+                alert("패스워드를 입력하세요");
+            }
+            else if(pw_check.value==""){
+                alert("패스워드 확인를 입력하세요");
+            }
+            else if(name.value==""){
+                alert("이름를 입력하세요");
+            }
+            else if(birth.value=="" || isNaN(birth.value)){
+                alert("생년월일를 제대로 입력하세요 Ex)yymmdd");
+            }
+            else if(sex.value==""){
+                alert("성별을 입력하세요");
+            }
+            else if(email.value==""){
+                alert("이메일를 입력하세요");
+            }
+            else if(number.value==""|| isNaN(number.value)){
+                alert("핸드폰번호를 제대로 입력하세요");
+            }
+            else{
+                alert("로그인중입니다")
+            }
+
+        }
+    </script>
+    <style>
+        .wrap{
+            width: 500px;
+            height: 800px;
+            border: 2px solid black;
+            margin:auto;
+            margin-top: 10px;
+        }
+        .img_div{
+            width: 353px;
+            height: 75px;
+            border: 0px solid black;
+            margin: auto;
+            margin-top: 0px;
+            
+            background-image: url('../images/쿠팡사진.png');
+            background-position: center;
+            
+
+        }
+
+        .info_div{
+            width: 300px;
+            height: 200px;
+            
+            margin: auto;
+            margin-top: 10px;
+
+        }
+        input{
+            width: 97%;
+            height: 30px;
+
+        }
+        button{
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+            border: 0px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+             
+        }
+        span{
+            font-size: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+        
+
+<!-- 전체 영역-->
+    <form name="frm" >
+    <div class="wrap">
+        <!--이미지영역-->
+        <div class="img_div"></div>
+        <!--로그인정보영역-->
+        <div class="info_div">
+            아이디 <input name="id" type="text">
+            비밀번호 <input name="pw" type="password">
+            비밀번호 재확인  <input name="pw_check" pw type="password">
+            이름 <input name="name" type="text">
+            생년월일 <input name="birth" type="text">
+            성별 <input name="sex" type="text">
+            본인확인 이메일 <input name="email" type="text">
+            휴대전화 <input name="number" type="text">
+            <button onclick="check();"><span>가입하기</span></button>
+        </div>
+    </div>
+</form>
+
+<span></span>
+
+
+
+</body>
+</html>

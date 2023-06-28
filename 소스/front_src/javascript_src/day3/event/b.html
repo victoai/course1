@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+ function largeFont(){    
+	 
+	 let lis = document.getElementsByTagName("li");   
+	 for(let i=0; i<lis.length ; i++){
+		 lis[i].addEventListener("click" , function(){
+			  this.style.fontSize="20px" ;
+		 });
+	 } 	 
+ }
+
+</script>
+</head>
+<body  onload="largeFont();">
+
+<ul>
+<li > 김밥</li>
+<li> 초밥</li>
+<li> 스시</li>
+</ul>
+
+</body>
+</html>

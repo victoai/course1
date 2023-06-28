@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let menu=prompt("숫자입력해주세요");
+
+        switch(menu){
+            case 1:
+                alert("입력");
+                break;
+            case 2:
+                alert("조회");
+                break;
+            case 3:
+                alert("삭제");
+                break;
+            case 4:
+                alert("변경");
+                break;
+        
+            default:
+                alert("다시 입력해주세요");
+        }
+        
+        let kor1=prompt('점수를 입력해주세요');
+        let result;
+        if(kor1>=90){
+            result="A";
+        }else if(kor1>=80){
+            result="B";
+        }else if(kor1>=70){
+            result="C";
+        }else{
+            result="F";
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

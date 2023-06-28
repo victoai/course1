@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page{
+            width: 500px;
+            height: 930px;
+
+            margin: auto;
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            border: 3px solid gray;
+            border-radius: 5px;
+
+        }
+        .product{
+
+            border-bottom: 3px dotted gray;
+        }
+        .image{
+            width: 300px;
+            height: 180px;
+
+            background-image: url("https://w.namu.la/s/186ce0c227b98ea8c7c88ed66cd1eebd64acb0dfa1b580384cc2afbe7a55012520630674252c74d075d1e8a1cdf65377900084fe5b9d501e2db9bf6420751835c768ee3b773cf51ca578548f9a3f03bcc477e1cf1fe79e10c4ac392eae750f00aca1098d068174148d3ba83306c5f714");
+            background-position: center;
+            background-size: cover;
+
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 80px;
+            border: 1px solid gray;
+        }
+        .name{
+            font-size: 20pt;
+            font-weight: bold;
+        }
+        .detail{
+            margin-top: 12px;
+        }
+        .cost{
+            margin-top: 12px;
+            margin-bottom: 30px;
+        }
+
+
+
+
+
+        .order{
+            margin-top: 30px;
+            
+        }
+        .order div{
+            margin-top: 20px;
+        }
+        .order input{
+            margin-top: 5px;
+            width: 98%;
+            height: 25px;
+
+            background-color: aliceblue;
+
+            border-radius: 3px;
+        }
+        .count{
+            margin-top: 5px;
+            width: 100%;
+            height: 35px;
+
+            background-color: aliceblue;
+        }
+        .button{
+            padding-top: 20px;
+            padding-left: 10%;
+        }
+        .btorder{
+            width: 90%;
+            height: 30px;
+
+            border-radius: 5px;
+        }
+
+
+
+        .maintitle{
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(94, 89, 89);
+
+            border-bottom: 1px solid gray;
+        }
+        .title{
+            font-weight: bold;
+            color: rgb(94, 89, 89);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!--  상품정보-->
+        <div class="product">  
+            <div class="image"></div>
+            <div class="name">치킨(chicken)</div>
+            <div class="detail">서양 요리의 영향을 받은 닭튀김의 일종으로, 토막난 닭고기에 양념을 한 뒤 밀가루나 전분 등을 묻히고 끓는 기름에 튀긴 요리</div>
+            <div class="cost"><span class="title">가격</span> 1800원 </div>
+        </div>
+
+        <!--  주문내역정보-->
+        <div class="order">
+            <span class="maintitle">주문내역</span>
+            <div><span class="title">주문자이름</span> <input type="text"></div>
+            <div><span class="title">수량</span>
+                <select class="count">
+                    <option>수량을 선택하세요</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div><span class="title">주문금액</span> <input type="text"></div>
+            <div><span class="title">전화금액</span> <input type="text"></div>
+            <div class="button"> <button class="btorder">order</button></div>
+        </div>
+    </div>
+
+</body>
+</html>

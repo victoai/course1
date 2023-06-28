@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /* 선택자 , 셀렉터 
+        공용선택자 : 모든태그들에 적용,  초기화작업 , 모든 태그들의 여백(padding, margin) 다 없애기 
+     */
+
+     *{
+         color: red;
+     }
+     p{
+         color:blue;
+     }
+     header p{
+        color: yellow;
+     }
+
+     header>p{
+         color :chartreuse;
+     }
+     .pretty{
+         font-size: 20px;
+         color:aqua;
+        
+     }
+     .pretty2{
+        background-color: rgb(110, 12, 102);
+     }
+
+     #sp{        
+        border:5px solid gray;
+     }
+    </style>
+</head>
+<body>    
+
+    <header>
+        <p class="pretty pretty2"> header  p 자식</p>
+         <div class="pretty">
+             <p> header의 자손</p>
+         </div>
+    </header>
+
+    <nav>
+
+        <p id="sp"> nav p </p>
+    </nav>
+
+   <section>
+     <p> section p</p>
+   </section>
+
+    <footer  class="pretty">
+        <p> footer</p>
+    </footer>
+</body>
+</html>

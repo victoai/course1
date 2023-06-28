@@ -1,0 +1,56 @@
+.post1 {
+    display:block;
+    width:585px;
+    margin-top: 15px;
+    margin:auto;
+}
+.post2 {
+    display:block;
+    width:585px;
+    margin-top: 15px;
+    margin:auto;
+}
+.post3 {
+    display:block;
+    width:585px;
+    margin-top: 15px;  
+    margin:auto;
+}
+.post4 {
+    display:block;
+    width:585px;
+    margin-top: 15px;
+    margin:auto;
+}
+.post5 {
+    display:block;
+    width:585px;
+    margin-top: 15px;
+    margin:auto;
+}
+.post6 {
+    display:block;
+    width:585px;
+    margin-top: 15px;
+    margin:auto;
+}
+p{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+a{
+    text-decoration:none;  
+}
+
+#namu{
+    position: absolute;
+    width:1000px;
+    text-align: right;
+     margin-right: 10px;
+     background-color: rgb(51, 28, 30);
+     color:white;
+     font-size: 5pt;
+}

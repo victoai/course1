@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <form  name="frm" action="https://search.naver.com/search.naver" method="get">
+        <input type="text" name="query" size="15"  >    
+        <input type="submit" value="완료">
+    </form>
+</body>
+</html>

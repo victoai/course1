@@ -1,0 +1,48 @@
+문제 1
+    <script>
+        let pw = prompt("비밀번호를 입력해주세요.");
+        while(true){
+            alert("다시 입력해주세요.");
+            let pw = prompt("비밀번호를 입력해주세요.");
+           if( pw == "1234")break;
+        }
+            alert("맞습니다. ");
+    </script>
+
+
+문제 2
+
+    <script>
+
+        let day = prompt("요일을 입력하세요.");
+        let work;
+
+        switch(day){
+            case "월요일":
+                work="출근";
+                break;
+            case "화요일":
+                work="출근";
+                break; 
+            case "수요일":
+                work="출근";
+                break;     
+            case "목요일":
+                work="출근";
+                break;       
+            case "금요일":
+                work="휴일";
+                break;   
+            case "토요일":
+                work="휴일";
+                break;
+            case "일요일":
+                work="휴일";
+                break;
+            default:
+                alert("다시 입력해주세요.");
+            
+        }
+        alert(day + "는" + " " + work + "입니다.");
+ 
+    </script>

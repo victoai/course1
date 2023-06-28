@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width:400px;
+            height: 300px;
+            border: 1px solid black;
+            margin:auto;
+            margin-top: 100px;
+        }
+        td{
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        td:nth-child(1){
+            text-align: center;
+        }
+        
+        #btn2{
+            width:200px;
+            height: 25px;
+ 
+         
+            font-weight: bold;
+            background-color: whitesmoke;
+            border-radius: 20%;
+        }
+        input{
+            margin-left: 20px;
+        }
+        
+    </style>
+    <script>
+        function new_cus(){
+            let frm = document.frm;
+            let userId = frm.userID;
+            let userPw = frm.userPW;
+            let userPw2 = frm.userPW2;
+            let username = frm.username;
+            let cellnum = frm.cellnum;
+            
+
+            if(userId.value == ""){
+                alert("사용할 아이디를 정확히 입력해주세요");
+                userId.focus();
+            }else if(userPw.value ==""){
+                alert("사용할 비밀번호를 정확히 입력해 주세요");
+                userPw.focus();
+            }else if(userPw2.value == ""){
+                alert("사용할 비밀번호를 한번 더 입력해 주세요");
+                userPw2.focus();
+            }else if(username.value == ""){
+                alert("이름을 정확히 입력해주세요");
+                username.focus();
+            }else if(cellnum.value == ""){
+                alert("전화번호를 입력해 주세요");
+                cellnum.focus();
+            }else{
+                alert("ID = " + userId.value);
+                alert("PW = " + userPw.value);
+                alert("환영합니다");
+            }
+        }
+
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+    <form name="frm"> <!--form을 사용해야 name으로 접근이 가능해진다.-->
+        <table>
+            <tbody>
+                <tr>
+                    <td>아이디</td>
+                    <td><input placeholder="아이디" type="text" name="userID"></td>
+
+
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input placeholder="비밀번호" type="password" name="userPW"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 재확인</td>
+                    <td><input placeholder="비밀번호" type="password" name="userPW2"></td>
+                </tr>
+
+                <tr>
+                    <td>이름</td>
+                    <td><input placeholder="이름" type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td><input placeholder="전화번호" type="text" name="cellnum"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button  id="btn2" type="button" onclick="new_cus();">회원가입</button></button></td>
+                </tr>
+            </tbody>
+
+        </table>
+
+
+
+        
+    </form>
+
+
+</body>
+</html>

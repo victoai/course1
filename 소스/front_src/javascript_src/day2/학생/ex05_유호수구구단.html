@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 함수는  호출해야 실행됩니다.
+        function Dan(num){            
+            let arr=[];    
+            //배열선언 
+            /*
+             arr[0] =5;
+             arr[1] =10
+
+            */
+            for(i=0;i<9;i++){
+                arr[i]=num* (i+1);                 
+            }                
+            return arr;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>구구단 출력</h2>
+    <script>
+        num = prompt("원하는 단을 입력해보세요");       
+        let result=parseInt(num);       
+      
+        // Dan() 함수호출
+        let rtn = Dan(result); 
+               
+        for( let i=0;  i< rtn.length ; i++)
+            document.write( rtn[i] + "<br>");
+
+    </script>        
+</body>
+</html>

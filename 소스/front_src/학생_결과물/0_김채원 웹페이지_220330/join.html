@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .menu {
+            background-color: #FFDAB9;
+			list-style-type: none;
+			margin-left: 10px;
+            display :flex;
+            
+        }
+        .menu li a {
+            display: block;
+			color: #000000;
+			padding: 8px;
+			text-decoration: none;
+			text-align: center;
+			font-weight: bold;
+            margin : 0px;
+            padding:20px 50px 20px 50px;
+        }
+        .menu li a:hover{
+			background-color: #EDBF90;
+			color: white;
+		}
+     
+        #wrap {
+            width:100%;
+            height:140vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:rgb(0,0,0,0.1)
+        }
+
+
+        .join{
+            width:30%;
+            height:900px;
+            background:rgba(255, 255, 255, 0.421);
+            border-radius: 20px;
+            display : flex;
+            align-items: center;
+            flex-direction: column;
+            border :1px solid white;
+        }
+        .join_box{
+            margin-top:20px;
+            width:80%;
+        }
+        .join_box input{
+            width:80%;
+            height: 20px;
+            border-radius: 10px;
+            margin-top: 5px;
+            padding: 5px 20px;
+            border: 1px solid lightgray;
+            outline: none;
+        }
+        .btn {
+			background-color: #FFDAB9;
+			display: inline-block;
+			height: 50px;
+			width: 150px;
+			padding: 15px 30px;
+			margin: 10px;
+			border: none;
+			outline: none;
+			border-radius: 20px;
+			text-align: center;
+			text-decoration: none;
+			font-size: 17px;
+            font-weight: bold;
+			cursor: pointer;
+			box-shadow: 0 9px #B0B0B0;
+            margin-top:50px;
+		}
+		.btn:hover {
+             background-color:  #EDBF90; 
+        }
+		.btn:active {
+			background-color: #EDBF90;
+			box-shadow: 0 5px #808080;
+			transform: translateY(4px);
+		} 
+        h1{
+            margin-left:20px;
+        }  
+        #check{  
+            padding: 0;
+            width: 80%;
+            font-size: 14px;
+            align-items: left;
+            margin-top:10px;
+            line-height:30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div><h1>Chae Won</h1></div>
+        <div class="header_wrap">
+              <ul class="menu">
+                  
+                <li><a href="main1.html">Home</a></li>
+                <li><a href="log.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="cs.html">고객센터</a></li>
+                <li><a href="">장바구니</a></li>
+                <li><a href="">마이페이지</a></li>
+              </ul>
+        </div>
+    </header>
+    <main>
+        <div id="wrap">
+            <div class="join">
+                <h2>회원가입</h2>
+                <div class="join_box">
+                    <h4>아이디</h4>
+                    <input type="text" placeholder="Id">
+                    <h4>비밀번호</h4>
+                    <input type="password" placeholder="Password">
+                    <h4>비밀번호 재확인</h4>
+                    <input type="password" placeholder="Password">
+                    <h4>이름</h4>
+                    <input type="text" placeholder="Name">
+                    <h4>휴대전화</h4>
+                    <input type="text" placeholder="Phone">
+                    <h4>약관동의</h4>
+                 </div>   
+                    <div id="check">
+                        <input type="checkbox" > 
+                        <label for="">개인정보 수집 이용동의(필수)</label><br> 
+                        <input type="checkbox" > 
+                        <label for="">이용약관(필수)</label><br> 
+                        <input type="checkbox" > 
+                        <label for="">마케팅 활용 및 광고성 정보 수신 동의(선택)</label> 
+                    </div>
+                    <div>
+                        <button class="btn">가입하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <img src="../images/img1.jpeg"  width="300px"  height="300px">
+           
+    <br>
+    &nbsp;&nbsp;//익명클래스 생성 		<br>
+        CafeArray.sort(coffee, new MyComparator() {		 <br> 
+          @Override<br>
+          public int compareTo(Object o1, Object o2) { <br>
+             Cafe c1 = (Cafe) o1; <br>
+             Cafe c2 = (Cafe) o2; <br>
+           return c1.menu.compareTo(c2.menu); <br>
+        }}); <br>         
+    
+        <p></p>
+        System.out.println("\n이름순&nbsp;정렬후"); <br>
+        <p></p>
+        &nbsp;&nbsp;&nbsp;&nbsp;for(Cafe c : coffee) <br>
+    System.out.println( c);   //s.toSting();       <br>
+    }   <br>
+}<br>  
+ 
+</body>
+</html>

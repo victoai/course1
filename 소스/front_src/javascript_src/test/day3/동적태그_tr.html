@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width:700px;
+            border:1px solid black;
+            font-size:12px;
+            border-collapse: collapse;
+        }
+        td{
+            width:150px;
+            border:1px solid black;
+        }
+        tr{
+            height: 40px;
+        }
+    </style>
+
+
+    <script>
+        function calc(){
+           let tbody = document.getElementById("cart");
+           // 전체 tr정보 가져오기
+           let rows = tbody.getElementsByTagName("tr");
+
+           for( let i=0; i< rows.length; i++){
+               //각 tr 선택
+               let tr = rows[i];
+               // 각 tr의 가격td 가져오기
+               let priceTd = tr.firstElementChild.nextElementSibling;
+               // 각 tr의 수량td 가져오기
+               let qtyTd= tr.firstElementChild.nextElementSibling.nextElementSibling;   
+               // 각 tr의 금액td 가져오기                     
+               let amountTd = tr.lastElementChild;     
+              
+               //금액구하기
+               price = priceTd.innerHTML;
+               //수량구하기
+               qty = (qtyTd.firstElementChild.value =="")?0 :qtyTd.firstElementChild.value;
+               //금액구하기
+               let amount = price  * qty;         
+               //금액td에 금액넣기
+               amountTd.innerHTML = amount;
+              
+           }
+        }
+    </script>
+</head>
+<body>
+    
+
+    <table>
+    <tbody id="cart">
+        <tr>          
+            <td>상품1</td>
+            <td>2000</td>
+            <td><input type="text" value="3"></td>
+            <td></td>
+        </tr>
+        <tr>          
+            <td>상품2</td>
+            <td>3000</td>
+            <td><input type="text" value="4"></td>
+            <td></td>
+        </tr>
+    </tbody>
+    </table>
+
+    <button onclick="calc();">클릭</button>
+</body>
+</html>

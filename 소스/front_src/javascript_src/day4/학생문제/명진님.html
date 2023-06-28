@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h3>각 메뉴를 클릭했을 때, 글자크기를 크게 1em, 1.3em</h3>
+    <p>객체.style.fontsize="1.3em";</p>
+    <p>점심에 먹고싶은 메뉴</p>
+    
+    <ul>
+        <li  id="li1" onclick="changeFontSize()" >김밥</li>
+        <li>스파게티</li>
+        <li>스시</li>
+        <li>콩나물 해장국</li>
+    </ul>
+    <script>
+        function changeFontSize(){
+                document.getElementById("li1").style.fontSize= "1.3em";
+            
+        }
+       
+    </script>
+</body>
+</html>

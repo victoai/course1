@@ -1,0 +1,29 @@
+/* 전체적인 위치 및 배치구현 */
+main{
+    height : 1300px;
+}
+
+/* noti_title 위치 및 배치구현 */
+.noti_title{
+    position: relative;
+}
+.noti_title .nav{
+    width: 500px;
+    display: flex;
+
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.noti_title .nav li{
+    width: 200px;
+}
+.noti_title .search{
+    width : 800px;
+    height: 40px;
+
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+
+    border: 1px solid gray;
+}

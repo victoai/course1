@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
+<style>
+    body {
+        background-color: white;
+        padding: 50px;
+    }
+    button {
+        background-color: white;
+    }
+
+    /* ===HEAD=== */
+    .headBar {
+        background-color: blueviolet; 
+        color: white; 
+        text-align: center; 
+        vertical-align: middle; 
+        width: 1500px;
+        height: 20px; 
+        padding: 10px;
+    }
+    .headMain {
+        width: 1500px;
+        background-color: blue; 
+    }
+    #headMainBtnForDelevery {
+        width: 500px; 
+        float: left;
+    }
+    #headMainLogo {
+        width: 500px; 
+        float: left; 
+        text-align : center;
+        border-radius: 3px;
+        box-shadow: 5px 0px 5px 5px #999;
+        height: 350px;
+    }
+    #headMainBtnContainer{
+        width: 500px;
+        float: right;
+    }
+    #headMainLogoImg {
+        margin: auto; 
+        width: 500px; 
+        height: 300px;
+    }
+    #headMainBtnForSignIn {
+        float: right;
+    }
+    #headMainBtnForLogin {
+        float: right;
+    }
+    #headMainBtnForCS {
+        float: right;
+    }
+    #headMainBanner{
+        text-align : center;
+    }
+    #headMainBannerImg {
+        margin: auto;
+        width: 1200px;
+        margin-top: 10px;
+    }
+
+    /* ===MAIN=== */
+    main {
+        margin: auto;
+    }
+    #mainTitle1 {
+        text-align: center;
+    }
+    .mainProductContainer {
+        text-align: 
+        flex=auto; 
+        width: 1500px;
+    }
+    #products {
+        float: left;
+        flex: 1;
+        width: 270px;
+        margin-bottom: 100px;
+    }
+    #mainProductListImg {
+        width: 220px;
+        height: 250px;
+    }
+    span {
+        color: red;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+    /* ===Footer=== */
+    table {
+        text-align: left;
+    }
+    table button {
+        width: 150px;
+        height: 100;
+        background-color: white;
+        border-color: gainsboro;
+    }
+    .socialMediaList button{
+        width: 120px;
+    }
+    footer {
+        width: 1500px;
+        display: flex;
+    }
+    .footerDiv1{
+        width: 700px;
+    }
+    .footerDiv2 {
+        width: 800px;
+        float: right;
+    }
+    .footerDiv2 table {
+        width: 800px;
+    }
+    
+
+
+    
+
+
+</style>
+</head>
+<body >
+
+<head>
+    <p class="headBar">지금 가입하고 인기상품 100원에 받아가세요! ></p>
+    <br>
+    <div class="headMain">
+        <div id="headMainBtnForDelevery"><button><a href="../Practice/html/IntroDelivery.html">샛별 택배 배송안내</a></button></div>
+        <div id="headMainLogo"><img id = "headMainLogoImg" src="../Practice/images/MK.jpeg" ></div>
+        <div id="headMainBtnContainer">
+            <button id="headMainBtnForSignIn"><a style="color: black;" href="../Practice/html/Join.html">회원가입</a></button>  
+            <button id="headMainBtnForLogin"><a style="color: black;" href="../Practice/html/Login.html">로그인</a></button>  
+            <button id="headMainBtnForCS"><a style="color: black;" href="../Practice/html/CustomerCentre.html">고객센터</a></button>
+        </div>
+    </div>
+    <div id="headMainBanner"><img id="headMainBannerImg" src="../Practice/images/banner.jpeg"></div>
+</head>
+
+<main>
+<h2 id ="mainTitle1">이 상품 어때요?</h2>
+<div class="mainProductContainer">
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/candle.webp">
+            <p>방안을 무섭게 밝혀줄 무드캔들</p>
+            <p><span>10%</span> 12,000원</p>
+        </li>
+    </ul>
+</div>
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/refri.webp">
+            <p>2022년 신형같은 냉장고</p>
+            <p><span>15%</span> 1,230,000원</p>
+        </li>
+    </ul>
+</div>
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/Steak.jpg">
+            <p>미국 프라임 등급 안심 스테이크</p>
+            <p><span>30%</span> 9,000원(100g)</p>
+        </li>
+    </ul>
+</div>
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/ck.jpeg">
+            <p>필라델피아산 밀가루로 버무린 치즈케이크</p>
+            <p><span>20%</span> 14,000원</p>
+        </li>
+    </ul>
+</div>
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/Desktop.jpeg">
+            <p>10년전 Dell이 야심차게 출시한 데스크탑</p>
+            <p><span>33%</span> 100,000원</p>
+        </li>
+    </ul>
+</div>
+</div>
+
+
+
+<h2 style="text-align: center; width: 300px; margin: 0 auto;">오늘 하루 특가!</h2>
+<div style="text-align: flex=auto; width: 1500px;">
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/Strawberry.jpeg">
+            <p>GAP 딸기 한봉지 900g (5~6입)</p>
+            <p><span>15%</span> 5,941원</p>
+        </li>
+    </ul>
+</div>
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/tp.webp">
+            <p>아프지 않은 화장실 휴지</p>
+            <p><span>15%</span> 9,999원</p>
+        </li>
+    </ul>
+</div>
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/iphone.jpeg">
+            <p>GOS 성능조작 無 - 아이폰13</p>
+            <p><span>1%</span> 1,399,999원</p>
+        </li>
+    </ul>
+</div>
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/pizza.jpeg">
+            <p>가볍게 즐기는 고칼로리 냉동피자</p>
+            <p><span>22%</span> 4,999원</p>
+        </li>
+    </ul>
+</div>
+<div id="products">
+    <ul>
+        <li>
+            <img id="mainProductListImg" src="../Practice/images/pineapple.jpeg">
+            <p>어제 딴 초신선 파인애플</p>
+            <p><span>40%</span> 6,000원</p>
+        </li>
+    </ul>
+</div>
+</div>
+</main>
+
+<footer>
+<div class="footerDiv1">
+    <table>
+        <thead>
+            <tr>
+                <td><h3>고객행복센터</h3></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" style="padding: 10px;"><h1>1644-1107</h1></td>
+                <td style="vertical-align: bottom;">365고객센터</td>
+            </tr>
+            <tr><td style = "vertical-align: top;">오전 7시 - 오후 7시</td></tr>
+            <tr>
+                <td rowspan="2" style="padding: 10px;"><button>카카오톡 문의</button></td>
+                <td>365고객센터</td>
+            </tr>
+            <tr><td>오전 7시 - 오후 7시</td></tr>
+            <tr>
+                <tr>
+                    <td rowspan="2" style="padding: 10px;"><button>1:1 문의</button></td>
+                    <td>24시간 접수 가능</td>
+                </tr>
+            </tr>
+            <tr><td>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</td>
+            </tr>
+            <tr>
+                <tr>
+                    <td rowspan="2" style="padding: 10px;"><button>대량주문 문의</button></td>
+                    <td rowspan="2">비회원의 경우 메일로 문의 바랍니다</td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="footerDiv2">
+    <table>
+        <tr style="text-align: center; height: 100px;">
+            <th>컬리소개</th>
+            <th>컬리소개영상</th>
+            <th>인재채용</th>
+            <th>이용약관</th>
+            <th>개인정보처리방침</th>
+            <th>이용안내</th>
+        </tr>
+        <tr>
+            <td colspan="6">법인명 (상호) : 주식회사 컬리 | 사업자등록번호 : 261-81-23567 <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&apv_perm_no=">사업자정보 확인</a></td>
+        </tr>
+        <tr>
+            <td colspan="6">통신판매업 : 제 2018-서울강남-01646 호 | 개인정보보호책임자 : 이원준</td>
+        </tr>
+        <tr>
+            <td colspan="6">주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) | 대표이사 : 김슬아</td>
+        </tr>
+        <tr>
+            <td colspan="6">입점문의 : <a href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform?usp=sf_link">입점문의하기</a> | 마케팅제휴 : <a href="mailto:business@kurlycorp.com">business@kurlycorp.com</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6">채용문의 : <a href="mailto:recruit@kurlycorp.com">recruit@kurlycorp.com</a></td>
+        </tr>
+        <tr>
+            <td colspan="6">팩스: 070 - 7500 - 6098 | 이메일 : <a href="mailto:help@kurlycorp.com">help@kurlycorp.com</a></td>
+        </tr>
+        <tr>
+            <td colspan="6">대량주문 문의 : <a href="mailto:kurlygift@kurlycorp.com">kurlygift@kurlycorp.com</a></td>
+        </tr>
+        <tr class="socialMediaList">
+            <td><button>Instagram</button></td>
+            <td><button>Facebook</button></td>
+            <td><button>Blog</button></td>
+            <td><button>Naver</button></td>
+            <td><button>Youtube</button></td>
+            <td><button>Acorn</button></td>
+        </tr>
+    </table>
+</div>
+</footer>
+</body>

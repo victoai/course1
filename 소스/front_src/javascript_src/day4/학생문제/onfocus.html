@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function largeFont(m){   
+          
+              m.style.fontSize = "20px";
+        }
+      
+        function smallFont(m){   
+            
+            m.style.fontSize = "10px";
+        }
+    </script>
+</head>
+<body>    
+
+    <input type="text"  onfocus="largeFont(this);"  onblur="smallFont(this)"  value="안녕" >
+</body>
+</html>

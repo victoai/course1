@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        img{
+            border:20px ridge wheat;
+            width:300px;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+        let files = ["media/Penguins.png", 
+             "media/Lighthouse.png",
+             "media/Chrysanthemum.png",
+             "media/Desert.png",
+             "media/Hydrangeas.png",
+             "media/Jellyfish.png",
+             "media/Koala.png",
+             "media/Tulips.png"
+            ];
+         // 전역변수:함수밖에서 선언, 지역변수 :함수내에서 선언
+      
+        let index =1;  
+
+        function change(obj ){          
+           obj.src= files[index];
+           index++;   
+           index = index % files.length  ;// 0~7   , 산수 10 /3 ....1      
+        }
+    </script>
+</head>
+<body>
+    <img src="media/Penguins.png" alt="이미지갤러리"  onclick="change(this);" >
+</body>
+</html>

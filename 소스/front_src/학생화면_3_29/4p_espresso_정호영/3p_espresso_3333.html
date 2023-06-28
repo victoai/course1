@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+    .container{
+            width:1000px;  /* 너비 */
+			margin:0 auto;  /* 가로로 중앙에 배치 */
+			padding:3px;	/* 테두리와 내용 사이의 패딩 여백 */	
+            position : center;	
+            text-align : center;
+            background-size: cover;
+    }
+   
+
+    header{
+        height : 95px;
+        width : 1500px;
+        background-color : palegoldenrod;
+    }
+    
+    div{
+        font-style: solid white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        display : flex;
+        }
+  
+    ul{
+    text-align : center;
+    flex-direction: column;
+    list-style: none;
+    }
+    
+   li.hover{    /*li에 float:left;를 쓰면 안된다*/
+    display: inline-block;
+    width: 300px;
+    height :200px;
+    background-color : sandybrown;
+    font-size: large;
+    border: 2px;
+    text-align : center;
+    padding-top : 20px;
+    font: bold black;
+    text-decoration : none;
+    background:grey;
+   }
+
+   img{    
+    width: 130px;
+    margin : 30px;
+   }
+
+
+
+/*
+   li a:hover{      <----혹시 이것도 설정해야 되나요????
+       background: mediumaquamarine;  
+   } */
+    
+    .smalltext{ 
+        font: smaller gray;
+        text-align : center;
+        padding-top : 5px; 
+    }
+
+    header nav{
+        right : 20px;
+        position : absolute;
+        top:75px;
+        font-size : 15px;
+    }
+/*
+    .navi a:hover, .navi a:focus{
+        background-color: slategray;
+        color : slategray;
+    }*/
+</style>
+
+
+
+
+
+</head>
+<header>
+    <div> Sorry,sorry Espresso Bar   <br>
+        <br><br>  주문/예약 | 소식 | 이벤트 | 리뷰 | 사진  <nav>홈으로 | 로그인 | 회원가입 </nav> </div>
+</header>
+<body>
+
+<div id="container">
+
+   
+    <ul>
+    <li><img src="espresso.jpg">
+        <br>에스프레소<br>1,500원 </li>
+    </ul>
+
+    <ul>
+    <li><img src="egg.jpg"><br><br>에그타르트<br>2,000원</li> 
+    </ul>
+
+    <ul>
+    <li><img src="이걸콘파냐로.jpg"><br><br>에스프레소 콘파냐 <br>2,800원</li>
+    </ul> <br> <br>
+    </div>
+
+    
+    <p></p>
+    <div id="container">
+    <ul>
+    <li><img src="macci.jpg"><br>에스프레소 마끼야또<br>2,000원</li></ul>
+    
+    <ul>    
+    <li><img src="capu.png"><br>카푸치노<br>2,800원</a></li></ul>
+    <ul>
+    <li><img src="combo.jpg"><br> 에그타르트 콤보<br>5,000원</li></ul>
+    </div>
+    <div>
+    
+    </nav>
+    </div>
+</body>
+</html>
+</html>

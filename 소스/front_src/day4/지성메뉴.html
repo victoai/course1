@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            height:50px;
+            background-color: lightskyblue;
+            list-style: none;
+        }
+        .menu > li{
+            display:flex;
+        }
+        .lowerMenu >li{
+            display: none;    
+        }
+        .menu1:hover ul{
+            background-color:dodgerblue;
+            width: 150px;
+            height:200px;
+            padding-top:30px;
+        }
+        .lowerMenu >li{
+            display: none;    
+        }
+        .menu1:hover ul li{
+            display:block;
+            padding:10px ;
+        } 
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu1">
+            <p>화성학</p>
+            <ul class="lowerMenu">
+                <li><p>기본 3화음</p></li>
+                <li><p>기본 4화음</p></li>

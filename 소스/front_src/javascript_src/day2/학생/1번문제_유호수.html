@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let pw=1234
+        let tem;
+      
+        while(true){
+            let tem=prompt("암호를 입력해주세요");
+            let result=parseInt(tem);
+            if(result==pw) {
+                document.write("성공하였습니다")
+                document.write("<p>축하합니다.</p>")
+                break;
+            }else if(result!=pw||result==null){
+                alert("다시입력해주세요");
+
+            }
+        }        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

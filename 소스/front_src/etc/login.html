@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="../general_forum/StyleCss/login.css">
+    
+</head>
+<body>
+    <header>
+        
+        <a href="/general_forum/mainPage.html">
+            <img class="img" src = "/images/logo.png" >
+        </a>
+     
+       
+
+   <form method="post" name="login">
+    
+        <div class="wrap" > 
+
+            <h2>로그인</h2>
+
+            <div class="info_div">
+                <input type="text" name="usid" placeholder="아이디를 입력하세요" class="idInput"> 
+                
+            </div>
+
+            <div class="info_div">
+                  
+                <input type="password"  name="uspass" placeholder="비밀번호를 입력하세요" class="pwInput">
+            </div> 
+
+            <div class="info_div">
+                <button type="button" class="loginBtn" id="loginBtn" onclick= 'loginText()'>로그인</a></button>           
+                <button type="button" class="signUpBtn" id="signUpBtn" onclick='signUpText()'>회원가입</button>
+            </div>
+        </div>
+        
+       
+    </form>
+    <script>
+        function loginText(){
+            alert("로그인에 성공하였습니다.");
+            window.location.href='./mainPage.html';
+        }
+        function signUpText(){
+            window.location.href='./signUp.html';
+        }
+    </script>
+</body>
+</html>

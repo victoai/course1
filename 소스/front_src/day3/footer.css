@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+        
+}
+.footer .item{
+    width:400px;
+    margin-left: 30px;  
+    font-size:10px;  
+    margin-top: 20px;
+
+}

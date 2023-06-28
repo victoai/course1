@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+        }
+        table{
+            margin:auto;
+            width:1000px;
+            margin-top:20px;
+            border:1px solid black;
+        }
+        table td, th{
+            border:0.1px solid red;
+        }
+
+        thead tr{
+            width:200px;
+            height:40px;
+            background-color:orange;
+            text-align: center;
+        }
+        tbody tr{
+            width:200px;
+            height:40px;
+            background-color:cyan;
+            text-align: center;
+        }
+        tfoot tr{
+            width:200px;
+            height:40px;
+            background-color:magenta;
+            text-align: center;
+        }
+        #order{
+            background-color:blue;
+            color:green;
+            cursor:pointer;
+            font-weight: bold;
+            text-align: center;
+        }
+        #id{
+            background-color:gold;
+            color:silver;
+        }
+        .reverse{
+            background-color:white;
+            color:black;
+        }
+        img{
+            margin:1px;
+        }
+        input{
+            width:auto;
+            height:20px;
+            margin:1px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <h1>
+        <button onclick="location.href='https://youtu.be/q04EkSErGFo?t=1230'"><img src="chacha1.gif" width="200px" height="150px"></button>
+        <button onclick="location.href='https://youtu.be/GKAvkGUJVVs?t=1285'"><img src="chacha2.gif" width="200px" height="150px"></button>
+        赤ずきんチャチャ 
+        </h1>
+    </table>
+    <table>
+        <caption><h2>The★Scanty 
+            <img src="fullmoon3.gif" width="160px" height="120px"></h2></caption>
+        <thead>
+            <tr>
+                <th>Title1</th>
+                <th>Title2</th>
+                <th>Title3</th>
+                <th>Title4</th>
+                <th>Title5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>What1</td>
+                <td class="reverse">Reverse2</td>
+                <td>What3</td>
+                <td class="reverse">Reverse4</td>
+                <td>What5</td>
+            </tr>
+            
+            <tr>
+                <td class="reverse">Reverse1</td>
+                <td>What2</td>
+                <td class="reverse"><input data="number"></td>
+                <td>What4</td>
+                <td class="reverse">Reverse5</td>
+            </tr>   
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Colspan * 4 Area</td>
+                <td id="order">ORDER</td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function event_big1(){
+            let event = document.getElementById("menu1");
+            event.addEventListener("click", function(){
+                event.style.fontSize ="1.3em";
+            })
+        }
+        
+    </script>
+
+
+</head>
+<body onload="event_big1();">
+    <h3>각 메뉴를 클릭했을 때 글자크기를 크게 1em, 1.3em</h3>
+    <p>객체 . style . fontsize = "1.3em"</p>
+    <p>점심메뉴</p>
+    <ul>
+        <li id="menu1" onclick="event_big1();">김밥</li>
+        <li id="menu1" onclick="event_big1();">스파게티</li>
+        <li id="menu1" onclick="event_big1();">스시</li>
+        <li id="menu1" onclick="event_big1();">국밥</li>
+
+
+
+    </ul>
+
+
+</body>
+</html>

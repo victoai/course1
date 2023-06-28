@@ -1,0 +1,434 @@
+/* 전체적인 위치 및 크기구현 */
+main{
+
+    margin: 50px 80px;
+    height : 1000px;
+
+    /* 사이트 대표글꼴 */
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+
+
+
+/* main_article 위치 및 크기구현 */
+main .main_article{
+    height: 150px;
+    margin: 20px 0px;
+    display: flex;
+}
+
+/* 하위메뉴 통일성 있게 크기 및 배치구현 */
+.main_article .menu1{
+    width: 30%;
+    
+    margin: 3px 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+    font-weight: bold;
+}
+
+/* 사진광고 id로 크기 및 위치구현 */
+#photo_article{
+    width: 40%;
+
+    margin: 2px 5px;
+
+}
+/* a태그에 배경으로 사진넣기 */
+#photo_link{
+    display: inline-block;
+
+    width: 100%;
+    height: 150px;
+
+    background-image: url("http://ncov.mohw.go.kr/upload/ncov/20220301093119.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* 하위메뉴 통일성 있게 크기 및 배치구현 */
+.menu1 ul li{
+
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+    font-size: 10pt;
+    font-weight: 600;
+
+
+    list-style: circle;
+}
+
+/* 하위메뉴의 기사 제목 class부여하여 글꼴지정 */
+.main_article .article_title{
+
+    /* 제목글꼴 */
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+
+
+
+
+/* main_vaccine 위치 및 크기구현 */
+.vaccine_table{
+    width: 100%;
+
+    margin: 15px 0px;
+
+    /* vaccine_table 외부 테두리 만들기 */
+    border: 1pt solid gray;
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+/* vaccine_table 내부 테두리 만들기 */
+.vaccine_table th,td{
+    border: 1pt solid gray;
+
+    padding: 5px;
+}
+
+
+
+
+
+
+/* vaccine_table 제목 크기 및 위치 글꼴지정 */
+.vaccine_table caption{
+    /* 상세보기 메뉴를 위해 관계설정 */
+    position: relative;
+
+    margin: 5px 0px;
+    padding: 5px;
+    padding-left: 30px;
+
+    font-size: 14pt;
+    text-align: left;
+    /* 제목글꼴 */
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 400;
+
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+/* vaccine_table 단위 글꼴 설정 */
+.vaccine_table .table_index{
+font-size: small;
+}
+
+/* 상세보기 // a태그로 링크걸고 모양 크기 위치 설정 */
+.vaccine_table caption a{
+
+    position: absolute;
+    right: 30px;
+    line-height: 100%;
+
+    font-size: 10pt;
+    font-weight: 300;
+    padding: 5px 6px;
+
+    display: inline-block;
+    background-color: rgb(161, 149, 134);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+/* main_vaccine 상세보기 마우스 올릴 때 기능구현 */
+.vaccine_table caption .details:hover{
+    background-color: rgb(197, 187, 175);
+}
+
+/* 접종 횟수 나누는 부분 //스타일 구현 */
+.vaccine_table .vaccine_count{
+    display: inline-block;
+    width: 100px;
+
+    border: 0.5px solid gray;
+    border-radius: 50%;
+
+    margin-right: 20px;
+}
+
+
+
+
+
+
+/* main_situation 위치 및 크기구현 */
+.main_situation{
+
+    margin: 15px 0px;
+
+    display: flex;
+    height: 450px;
+}
+/* 하루 단위의 부분(왼쪽) */
+.situadtion_day{
+    width: 60%;
+    /* border: 1px solid gray; */
+
+    padding-right: 10px;
+}
+/* 한 주 단위의 부분(오른쪽) */
+.situadtion_week{
+    width:40%;
+    border-collapse: collapse;
+}
+
+
+
+
+/* situadtion_day 위치 및 배치구현 */
+/* occur_table 위치 및 크기설정 */
+.situadtion_day .occur_table{
+    width: 100%;
+    height:40%;
+    margin-bottom: 20px;
+
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+/* occur_table 내부 테두리 설정 */
+.occur_table th,td{
+    border: 1pt solid gray;
+
+    padding: 5px;
+}
+/* occur_table 제목 _ 크기, 위치, 글꼴 설정 */
+.occur_table caption{
+    /* 상세보기를 위해 관계설정 */
+    position: relative;
+
+    margin: 3px 0px;
+    padding: 5px;
+    padding-left: 20px;
+
+    font-size: 14pt;
+    text-align: left;
+    /* 제목글꼴 */
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 400;
+
+    background-color: rgb(141, 177, 141);
+    border-radius: 5px;
+}
+/* occur_table 단위 글꼴 크기설정 */
+.occur_table .table_index{
+    font-size: smaller;
+    }
+/* 상세보기 // a태그로 링크걸고 모양 크기 위치 설정 */
+.occur_table caption a{
+
+    position: absolute;
+    right: 20px;
+    line-height: 100%;
+
+    font-size: 9pt;
+    font-weight: 300;
+    padding: 5px 6px;
+
+    display: inline-block;
+    background-color: rgb(128, 134, 120);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+
+/* seat_table 위치 및 크기설정 */
+.situadtion_day .seat_table{
+    width: 100%;
+    height: 40%;
+
+    margin: 10px 0px;
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+/* seat_table 내부테두리 설정 */
+.seat_table th,td{
+    border: 1pt solid gray;
+
+    padding: 5px;
+}
+/* seat_table 제목 _ 크기, 위치, 글꼴 설정 */
+.seat_table caption{
+
+    margin: 3px 0px;
+    padding: 5px;
+    padding-left: 20px;
+
+    font-size: 14pt;
+    text-align: left;
+    /* 제목글꼴 */
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 400;
+
+    background-color:rgb(141, 177, 141);
+    border-radius: 5px;
+}
+/* seat_table 단위 글꼴 크기 설정 */
+.seat_table .table_index{
+    font-size: smaller;
+}
+
+
+
+
+
+
+
+/* situadtion_week 위치 및 크기구현 */
+.situadtion_week caption{
+
+    margin: 3px 0px;
+    padding: 5px;
+    padding-left: 20px;
+
+    font-size: 14pt;
+    text-align: left;
+    /* 제목글꼴 */
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 400;
+
+    background-color:rgb(141, 177, 141);
+    border-radius: 5px;
+}
+/* situadtion_week 단위 글꼴 크기 설정 */
+.situadtion_week .table_index{
+    font-size: small;
+}
+/* 그래프 제목 넣기 // 위에 위치 배정 실패해서, 그래프 위에 넣음 */
+.situadtion_week .graph_title{
+    position:absolute;
+    left: 30px;
+    top:3px;
+
+    font-size: smaller;
+    font-weight: 600;
+
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 0px gray;
+    padding:1px 3px;
+}
+/* 확진자 수 그래프 제목 넣기 // 위치 잘 안맞아서 id로 따로 배정 */
+#disease_title{
+    position:absolute;
+    left: 43px;
+    top:3px;
+}
+
+/* 테이블에 그래프 사진 넣기 // 이것도 사이즈 잘 안맞아서 여러 방법으로 시도함 */
+#death{
+    position: relative;
+    background-image:url("images/사망그래프.png") ;
+    /* background-position: center; */
+    background-size:contain;
+}
+#hospital{
+    position: relative;
+    background-image:url("images/신규입원그래프.png") ;
+    /* background-position: center; */
+    background-size:contain;
+}
+#hard_disease{
+    position: relative;
+    background-image:url("images/재원위중증그래프.png") ;
+    /* background-position: center; */
+    background-size:contain;
+}
+#disease{
+    position: relative;
+    background-image:url("images/확진그래프.png") ;
+    /* background-position: center; */
+    background-size:contain;
+}
+
+
+/* 상세보기 // 마우스 올릴때 기능 구현 */
+.occur_table caption .details:hover{
+    background-color: rgb(172, 180, 162);
+}
+
+
+/* 급해서 table 스타일 한꺼번에 지정 */
+th{
+    background-color: rgb(206, 202, 202);
+}
+thead td{
+    background-color: antiquewhite;
+}
+tfoot{
+    background-color: rgb(117, 139, 117);
+}
+
+
+
+
+/* main_video 위치 및 크기구현 */
+.main_video{
+    height:200px;
+
+    margin-top: 40px;
+    
+    display: flex;
+}
+/* 가장 왼쪽 글귀 공간 */
+.main_video .line{
+
+    width: 25%;
+    line-height: 30px;
+
+    padding-top: 17px;
+    padding-left: 20px;
+    background-color: rgb(141, 177, 141);
+
+    border-radius: 10px 0px 0px 10px;
+}
+/* 관련 동영상 리스트 // 위치, 크기 구현 */
+.main_video .video_list{
+    width: 75%;
+    display: flex;
+
+    background-color: rgb(128, 134, 120);
+    border-radius: 0px 10px 10px 0px;
+    
+    padding: 0px 5px;
+}
+/* 썸네일 넣기 위해 공간부여 */
+.video_list .video{
+    
+    display: inline-block;
+
+    width:33%;
+    margin : 10px 5px;
+}
+/* 공간에 썸네일 각각 넣기 //id */
+#video1{
+    background-image: url("http://ncov.mohw.go.kr/upload/ncov/20220210105252.jpg");
+    background-size: cover;
+}
+#video2{
+    background-image: url("http://ncov.mohw.go.kr/upload/ncov/20211029142041.png");
+    background-size: cover;
+}
+#video3{
+    background-image: url("http://ncov.mohw.go.kr/upload/ncov/20210907135518.jpg");
+    background-size: cover;
+}

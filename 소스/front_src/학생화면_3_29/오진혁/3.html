@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>      
+      .container{
+        width: 1000px;
+        height: 1200px;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid black;              
+      }
+      .logo{
+        border: 1px solid black;
+        width: 300px;
+        height: 80px;
+        line-height: 80px;
+        margin: 20px auto;
+        text-align: center;
+      }
+      .header{                        
+        width: 1000px;
+        height: 50px;        
+        margin-bottom: 20px;
+        background-color: black;        
+      }     
+      .titlemenu ul{
+        width: 1000px;
+        height: 100px;
+        line-height: 50px;
+        margin: auto;
+      }
+      .titlemenu li{
+        float: left;
+        list-style: none;
+        font-size: 0.9em;                
+        margin-left: 90px;
+      }
+      .titlemenu a{
+        color: white;
+        text-decoration: none;        
+      }
+      .content{
+        width: 750px;
+        height: 780px;
+        padding: 15px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid black;
+      }
+
+      /* 제품 목록 박스 css  */
+      .product ul li{
+        list-style: none;
+        float: left;
+        margin: 0px 30px 10px 15px;
+        width:  280px;
+        height: 180px;
+        border: 0.5px solid black;   
+        padding:10px;
+        text-align:center;
+      }
+      .leftbox{
+        width: 160px;
+        height: 300px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid black;        
+      }        
+      .footer{                  
+        width: 1000px;
+        height: 180px;
+        border-top: 1px solid black;            
+        border-bottom: 1px solid black;
+        display: flex        
+      }
+      .f1{
+        width: 200px;
+        height: 160px;
+        padding: 5px;
+        line-height: 20px;                
+        margin-left: 10px;
+        font-size: 12px;                    
+      }        
+      .f2{
+        width: 300px;
+        height: 160px;
+        padding: 5px;
+        line-height: 25px;
+        margin-left: 10px;        
+      }
+      .f3{
+        width: 500px;
+        height: 160px;
+        line-height: 25px;
+        padding: 5px;
+        margin-left: 10px;        
+      }
+      p{
+        line-height: 10px;
+        font-size: 16px;
+      }
+      hr{
+        width: 100%;
+      }     
+      ul.sidelist{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-width: 250px;
+        width: 100%;
+      }  
+      ul.sidelist li{
+        padding: 5px 0 5px 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px dotted black;
+        font-size: 12px;
+      }
+      ul.sidelist li:last-child{
+        border-bottom: 0px;
+      }
+
+    
+
+      .product img{
+        width:100px;
+        height:100px;             
+      }
+      
+      a{
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">logo</div>                
+    <div class="header"> 
+      <div class="titlemenu">
+        <ul>
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+          <li><a href="">장바구니</a></li>
+          <li><a href="">주문</a></li>
+          <li><a href="">마이페이지</a></li>
+          <li><a href="">1:1문의</a></li>
+        </ul>
+      </div>       
+    </div>
+    <div class="leftbox">
+      <h2>Category</h2>               
+      <ul class="sidelist">        
+        <li><a href="">예약판매</a></li>
+        <li><a href="">Switch</a></li>
+        <li><a href="">Switch DL</a></li>
+        <li><a href="">주변기기</a></li>
+        <li><a href="">그 외</a></li>
+        <li><a href="">할인특가</a></li>
+      </ul>
+    </div>        
+    <div class="content">
+      <div class="product">
+        <ul>
+          <li>
+              <!--이미지그림-->
+            <a href=""><img src="../images/ad1.jpg"></a>             
+          </li>
+          <li><a href="">product2</a></li>
+          <li><a href="">product3</a></li>
+          <li><a href="">product4</a></li>
+          <li><a href="">product5</a></li>
+          <li><a href="">product6</a></li>         
+          <li><a href="">product7</a></li>
+          <li><a href="">product8</a></li>
+        </ul>
+      </div>             
+    </div>
+    <div class="footer">
+      <div class="f1">        
+        <p>CUSTOMER CENTER</p><hr>
+        <p>070-4000-0000</p>
+        평일 : 09:00 ~ 18:00<br>
+        점심 : 13:00 ~ 14:00<br>
+        휴무 : 토 / 일 / 공휴일 휴무
+      </div>
+      <div class="f2">
+        <p>BANK INFO</p><hr>
+        국민은행 : 000000000000<br>
+        농협은형 : 000000000000<br>
+        하나은행 : 000000000000<br>
+        예 금 주 : JHOH
+      </div>      
+      <div class="f3">
+        <p>COMPANY INFO</p><hr>
+        회사명 : JHOHCOM<br>
+        대표 : JHOH<br>
+        주소 : 경기도 김포시 김포한강로 어딘가의 어딘가쯤<br>
+        대표전화 : 031-000-0000<br>        
+      </div>
+    </div>
+  </div>    
+</body>
+</html>

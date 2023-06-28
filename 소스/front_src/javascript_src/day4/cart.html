@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width:460px;
+            border:1px solid black;
+        }
+        td{
+            border:1px solid black;
+            width:150px;
+        }
+    </style>
+
+    <script>
+        function calcPrice( ){
+        
+         let tbody  =document.getElementById("cart");       
+         let  trs=    tbody.getElementsByTagName("tr");  
+
+         for( let i=0; i< trs.length ;i++){            
+            let tr = trs[i];
+
+            let priceTd  = tr.firstElementChild;        
+            let qtyTd= priceTd.nextElementSibling;
+            let amtTd = qtyTd.nextElementSibling;              
+            
+            let price = priceTd.innerHTML;         
+            let qty  =  qtyTd.firstElementChild.value ;         
+            let amt  = price  * qty ;
+            amtTd.innerHTML = amt; 
+         }
+
+          
+          calcSum();
+
+        }
+
+        function calcSum(){
+            let span =  document.getElementById("order_price");
+            //
+            let tbody = document.getElementById("cart");        
+            let trs = tbody.getElementsByTagName("tr");
+
+            //전체합계변수
+            let total=0;
+
+            for(let i=0; i< trs.length ; i++){
+                let tr = trs[i];   // 각 tr의 정보
+                let amtTd = tr.lastElementChild;  // 마지막td 얻어오기
+                let amt =  parseInt(amtTd.innerHTML); // 마지막td 내용얻어오기
+                total = total + amt;   // 누적하기           
+            }
+            // 합계금액 영역에 값 넣어주기
+            span.innerHTML= total;
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <table>
+        <tbody id="cart">
+            <tr>
+                <td>3000</td>
+                <td> 
+                    <input type="text"  onkeyup="calcPrice();">
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>3000</td>
+                <td> 
+                    <input type="text"  onkeyup="calcPrice();">
+                </td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td>3000</td>
+                <td> 
+                    <input type="text"  onkeyup="calcPrice();">
+                </td>
+                <td></td>
+            </tr>
+       
+        </tbody>
+    </table>
+
+    <p id="order">
+        합계 <span  id="order_price"> 0</span>원
+    </p>
+    
+</body>
+</html>

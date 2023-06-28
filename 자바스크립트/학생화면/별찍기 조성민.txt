@@ -1,0 +1,36 @@
+1번 
+let star = prompt("원하는 별의 개수를 입력하세요");
+        star = parseInt(star)
+
+        for (i = 1; i <= star; i++) {
+
+            document.write("*");
+        }
+
+
+2번
+
+          let star = prompt("원하는 별의 개수를 입력하세요");
+        star = parseInt(star)
+
+      for(j=1; j<+star+1; j++) {
+        for (i = 1; i <= star; i++) {
+
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+
+3번
+
+    let star = prompt("원하는 별의 개수를 입력하세요");
+        star = parseInt(star)
+
+      for(j=1; j<+star+1; j++) {
+        for (i = 1; i <= j; i++) {
+
+            document.write("*");
+        }
+        document.write("<br>");
+    }

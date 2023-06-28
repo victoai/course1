@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1~10까지의 합계를 구하는 함수
+        function gettentotal() {
+
+            let sum = prompt("숫자를 입력");
+            sum = parseInt(sum);
+
+            let n = prompt("반복횟수를 입력");
+            n = parseInt(n);
+
+            let i = 0;
+
+
+            while (i <= n) {
+
+                sum = sum + i;
+                i++;
+            }
+
+            return sum;
+        }
+    </script>
+</head>
+
+<body>
+
+    <p>1~10까지 구하는 함수 호출</p>
+
+    <script>
+        let tensum = gettentotal();
+        alert(tensum);
+    </script>
+
+</body>
+
+</html>

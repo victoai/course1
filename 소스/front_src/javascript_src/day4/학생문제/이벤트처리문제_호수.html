@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function larger(a){
+
+            alert("ddd");
+            a.style.fontSize="1.3em";
+            a.style.color="red";
+            a.addEventListener("click",function(){
+                this.style.fontSize="1em";
+                this.style.color="black";
+            });
+        }
+
+
+    </script>
+</head>
+<body>
+    <p>메뉴</p>
+    <ul>
+        <li onclick="larger(this);">김밥</li>
+        <li onclick="larger(this);">스파게티</li>
+        <li onclick="larger(this);">스시</li>
+        <li onclick="larger(this);">콩나물해장국</li>
+    </ul>
+    
+</body>
+</html>

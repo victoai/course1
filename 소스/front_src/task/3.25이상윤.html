@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width: 80%;
+            height: 100px;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 200px;
+        }
+
+        td, th{
+            border: 2px solid black;
+        }
+        tbody tr{
+            height: 50px;
+        }
+        thead tr{
+            background-color: aqua;
+        }
+        input{
+            width: 95%;
+            
+        }
+        tfoot input{
+            width: 98%;
+        }
+        .wide{
+            width: 30%;
+        }
+        #sum{
+            font-weight: bold;
+            background-color: red;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+    <div><img src="../images/hom.jpg" width="50px" height="50px">
+        홈으로</div>
+
+<body>
+
+    <table>
+        <caption>장바구니<img src="../images/cart.png" 
+            width="30px" height="30px"></caption>
+        <thead>
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+                <th class="wide">제목4</th>
+                <th>제목5</th>
+                <th>제목6</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+                <td class="wide"><input type="text"></td>
+                <td>내용5</td>
+                <td>내용6</td>
+            </tr>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+                <td class="wide"><input type="text"></td>
+                <td>내용5</td>
+                <td>내용6</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="5"><input type="text"></td>
+                <td id="sum">합산</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

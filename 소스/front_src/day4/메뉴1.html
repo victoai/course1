@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+           padding:0px;
+           margin:0px;
+       }
+       
+       ul{
+           list-style: none;
+       }
+
+       
+       nav{
+           height:60px;
+           background-color: rgb(179, 164, 144);
+           margin-top:100px;           
+       }        
+        
+       
+        section{
+            height: 400px;
+            background-color: aqua;           
+        }
+
+        /* 전체메뉴바의 크기  , 메뉴를 옆으로 나올수 있게 flex*/
+
+        .menubar{
+            width:900px;
+            display:flex;
+        }
+
+        /* 첫메뉴 각각의 크기 , 첫메뉴사이의 간격 여백, */
+
+        .menu1{
+            width:100px;
+            height: 200px;
+            margin:0px 20px;
+        }
+
+        /*  하위메뉴는 처음에 보이지 않게 한다. */
+        .menu1 li{
+            display: none;
+        }
+
+        /* 상위메뉴에 마우스가 over되면  하위메뉴 칸 지정*/
+        .menu1:hover  ul{           
+            width:100px;
+            height: 200px;        
+            background-color: antiquewhite;
+            padding-top:30px;         
+        }
+
+        /*  하위메뉴 목록이 보이게*/
+        .menu1:hover ul li{
+            display:block;
+            padding:10px ;
+        }
+
+    </style>
+</head>
+<body>
+    
+ <nav>
+     
+    <ul class="menubar">
+        <li class="menu1">메뉴1
+            <ul>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+            </ul>
+        </li>
+        <li class="menu1">메뉴2
+            <ul>
+                <li>서브메뉴2</li>
+                <li>서브메뉴2</li>
+                <li>서브메뉴2</li>
+            </ul>
+        </li>           
+    </ul>
+ </nav>
+ 
+</body>
+</html>

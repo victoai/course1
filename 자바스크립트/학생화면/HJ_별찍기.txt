@@ -1,0 +1,26 @@
+        let cnt = prompt("숫자를 입력해주세요");
+        cnt = parseInt(cnt);
+
+        let i;
+        let j;
+
+        for(i=1; i<=cnt; i++){
+            document.write("*");
+        }
+        document.write("<br>");
+        
+
+        for(i=1; i<=cnt; i++){
+            for(j=1; j<=cnt; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+
+        for(i=1; i<=cnt; i++){
+            for(j=1; j<=i; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }

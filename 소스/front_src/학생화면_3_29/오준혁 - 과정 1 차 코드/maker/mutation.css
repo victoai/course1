@@ -1,0 +1,42 @@
+body{
+    padding:0px;
+    background-color: white;
+    margin:auto;
+}
+.menu{
+    width:742px;
+    height:86px;
+    padding:0px;
+    border:2px solid black;
+    margin:auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.budiv{
+    width:84px;
+    height:84px;
+    border:1px solid black;
+}
+.buttons{
+    width:84px;
+    height:84px;
+    padding:0px;
+}
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    margin:auto;
+}
+.center{
+    width:644px;
+    height:84px;
+    border:1px solid rgb(224,224,224);
+    background-color: rgb(224,224,224);
+    padding-left: 10px;
+}
+.title{
+    font-size:20px;
+    font-weight: bold;
+    line-height: 1px;
+    color:rgb(72,48,96);
+}

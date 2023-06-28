@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        /*  웹문서 실행순서는 위에서부터 실행됨  
+          자바스크립트 순서가 화면의 태그와 관계가 있다.
+          input 태그 아래에 코드를 두면 정상 수행된다.
+        */                  
+        let input  = document.getElementById("userId");
+        alert(input);
+        input.value = "안녕하세요";
+    </script>    
+
+   
+    
+</head>
+<body>
+    
+    <h2> 자바스크립트 코드 위치</h2>
+    <input  id="userId" type="text">   
+
+
+
+</body>
+</html>

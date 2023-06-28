@@ -1,0 +1,26 @@
+body{
+    display:flex;
+    flex-wrap: nowrap;
+    background-color:rgb(0,255,192);
+    margin:auto;
+}
+.center{
+    width:1024px;
+    height:640px;
+    background-color: rgb(0,0,0);
+    margin:auto;
+    display:flex;
+    flex-wrap:nowrap;
+}
+.left{
+    width:256px;
+    height:640px;
+    background-color:rgb(192,192,192);
+    margin:auto;
+    position: relative;
+}
+.right{
+    width:768px;
+    height:640px;
+    background-color:rgb(255,255,255);
+}

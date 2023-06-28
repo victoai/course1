@@ -1,0 +1,69 @@
+/* 크기 및 위치구현 */
+header{
+    display: flex;
+    position: relative;
+
+    height: 100px;
+    margin: 0px;
+
+    /* background-color: aquamarine; */
+}
+header .maintitle{
+    width: 800px;
+    height: 100px;
+
+    margin: 0px;
+    margin-top: 8px;
+    padding-left: 100px;
+    line-height: 90px;
+
+    font-size: 20pt;
+
+}
+
+header ul{
+    position: absolute;
+    right:80px;
+    bottom: 10px;
+
+    display: flex;
+}
+header ul li{
+    width: 50px;
+}
+
+header ul li a{
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+header ul li a:hover{
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+header ul li .facebook{
+    background-image: url("images/페이스북로고.png");
+    background-size: cover;
+    background-position: center;
+}
+header ul li .youtube{
+    background-image: url("images/유투브로고.png");
+    background-size: cover;
+    background-position: center;
+}
+header ul li .post{
+    background-image: url("images/포스트로고.jpg");
+    background-size: cover;
+    background-position: center;
+}
+header ul li .twitter{
+    background-image: url("images/트위터로고.png");
+    background-size: cover;
+    background-position: center;
+}

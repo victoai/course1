@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width:500px;          
+            border:1px solid red;
+            margin:auto;
+        }
+
+        .contents{
+            width:450px;
+            margin:auto;
+            border:1px solid red;
+        }
+
+        /*
+         이미지태그아래의 빈공백제거하는 방법  
+         img태그는  inline-block , inline태그들은 아래의 약간의 공백이 생김 => block태그로 변경해줌 
+         */
+        /*
+         img태그의  vertical-align: bottom 으로 변경
+        */
+        img{            
+           display: block;
+        }
+
+        p{
+            font-size:50px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+     <p>abcdefghijk</p>
+    
+    
+    <div class="wrap">
+        <img src="../images/easyspub.jpg">
+
+        <div class="contents">
+             <p>dfdfd</p>
+             <p>dfdfd</p>
+             <p>dfdfd</p>
+             <p>dfdfd</p>
+             <p>dfdfd</p>
+        </div>
+    </div>
+</body>
+</html>

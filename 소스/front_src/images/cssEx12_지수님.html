@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        .wrap{
+            width: 500px;
+            height: 1000px;
+            margin: auto;
+            margin-top: 20px;
+            border: 1px solid black;
+        }
+        .header{
+            width: 400px;
+            margin: auto;
+            margin-top: 40px;
+            position: relative;
+        }
+        .imgdiv{
+            width: 350px;
+            height: 350px;
+            margin: auto;
+            background-color: white;
+            background-image: url(https://contents.lotteon.com/itemimage/_v190644/LO/14/95/06/26/55/_1/49/50/62/65/9/LO1495062655_1495062659_1.jpg/dims/resizef/554X554);
+            background-position: center;
+            background-size: cover;
+        }
+        .pname{
+            font-weight: bold;
+        }
+        .info{
+            font-size: 12px;
+        }
+        .price{
+            height: 20px;
+            position: absolute;
+            right: 10px;
+            font-size: 14px;
+        }
+        .order{
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+        }
+     
+        input, select{
+            width: 390px;
+            height: 30px;
+            margin-bottom: 5px;
+        }
+        button{
+            width: 400px;
+            height: 50px;
+            background-color: rgb(17, 33, 63);
+            color: white;
+            border: 0px;
+            border-radius:10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!--  상품정보-->
+        <div class="header">  
+            <div class="imgdiv"> 
+                <img src="" alt=""> 
+            </div>
+            <div>
+                 <h1>HUNTER</h1> 
+                 <p class="pname">헌터 플레이톨</p>
+                 <p class="info">한 여름 장마, 발을 뽀송하게 지켜주는 장화</p>
+            </div>
+            <div class="price">가격: 159,000원 </div>
+        </div>
+
+        <!--  주문내역정보-->
+        <div class="order">
+            <p>--------------------------주문내역---------------------------</p>
+            <div>주문자이름 <input type="text"></div>
+            <div>수량 
+                <select>
+                    <option>수량을 선택하세요</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div>주문금액 <input type="text"></div>
+            <div>전화번호 <input type="text"></div>
+            <div> <button>order</button></div>
+        </div>
+    </div>
+
+</body>
+</html>

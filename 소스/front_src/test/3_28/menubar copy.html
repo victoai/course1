@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       *{
+           padding:0px;
+           margin:0px;
+       }
+
+       ul{
+           list-style: none;
+       }
+
+       nav{
+           height:60px;
+           background-color: rgb(179, 164, 144);
+           margin-top:100px;           
+       }        
+        
+        .menubar{
+            display:flex;
+            width:900px;            
+        }
+              
+         
+        /* 각메뉴의 크기   */
+       .menubar>li{
+            margin:0px  50px;
+            width:150px;
+            height:200px;           
+        }
+        
+
+        /*  각 메뉴 하위메뉴 감추기 */
+       .menu1 li{
+            display:none;
+        }       
+
+      
+        /*  상위메뉴에 마우스가 올려졌을 때 */
+        .menu1:hover>ul{              
+            width:150px;
+            height:200px;
+            background-color: burlywood;
+            position:absolute;   /*  z-index 속성   */
+            z-index:5;
+            top:160px;
+                      
+        }
+        .menu1:hover>ul>li{
+            display:block;            
+            padding:5px 0px;  
+        }
+         
+        section{
+            height: 400px;
+            background-color: aqua;
+           
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+ <nav>
+     
+    <ul class="menubar">
+        <li class="menu1">참여교실입니다
+            <ul>
+                <li>서울태릉초 행정실</li>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+            </ul>
+        </li>
+        <li class="menu1">메뉴1
+            <ul>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+            </ul>
+        </li>
+        <li class="menu1">메뉴1
+            <ul>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+            </ul>
+        </li>
+        <li class="menu1">메뉴1
+            <ul>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+                <li>서브메뉴1</li>
+            </ul>
+        </li>
+    </ul>
+
+ </nav>
+
+    <section>
+ddddddddddddddddddddddddddddddddddddddddddddddd
+dffffffffffffffffffffffffffffffffffffffff
+    </section>
+</body>
+</html>

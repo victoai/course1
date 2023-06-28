@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="lineColor.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title{
+            width:1000px;
+            margin: auto;
+        }
+        #titleImg{
+            margin: auto;
+            width:fit-content;
+            height:200px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            
+        }
+        #titleImg img{
+            height: 200px;
+        }
+        #titleImg ul{
+            display: flex;
+            list-style: none;
+        }
+    
+        #whole{
+            width:1000px;
+            height:auto;
+            margin:auto;
+            
+        } 
+        #maintitle{
+            text-align: center;
+        }
+        .sign_in{
+            width:1000px;
+            height:auto;
+            text-align: center;
+            margin-top:25px;
+        }
+        input{
+            height:20px;
+        }
+       
+        
+        #menu{
+            width:1000px;
+            height: auto;
+            margin:auto;
+            margin-top:100px;
+        }
+        #list{
+            width:900px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #list>li{
+            width:220px;
+            height:300px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+        }
+        #list>li :hover{
+           border: 2px solid blue;
+        }
+        #list img{
+            margin-top: 10px;
+            margin-left: 10px;
+            width:200px;
+            height:150px;
+            background-size: cover;
+        }
+        footer{
+            height:100px;
+            background-color: darkseagreen;
+        }
+        #align{
+            width: fit-content;
+            margin: auto;
+            height:fit-content;
+            text-align: center;
+        }
+        .end{
+            position: absolute;bottom:0;right:0;
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <!-- header-->
+    <div id = "title">
+        <h1>서울철덕공사</h1>   
+    </div>
+    <div id="titleImg">
+        <ul>
+            <li><img src="images/1호선.jpg"></li>
+            <li><img src="images/2호선.jpg"></li>
+            <li><img src="images/3호선.jpg"></li>
+            <li><img src="images/4호선.jpg"></li>
+        </ul>
+    </div>
+    <div id="whole">
+        <div class="sign_in">
+            ID<input type="text">
+            비밀번호<input type="password">
+            <button>로그인</button>
+            <button>회원가입</button>
+        </div>
+    </div>
+
+    <!-- 내용영역 , 상품리스트 -->
+    <div id="menu">
+        <h1 id = "maintitle">지하철 판매</h1>
+        <ul id="list">
+            <li id="line1">
+                <img src="images/1호선.jpg"/>
+                <a href="line1.html"><p>1호선<br> 5000원</p></a>
+            </li>
+                <li id="line2">
+                <img src="images/2호선.jpg"/>
+                <a href="line2.html"><p>2호선<br> 5000원</p></a>
+            </li>
+            <li id="line3">
+                <img src="images/3호선.jpg"/>
+                <a href="line3.html"></a><p>3호선<br> 5000원</p>
+            </li>
+            <li id="line4">
+                <img src="images/4호선.jpg"/>
+                <a href="line4.html"></a><p>4호선<br> 5000원</p>
+            </li>
+            <li id="line5">
+                <img src="images/5호선.jpg"/>
+                <a href="line5.html"></a><p>5호선<br> 5000원</p>
+            </li>
+            <li id="line6">
+                <img src="images/6호선.jpg"/>
+                <a href="line6.html"></a><p>6호선<br> 5000원</p>
+            </li>
+            <li id="line7">
+                <img src="images/7호선.jpg"/>
+                <a href="line7.html"></a><p>7호선<br> 5000원</p>
+            </li>
+            <li id="line8">
+                <img src="images/8호선.jpg"/>
+                <a href="line8.html"></a><p>8호선<br> 5000원</p>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div id="align">
+            <p>지하철 연혁 | 철도를 좋아하게 된 계기 | <a href="http://www.seoulmetro.co.kr/kr/index.do?device=PC#3rdPage">
+            서울교통공사 홈페이지</a>
+            | 개인정보처리방침 </p>
+
+        </div>
+        
+        
+    </footer>
+    
+</body>
+</html>

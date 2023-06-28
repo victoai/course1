@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Arvo', serif;
+        }
+        .wrap{
+            background-color: #8e898f;
+        }
+        .title{ 
+            background-color: rgb(12, 8, 27);
+            text-align: center;
+            color:white;
+        }
+        
+        header ul{
+            list-style: none;
+            display: flex;
+            
+        }
+        header ul li{
+            height:300px;
+            margin:auto;
+            font-weight: bold;
+            text-decoration: overline underline;
+            color:white;
+        }
+        .menubar{
+            height:40px;
+        }
+        header{
+            background-color: #221d3c;
+        }
+        .some{
+            display:none;
+            
+        }
+        .cosmetic:hover .some{
+            display:block;
+            z-index:1;
+            position:absolute;
+            
+        }
+        .some li{
+
+            color:white;
+            background-color: #332c58;
+            border:1px solid white;
+            line-height: 40px;
+            text-decoration: none;
+            text-align: center;
+            height:40px;
+        }
+        main ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        main ul>li{
+            width:300px;
+            height:520px;
+            margin:10px auto;
+            border:0.5px solid rgba(228, 142, 142, 0.247);
+            line-height: 30px;
+            
+            text-align: center;
+            font-weight: bold;
+            color : white;
+            box-shadow: 0px 0px 10px 5px rgb(209, 186, 158);
+        }
+        h3{
+            text-decoration: overline underline;
+        }
+        
+        #soldout{
+            text-decoration: line-through
+        }
+        
+
+        main ul li img{
+            width:300px;
+            height:300px;
+            outline:0px;
+            margin:auto;
+            box-shadow: 0px 0px 10px 5px bisque;
+        }
+        .i1-1{
+            text-decoration: none;
+            line-height: 10px;
+        }
+        footer{
+            display:flex;
+            flex-wrap:wrap;
+            background-color: #603169;
+        }
+        footer div{
+            margin:auto;
+            text-align: center;
+            
+            color:aliceblue;
+        }
+        .info3{
+            line-height:50px;
+            padding-left:10px;
+            margin:auto;
+            height:50px;
+            border-radius: 30px;
+            
+        }
+        button a{
+            text-decoration: none;
+        }
+        #img3{
+         display:none;
+        
+        }
+        footer button:hover #img3{
+            display:block;
+            width:50px;
+            height:50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <header>
+        <div class="title"><h1>Sky Corp</h1></div>
+        <nav>
+            <div class="menubar">
+                <ul>
+                    <li class="cosmetic">화장품
+                        
+                        <ul class="some">
+                            <li>기능성</li>
+                            <li>바디</li>
+                            <li>헤어</li>
+                            <li>스킨/로션</li>
+                        </ul>
+                    </li>
+                    <li>일반의약품</li>
+                    <li>전문의약품</li>
+                    <li>의료기기</li>
+                    <li>식료품</li>
+                    <li>기타</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="mainmenu">
+            <ul>
+                <li><h3>화장품</h3>
+                    <div class="i1">
+                        <img src="images/기능성.jpeg" alt="이미지">
+                        <div class="i1-1">
+                        <p>상품 : 세럼</p>
+                        <p>금액 : 52,000원</p>
+                        <p>혜택 : Lakey Group 5,200pt적립</p>
+                        </div>
+                    </div>
+                </li>
+                <li><h3>일반의약품</h3>
+                    <div class="i2">
+                        <img src="images/바디.jpg" alt="이미지">
+                        <div class="i1-1">
+                            <p>상품 : 바디기능성</p>
+                            <p>금액 : 102,000원</p>
+                            <p>혜택 : Lakey Group 10,200pt적립</p>
+                            </div>
+                    </div>
+                </li>
+                <li><h3 id="soldout">전문의약품</h3>
+                    <img src="images/soldout.jpg" alt="이미지">
+                    <div class="i3">
+                        
+                        
+                    </div>
+                </li>
+                <li><h3>의료기기</h3>
+                    <img src="images/의료기기.jpg" alt="이미지">
+                    <div class="i4">
+                        <p>상품 : 관절 통증완화</p>
+                        <p>금액 : 798,000원</p>
+                        <p>혜택 : Lakey Group 79,800pt적립</p>
+                        </div>
+                        
+                </li>
+                <li><h3>식료품</h3>
+                    <img src="images/녹차.jpg" alt="이미지">
+                    <div class="i5">
+                        <p>상품 : 유기농 녹차</p>
+                        <p>금액 : 32,900원</p>
+                        <p>혜택 : Lakey Group 3,300pt적립</p>
+                        </div>
+                </li>
+                <li><h3>기타</h3>
+                    <img src="images/피렌체.jpg" alt="이미지">
+                    <div class="i6">
+                        <p>상품 : 이탈리아 Lakey호텔 여행</p>
+                        <p>금액 : 1,450,000원</p>
+                        <p>혜택 : Lakey Group 145,000pt적립</p>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        
+
+    </main>
+    <footer>
+        <div class="info">
+            <h2>Sky Corp.</h2><br>
+            대표이사 : Lakey
+            주소: 경기도 하남시<br>
+            Tel: 1500-1004<br>
+            사업자등록번호 : 123-45-67890<br>
+        </div>
+        
+        <div class="info2">
+            
+            <button class="info3"><a href="images/sky.svg" download>회사 로고</a><img id="img3" src="/유호수/images/sky.svg"></button>
+
+        </div>
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>

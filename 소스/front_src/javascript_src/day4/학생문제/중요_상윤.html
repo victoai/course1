@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            width: 200px;
+            height: 30px;
+        }
+        li{
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        function fon(s){
+            //alert(s.innerHTML);
+            s.style.fontSize = "2em";
+        }
+        function foq(){
+            let li = document.getElementsByTagName("li");
+            for(let i=0; i<li.length; i++){
+                li[i].style.fontSize = "16px";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    
+    <ul>
+        <li onclick="fon(this);">김밥</li>
+        <li onclick="fon(this);">스파게티</li>
+        <li onclick="fon(this);">스시</li>
+        <li onclick="fon(this);">콩나물해장국</li>
+        <button onclick="foq();" id="btn">초기화</button>
+    </ul>
+    
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let day = prompt("요일을 입력하세요");
+        let work = 0;
+        switch(day){
+            case "월":
+                work = "출근";
+                break;
+            case "화":
+                work = "출근";
+                break;
+            case "수":
+                work = "출근";
+                break;
+            case "목":
+                work = "출근";
+                break;
+            case "금":
+                work = "휴일";
+                break;  
+            case "토":
+                work = "휴일"; 
+                break;
+            case "일":
+                work = "휴일";  
+                break;
+            default :
+                alert(day + "요일은 없습니다");
+        }
+        alert(day + "요일은  " + work + "입니다");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

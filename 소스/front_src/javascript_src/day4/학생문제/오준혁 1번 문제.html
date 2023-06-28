@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @font-face {
+                font-family: 'dokdo';
+                src: url("../Dokdo-Regular.ttf");
+            }
+            body{
+                font-weight: bold;
+            }
+            li{
+                font-size:20px;
+                font-family: 'dokdo';
+            }
+        </style>
+        <script>
+            function sw(obj){
+                let ids = document.getElementById(obj.id);
+                if(ids.style.fontSize=="20px"){
+                    ids.style.fontSize = "40px";
+                    ids.style.color = "rgb("+parseInt(Math.random()*256)+","+
+                    parseInt(Math.random()*256)+","+parseInt(Math.random()*256)+")";
+                }else{
+                    ids.style.fontSize = "20px";
+                    ids.style.color = "black";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="frm">
+            <table>
+               <h1> 각 메뉴를 클릭했을 때 글자 크기를 크게 </h1>
+               <p> 클릭하면 2배. 다시하면 1배. 너는 108배. </p>
+                <br>
+                <ul>
+                    <li id="micho" onclick="sw(this)">민트초코</li>
+                    <li id="fipi" onclick="sw(this)">파인애플 피자</li>
+                    <li id="frchi" onclick="sw(this)">신호등 치킨</li>
+                    <li id="fish" onclick="sw(this)">삭힌 홍어회</li>
+                </ul>
+            </table>
+        </form>
+    </body>
+    </html>

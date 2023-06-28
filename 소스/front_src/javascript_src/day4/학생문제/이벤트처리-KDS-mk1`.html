@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function largeFont1(){            
+            let m = document.getElementById("menu1");
+            m.style.fontSize = "20px";
+        }
+        function largeFont2(){           
+            let m = document.getElementById("menu2");
+            m.style.fontSize = "20px";        
+        }
+
+        function largeFont3(){
+            let m = document.getElementById("menu3");
+            m.style.fontSize = "20px";
+        }
+
+        function largeFont4(){
+            let m = document.getElementById("menu4");
+            m.style.fontSize = "20px";
+        }
+    </script>
+</head>
+<body>
+    <p>점심먹고싶은메뉴</p>
+    <ul>
+        <li id="menu1" onclick="largeFont1();">김밥</li>
+        <li id="menu2" onclick="largeFont2();">스파게티</li>
+        <li id="menu3" onclick="largeFont3();">스시</li>
+        <li id="menu4" onclick="largeFont4();">콩나물해장국</li>
+    </ul>
+</body>
+</html>

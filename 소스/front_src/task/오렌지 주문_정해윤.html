@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            width: 300px;
+            margin-left: 20px;
+            margin-top: 15px;
+            
+        }
+        #d{
+            width: 350px;
+            height: 700px;
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: auto;
+        }
+        div h3{
+            font-weight: bold;
+            text-align: center;
+            font-size:larger
+        }
+        p{
+            font-size: 14px;
+            text-align: left;
+            margin-left: 35px;
+            font-weight: bold;
+        }
+        .info{
+            width: 300px;
+            height: 300px;
+            border: 0px solid black;
+            margin-left: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 19px;
+            margin-top: 20px;
+        }
+        button{
+            width: 95%;
+            height: 33px;
+            margin-top: 15px;
+            margin-left: 2px;
+            border: 1px solid orangered;
+            border-radius: 5px;
+            background-color: orangered;
+            color: white;
+        }
+        input{
+            width: 95%;
+            height: 23px;
+        }
+        select{
+            width: 95%;
+            height: 23px;
+        }
+        .name{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="d">
+        <!--  상품정보-->
+        <div>  
+            <div><img src="../images/sunkist.JPG"></im> </div>
+            <div><h3>선키스트 블랙라벨 고당도 오렌지</h3></div>
+            <div><p> 고당도 프리미엄 오렌지 40개입 9.4kg 내외 42,630원 </p></div>
+        </div>
+
+        <!--  주문내역정보-->
+        <div class="info">
+            <div id>-- 주문내역 --</div>
+            <div class="name">주문자이름 <input type="text"></div>
+            <div>수량
+                <select>
+                    <option>수량을 선택하세요</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div>주문금액 <input type="text"></div>
+            <div>전화번호 <input type="text"></div>
+            <div> <button>order</button></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

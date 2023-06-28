@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function larger(){
+            let mes = document.getElementsByTagName("li");            
+            for(let i=0;i<mes.length;i++){             
+              mes[i].addEventListener("click",function(){ 
+                  this.style.fontSize="1.3em";
+                  this.style.color="red";
+              })
+            
+            }   
+          }
+        
+    </script>
+</head>
+<body onload="larger()">
+    <p>메뉴</p>
+    <ul>
+        <li>김밥</li>
+        <li>스파게티</li>
+        <li>스시</li>
+        <li>콩나물해장국</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gugudan(){
+            let dan = prompt("1단부터19단까지 입력하세요");
+
+            if(isNaN(dan) || dan <1 || dan>19){
+            alert("잘못입력했습니다");
+        }
+        else {
+            let i;
+            for(i=1;i<=9;i++){
+               let ang = dan*i
+                document.writeln(dan+"*"+i+"="+ang+"<br>");
+            }
+        }
+
+        }
+    </script>
+</head>
+<body>
+
+  원하는단을 입력받아서 해당단을 출력 함수를 만들어서 사용해보세요. <br>
+    <script>
+        gugudan();
+    </script>
+</body>
+</html>

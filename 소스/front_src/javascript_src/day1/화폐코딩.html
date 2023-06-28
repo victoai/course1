@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let amount=312850;
+        let count = [];   // 화폐매수를 저장할 배열,  자바스크립트 배열선언 
+        let unit=[50000,10000,5000,1000,500,100,50,10];
+        let tmpAmount= amount;
+
+        alert( "dddd" + count[0]);
+        count.le
+        for( let i=0 ; i<8; i++){
+            count[i]  = parseInt(tmpAmount/unit[i]) ;
+            tmpAmount  =tmpAmount%unit[i];
+        }
+
+        for( let i=0; i<8 ; i++){
+            document.write( count[i] +"&nbsp&nbsp&nbsp" );
+        }
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

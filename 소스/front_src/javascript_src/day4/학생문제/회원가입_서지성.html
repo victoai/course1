@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:500px;
+            height: 700px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+        }
+        p{
+            margin-left: 10%;
+            width: 80%;
+        }
+    </style>
+    <script>
+        function check(){
+            let checkid = document.frm.CheckId;
+            let checkpw = document.frm.CheckPw;
+            let checkpwcorrect = document.frm.CheckPwCorrect;
+            if(checkid.value == ""){
+                alert("아이디를 입력하세요");
+                checkid.focus();
+            }
+            else if(checkpw.value == ""){
+                alert("비밀번호를 입력하세요");
+                checkpw.focus();
+            }
+            else{
+                if(checkpw.value == checkpwcorrect.value){
+                    alert("정상적으로 처리되었습니다");
+                }
+                else{
+                    alert("비밀번호가 다릅니다.");
+                    checkpw.focus();
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+    <div>
+        <p>아이디 <input name="CheckId" type="text"></p>
+        <p>비밀번호<input name="CheckPw" type="password"></p>
+        <p>비밀번호 확인<input name="CheckPwCorrect" type="password"></p>
+        <button type="button" onclick="check();">가입</button>
+    </div>
+    </form>
+</body>
+</html>

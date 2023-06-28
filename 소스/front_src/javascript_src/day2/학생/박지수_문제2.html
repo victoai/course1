@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let week = prompt("요일을 입력하세요 ex)월, 수, 금 ...");
+        let work;
+
+        switch(week){
+            case "월": case "화": case "수": case "목": case "금": 
+                work = "출근";
+                break;
+            case "토": case "일": 
+                work = "휴일";
+                break;
+        }
+        alert(week+"요일은 "+work+"입니다.")
+    </script>
+</head>
+<body>
+    prompt() 함수를 이용하여 월,화, 수,목,금, 토,일 중 하나를 
+    입력받아 월~목은 출근 다른날은 휴일을 출력하는 자바스크립트
+    코드를작상하여 웹페이지를 완성하시오
+
+</body>
+</html>

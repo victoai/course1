@@ -1,0 +1,37 @@
+
+        main{
+            margin-left: 20px;
+        }
+
+        main .wrap{
+            display:flex;
+        }
+        .wrap .left{
+            width:10%;            
+        }
+        .wrap .right{
+            width:90%;         
+           
+        }
+         
+        .wrap .right ul{
+         display:flex;
+         flex-wrap:wrap;        
+        }
+
+        .wrap .right ul li{
+            width:320px;
+            height:350px;
+            border:0.1px solid rgb(201, 199, 199);
+            text-align: center;
+        }
+       
+
+        /*왼쪽 메뉴바 */
+         .left_menu{
+             width:80px;
+             height:40px;
+             border:1px solid rgb(226, 219, 219);
+             margin:0px auto;
+         }
+         

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입화면</title>
+    <style>
+        form{
+            width: 800px;
+            margin: auto;
+        }
+        table{
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+        table caption{
+            padding: 15px 0px;
+
+            font-weight: 700;
+            font-size: 15pt;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+        th{
+            width: 8%;
+        }
+        td{
+            padding-left: 20px;
+            width: 15%;
+            height: 30px;
+        }
+        button{
+            margin: 10px 45%;
+            /* margin: 2px;px auto; 중앙에 오게 하고 싶당 */
+        }
+        td .blank{
+            display:inline-block;
+            width: 50px;
+        }
+    </style>
+    <script> 
+    function check(){
+    let form = document.getElementById("signForm")
+
+
+    let userName = form.userName;
+    
+    let userBY = form.birthYear;
+    let userBM = form.birthMonth;
+    let userBD = form.birthDate;
+    
+
+
+
+    let genders = form.userGender;
+    let userGender = null //성별을 받을 임의변수
+
+    for(let i=0 ; i< genders.length ; i++){
+        if(genders[i].checked == true){
+            userGender = genders[i].value;
+        }
+    }
+    
+
+
+    
+    
+    let userId = form.userId;
+    let userPw = form.userPw;
+    let userPwEqual = form.userPwEqual;
+
+    if(userName.value == ""){//아이디 비밀번호 유효성 검사
+        alert("이름을 입력하세요");
+        userName.focus();
+    }else if(userGender==null){//성별 유효성 검사
+        alert("성별을 선택해주세요");
+    }else if(userBY.value== "" || userBM.value=="" || userBD.value==""){//생년월일 유효성 검사
+        alert("생년월일을 입력해주세요");
+        userBY.focus();
+    }else if(userId.value == ""){//아이디 비밀번호 유효성 검사
+        alert("아이디를 입력하세요");
+        userId.focus();
+    }else if(userPw.value == ""){
+        alert("비밀번호를 입력하세요");
+        userPw.focus();
+    }else if(userPwEqual.value == ""){
+        alert("비밀번호 확인을 입력하세요");
+        userPwEqual.focus();
+    }else if(userPw.value != userPwEqual.value){
+        alert("비밀번호 확인이 일치하지 않습니다")
+        userPw.focus();
+    }else{
+        alert("회원가입이 완료되셨습니다")
+    }
+}
+</script>
+</head>
+<body>
+    <form id="signForm" action="">
+        <table>
+            <caption>회원가입양식</caption>
+            <tbody>
+                <tr>
+                    <th>이름</th>
+                    <td colspan="3"><input type="text" name="userName"></td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td colspan="3" class="arr_td"><input name="userGender" type="radio" value="남">남<span class="blank"></span><input type="radio" name="userGender" value="여">여</td>
+                </tr>
+                <tr>
+                    <th>생년월일</th>
+                    <td colspan="3"><input name="birthYear" type="text" list="byList">년 <input name="birthMonth" type="text" list="bmList">월 <input name="birthDate" type="text" list="bdList">일</td>
+
+
+                    <datalist id="byList">
+                        <option value="1900"></option>
+                        <option value="2022"></option>
+                    </datalist>
+                    <datalist id="bmList">
+                        <option value="1"></option>
+                        <option value="12"></option>
+                    </datalist>
+                    <datalist id="bdList">
+                        <option value="1"></option>
+                        <option value="31"></option>
+                    </datalist>
+
+
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td><input name="userId" type="text"></td>
+                    <td colspan="2" rowspan="3"></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input name="userPw" type="password"></td>
+                </tr>
+                <tr>
+                    <th>비밀번호확인</th>
+                    <td><input name="userPwEqual"type="password"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <button type="button" onclick="check()">가입하기</button>
+    </form>
+</body>
+</html>

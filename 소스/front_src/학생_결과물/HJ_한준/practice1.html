@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="top_header.css" rel="stylesheet">
+    <link href="title.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <style>    
+        main{
+            height: 900px;
+        }
+        main ul{
+            height: 400px;
+            list-style: none;
+            display: flex;
+        }
+        main ul li{
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            text-align: center;
+        }
+        main ul li img{
+            width: 250px;
+            height: 250px;
+            cursor: pointer;
+        }
+        main ul li p{
+            height: 15px;
+            font-size: 15px;
+        }
+        .price{
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        .item_name{
+            cursor: pointer;
+        }
+        .item_name:hover{
+            color: rgb(0, 17, 252);
+            font-weight: bolder;
+        }
+        .main_first{
+            margin-bottom: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+        <ul class="top_ul">
+            <li><a>로그인</a></li>
+            <li><a>회원가입</a></li>
+            <li><a>주문조회</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="logo"><img class="logo_img" src="images/logo.png"></div>
+        <div class="search_wrap">
+            <input class="search_bar" type="text">
+            <div class="search_btn"></div>
+        </div>
+            <table class="icon_wrap">
+                <tr class="icon_image">
+                    <td><img src="images/board.png"></td>
+                    <td><img src="images/people.png"></td>
+                    <td><img src="images/cart.png"></td>
+                    <td><img src="images/heart.png"></td>
+                </tr>
+                <tr class="icon_name">
+                    <td>공지사항</td>
+                    <td>로그인</td>
+                    <td>장바구니</td>
+                    <td>찜바구니</td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+    <hr>
+    <div class="title">
+        <div class="title_name">추천상품</div>
+    </div>
+    <main>
+        <ul class="main_first">
+            <li>
+                <a href="practice2.html"><img src="images/goldfish.png"></a>
+                <a href="practice2.html"><p class="item_name">금붕어 2마리 [랜덤]</p></a>
+                <p class="price">7000원</p>
+            </li>
+            <li>
+                <img src="images/guppy.png">
+                <p class="item_name">구피 2마리 [랜덤]</p>
+                <p class="price">5000원</p>
+            </li>
+            <li>
+                <img src="images/crownfish.png">
+                <p class="item_name">[니모] 크라운피쉬 1마리</p>
+                <p class="price">8000원</p>
+            </li>
+            <li>
+                <img src="images/bluetang.png">
+                <p class="item_name">[도리] 블루탱 2마리</p>
+                <p class="price">35000원</p>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <img src="images/shrimp.png">
+                <p class="item_name">민물 줄새우 1마리</p>
+                <p class="price">5000원</p>
+            </li>
+            <li>
+                <img src="images/crawfish2.png">
+                <p class="item_name">민물 얍비가재 1마리</p>
+                <p class="price">10000원</p>
+            </li>
+            <li>
+                <img src="images/crap.png">
+                <p class="item_name">민물 레인보우크랩 1마리</p>
+                <p class="price">30000원</p>
+            </li>
+            <li>
+                <img src="images/turtle.png">
+                <p class="item_name">늑대거북 등갑10cm급</p>
+                <p class="price">100000원</p>
+            </li>
+        </ul>
+    </main>
+    <hr>
+    <div class="title">
+        <div class="title_name">고객문의
+        </div>    
+    </div>
+    <footer>
+        <div class="center">
+            <p class="footer_name">고객센터</p>
+            <p class="footer_info">
+                010-0000-0000<br>
+                000-000-0000<br>
+                000-000-0000 (팩스)<br>
+                1:1 문의 게시판<br>
+                abcdefg@naver.com<br>
+                카카오톡 abcdefg1234
+            </p>
+        </div>
+        <div class="account">
+            <p class="footer_name">입금계좌</p>
+            <p class="footer_info">
+                예금주 마카롱아쿠아플래닛<br>
+                우리은행 0000-000-0000000<br>
+                국민은행 0000-000-0000000<br>
+                농협은행 0000-000-0000000<br>
+                기업은행 0000-000-0000000
+            </p>
+        </div>
+        <div class="company_info">
+            <p class="footer_name">업체정보</p>
+            <p class="footer_info">
+                상호 마카롱아쿠아플래닛<br>
+                대표자 홍길동<br>
+                사업자등록번호 000-00-000000<br>
+                영업소재지 서울특별시 00구 00동 00번지
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

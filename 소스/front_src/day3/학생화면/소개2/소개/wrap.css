@@ -1,0 +1,15 @@
+.wrap{
+    display: flex;
+}
+
+.profile{
+    width: 250px;
+    height: 670px;
+
+    background-color: rgb(117, 114, 110);
+}
+.main{
+    width: 960px;
+    height: 670px;
+    margin-left : 50px;
+}

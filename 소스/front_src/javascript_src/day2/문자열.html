@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let name="javascript"; 
+        //alert(name);
+        // 문자열 연결 + 기호 
+        name = name  + "hello" ;
+        //alert( name);    
+
+        // 문자열에서 요소 하나 가져오기 
+       // alert(name[0]);       
+
+        // 문자열의 길이 
+        // alert(name.length);
+
+        // 문자열의 일부가져오기
+        let str  =name.substring(0 , 4);
+        alert( "문자열의 일부가져오기 " + str);
+
+        //문자열변경
+        let  str2 = name.replace("java","type");
+        //alert( str2);
+
+        //
+        let every="boys and girls";
+        let result  =every.split(" ");
+
+        for( let i=0 ; i< result.length ; i++)
+            alert( result[i]);
+
+
+
+    </script>
+</body>
+</html>

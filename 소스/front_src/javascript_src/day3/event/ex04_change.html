@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function changeImage(){
+            let img =    document.getElementById("myImg");
+            let sel =   document.getElementById("sel");
+            // select 태그의 선택한 목록의 index 정보            
+            let index  = sel.selectedIndex;
+        
+            // 선택한 index 목록의 value 값 얻어오기
+            let changeImg_name = sel.options[index].value;             
+
+            //이미지 src 속성정보 변경=>이미지변경
+            img.src= changeImg_name;
+
+        }
+    </script>
+</head>
+<body>    
+    <img id="myImg" src="media/apple.jpeg" alt="과일이미지">
+   <!-- 목록변경할 때 change 이벤트  발생  => onChange 이벤트 리스너-->
+
+    <select id="sel" onchange="changeImage();">
+        <option value="media/apple.jpeg">사과
+        <option value="media/banana.jpeg">바나나
+        <option value="media/mango.jpeg">망고
+    </select>
+</body>
+</html>

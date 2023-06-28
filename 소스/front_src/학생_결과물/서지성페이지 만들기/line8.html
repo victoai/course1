@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lineColor.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+    <style>
+        #title{
+            width:1000px;
+            margin: auto;
+        }
+        #titleImg{
+            margin: auto;
+            width:fit-content;
+            height:200px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        #titleImg img{
+            height: 200px;
+        }
+        #list li{
+           height: 50px;
+           list-style: none;
+        }
+        .sign_in{
+            margin:auto;
+            padding:5px;
+            width: fit-content;
+            height: 50px;
+            
+        }
+        #whole{
+            display: flex;
+            width: fit-content;
+            margin:auto;
+        }
+        #left{
+            width:200px;
+            height:1000px;
+            background-color: rgb(104, 157, 255);
+        }
+        
+        #right{
+            width:800px;
+            height:1000px;
+            background-color: rgb(125, 211, 214);
+            margin-left:50px;
+        }
+        #right img{
+            
+            margin:30px 100px;
+            width:600px; 
+            height:fit-content;
+        }
+        p{
+            margin-left: 100px;
+            width: 600px;
+            line-height: 120%;
+        }
+        footer{
+            height:100px;
+            background-color: darkseagreen;
+        }
+        #align{
+            width: fit-content;
+            margin: auto;
+            height:fit-content;
+            text-align: center;
+        }
+        #upperTitle{
+            margin-left:100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button><a href="menu.html">메인으로</a></button>
+    </header>
+    <div id = "title">
+        <h1>서울철덕공사</h1>   
+    </div>
+    <div id="titleImg">
+        <img src="images/1호선.jpg">
+        <img src="images/2호선.jpg">
+        <img src="images/3호선.jpg">
+        <img src="images/4호선.jpg">
+    </div>
+    <div class="sign_in">
+        <div class="sign_in">
+            ID<input type="text">
+            비밀번호<input type="password">
+            <button>로그인</button>
+            <button>회원가입</button>
+        </div>
+   </div>
+    <div id="whole">
+        <div id="left">
+            <div id="left">
+                <div id = "list">
+                    <li id="line1">&nbsp;<a href="line1.html">1호선</a></li>
+                    <li id="line2">&nbsp;<a href="line2.html">2호선</a></li>
+                    <li id="line3">&nbsp;<a href="line3.html">3호선</a></li>
+                    <li id="line4">&nbsp;<a href="line4.html">4호선</a></li>
+                    <li id="line5">&nbsp;<a href="line5.html">5호선</a></li>
+                    <li id="line6">&nbsp;<a href="line6..html">6호선</a></li>
+                    <li id="line7">&nbsp;<a href="line7..html">7호선</a></li>
+                    <li id="line8">&nbsp;<a href="line8.html">8호선</a></li>  
+                        
+                </div>
+            </div>
+        </div>
+        <div id="right">
+                <img src="images/8호선.jpg" >
+                <h1 id="upperTitle">8호선</h1>
+                <p>
+                    기점:암사<br>
+                    종점:모란<br>
+                    서울 지하철 8호선(서울 地下鐵 8號線)은 서울특별시 강동구의 암사역과 경기도 성남시의 모란역을 잇는 서울특별시의 도시 철도 노선이자, 수도권 전철 운행 계통이다. 본 노선의 고유색은 ●분홍색으로, 색 뜻은 낭만, 사랑스러운 이미지를 가미하며, 전 구간 서울교통공사가 운영하고 있다. 또한 현재는 서울 지하철 중 총 연장이 가장 짧고, 수도권 전철을 통틀어서는 부산 도시철도 3호선과 마찬가지로, 세 번째로 짧다. 2023년에 별내역까지 연장할 예정이다. 통행방향은 어디서든 우측통행이다.
+                </p>
+        </div>
+    </div>
+    <footer>
+        <div id="align">
+            <p>지하철 연혁 | 철도를 좋아하게 된 계기 | <a href="http://www.seoulmetro.co.kr/kr/index.do?device=PC#3rdPage">
+            서울교통공사 홈페이지</a>
+            | 개인정보처리방침 </p>
+
+        </div>
+        
+        
+    </footer>
+
+</body>
+</html>
+<!--
+    margin: 10px 30px ;     / *  위아래 10px  왼쪽오른쪽  30px */
+margin: 20px;   /* 네군데 전체가 20px  */
+margin: 10px 20px 30px 40px;  /* 시계방향 */
+
+-->

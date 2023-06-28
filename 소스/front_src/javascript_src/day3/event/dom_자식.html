@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function selectTag(){
+        //alert("dd");
+        let house = document.getElementById("mbc"); 
+        alert( house);       
+        let c1 = house.firstElementChild;
+        alert( c1.innerHTML);
+        let c2 = c1.nextElementSibling;
+        alert(c2.innerHTML);
+        let c3 = c2.nextElemnetSibling;
+        alert( c3.innerHTML);
+        let c4 = c3.nextElemnetSibling;
+        alert( c4.innerHTML);
+        let c5 =house.lastElementChild;
+        alert( c5.innerHTML);
+
+     let parent = c1.parentElement;
+        alert( parent.innerHTML);
+        }
+        </script>
+        
+</head>
+<body>
+    <div id ="mbc">
+        나혼산 출연진들
+    <p>전현무</p>
+    <p>박나래</p>
+    <p>코드쿤스트</p>
+    <p>키범</p>
+    <p>기안84</p>
+    <p>송민호</p>
+    <p>STAFF</p>
+   </div>
+   <button onclick="selectTag();"> 클릭</button>
+</body>
+</html>

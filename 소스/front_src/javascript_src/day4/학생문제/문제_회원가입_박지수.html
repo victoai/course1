@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 300px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        caption{
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        table{
+            width:300px;         
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        table td, tr, th {
+            border:0.1px solid gray;            
+        }
+        th{
+            background-color: rgb(246, 251, 225);
+            width: 100px;
+            font-size: 13px;
+        }
+        tr{
+            height: 40px;
+            text-align: center;
+        }
+        button{
+            width: 300px;
+            height: 40px;
+            margin-top: 10px;
+        }
+        .input1{
+            border: 0px ;
+            height: 30px;
+            width: 180px;
+        }
+    </style>
+    <script>
+        function check(){
+            let frm = document.frm;
+            let userName = frm.userName;
+            let userBirth = frm.userBirth;
+            let userPNum = frm.userPNum;
+            let userId = frm.userId;
+            let userPw = frm.userPw;
+            let userCk = frm.userCk;
+            
+            if(userName.value == "") {
+                alert("이름을 입력하세요.");
+                userName.focus();
+            } else if (userBirth.value == ""){
+                alert("생년월일을 입력하세요.");
+                userBirth.focus();
+            } else if (userPNum.value == ""){
+                alert("전화번호를 입력하세요.");
+                userPNum.focus();
+            } else if (userId.value == ""){
+                alert("아이디를 입력하세요.");
+                userId.focus();
+            }else if (userPw.value == ""){
+                alert("비밀번호를 입력하세요.");
+                userPw.focus();
+            }else if (userCk.checked==false){
+                alert("개인정보동의에 체크해주세요.");
+            }else{
+                alert("회원가입이 완료되었습니다!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <table>
+            <tbody>
+                <caption>회원가입</caption>
+                <tr>
+                    <th>이름</th>
+                    <td><input class="input1" type="text" name="userName" placeholder="ex)홍길동"></td>
+                </tr>
+                <tr>
+                    <th>생년월일</th>
+                    <td><input class="input1" type="text" name="userBirth" placeholder="0000.00.00"></td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><input class="input1" type="text" name="userPNum" placeholder="010-0000-0000"></td>
+                </tr>
+
+                <tr>
+                    <th>아이디</th>
+                    <td><input class="input1" type="text" name="userId"></td>
+                </tr>
+
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input class="input1" type="password" name="userPw"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        개인정보동의 
+                        <input type="checkbox" name="userCk">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" onclick="check();">가입</button>
+    </form>
+</body>
+</html>

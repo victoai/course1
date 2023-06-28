@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+     function child(){ 
+
+    //태그이름으로 요소선택 => 배열로 반환함
+      let ps=  document.getElementsByTagName("p");
+      for( let i=0 ; i< ps.length; i++){
+          alert(  ps[i].innerHTML);
+      }
+
+     }
+
+    </script>
+</head>
+<body>    
+
+    <div id="woo">
+        우씨집안 자식들
+        <p>1큰딸</p>
+        <p>2둘째딸</p>
+        <p>3셋째딸</p>
+        <p>4넷째아들</p>
+        <p>5막내딸</p>
+    </div>
+
+
+    <button  onclick="child()">div의 자식요소 선택하기</button>
+</body>
+</html>

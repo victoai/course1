@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="co.css" rel="stylesheet">
+    <link href="detailSearch.css" rel="stylesheet">
+    <script>
+       
+    window.addEventListener("load",function(){
+            let seat=document.getElementById("seat");
+            seat.addEventListener("click",function(){
+                
+                window.open("좌석배치도.jpg", "myWin", "width:400px; height:400px;")
+        });
+    });
+      
+
+    /*
+     등록시 항공권 금액을 합계에 누적시켰음
+     등록할 때 마다 주문금액에 반영
+     calc() 함수는 버렸어요 ^
+    */
+    
+    let sum=0;
+    function add(){      
+        let seatgr = document.getElementsByName("seatgr");
+        let site1 = document.getElementById("site1").value;
+        let site2 = document.getElementById("site2").value;        
+        let indextbl=document.getElementById("indextbl");
+        
+        let tr= document.createElement("tr");
+       let nor=100000;
+       let prm=200000;
+       
+        if(seatgr[0].checked==true){           
+            if(site1!="일반석"){  
+                sum+=nor;             
+                tr.innerHTML="<td class='price' value='nor' style='background-color:yellow'>일반석</td>" +"<td>"+nor+"</td>"+"<td>"+site1+"</td> <td><button onclick='removeRow(this)'>삭제</button></td>";
+         
+                indextbl.appendChild(tr);
+            }else{
+                alert('잘못된 선택입니다.')
+            }
+        }else if(seatgr[1].checked==true){
+            if(site2!="일등석"){
+                sum+=prm;
+                tr.innerHTML="<td class='price' value='prm' style='background-color:brown'> 일등석</td>" +"<td>"+prm+"</td>"+"<td>"+site2+"</td> <td><button onclick='removeRow(this)'>삭제</button></td>";              
+                indextbl.appendChild(tr);
+            }else{
+                alert('잘못된 선택입니다.')
+            }
+        } 
+       
+       let span = document.getElementById("order_price");
+       span.innerHTML= sum;
+    }
+
+
+    function removeRow(obj){
+        let indextbl=document.getElementById("indextbl");
+        let tr= obj.parentElement.parentElement; 
+        indextbl.removeChild(tr); 
+    }
+ 
+     
+    </script>
+</head>
+
+
+<body onload="calc();">
+   
+    <div class="wrap">
+    <image id="headimg" src="로고2-1.png"></image>
+
+
+<nav>
+    <div class="nav">항공기 안내</div>    
+<div class="nav">좌석 클래스 안내</div>    
+<div class="nav">서비스 안내</div>    
+</nav>
+<hr>
+
+<main>
+<div class="BigI" >
+<div id="leftIndex"style='background-color:black;'>
+<div id="infobox"style='background-color:black;' >
+    <div id="dp" style='background-color:black;'>
+<div class="info" id="dpsite" name="dpsite">출발지</div>
+<div class="info" id="dpdate" name="dpdate">출발일자</div>
+<div class="info" id="dptime" name="dptime">출발시간</div>
+</div>
+<div id="ar" style='background-color:black;'>
+<div class="info" id="arsite" name="arsite">도착지</div>
+<div class="info" id="ardate" name="ardate">도착일자</div>
+<div class="info" id="artime" name="artime">도착시간</div>
+</div>
+<div class="info" id="airno" name="airno">비행번호</div>
+</div>
+
+</div>
+<div id="rightIndex" style='background-color:rgb(255, 247, 236);'>
+    
+<table id="indextbl">
+<tr id="indexline">
+<th style='background-color:black; color:white;'>구분</th>
+<th style='background-color:black; color:white;'colspan="2">등급(원/좌석)</th><!---->
+
+<th style='background-color:black; color:white;'>등록/삭제</th>
+
+</tr>
+<tr>
+<td style='background-color:black; color:white;'>승객</td>
+<td colspan="2" id="index">
+    <input type="radio" name="seatgr" id="seatn">
+    <select id="site1">
+        <option>일반석</option>
+        <option>A-4</option>
+        <option>A-5</option>
+        <option>A-6</option>
+        <option>A-7</option>
+        <option>A-8</option>
+        <option>A-9</option>
+        <option>A-10</option>
+        <option>A-11</option>
+        <option>B-4</option>
+        <option>B-5</option>
+        <option>B-6</option>
+        <option>B-7</option>
+        <option>B-8</option>
+        <option>B-9</option>
+        <option>B-10</option>
+        <option>B-11</option>
+        <option>C-4</option>
+        <option>C-5</option>
+        <option>C-6</option>
+        <option>C-7</option>
+        <option>C-8</option>
+        <option>C-9</option>
+        <option>C-10</option>
+        <option>C-11</option>
+        <option>D-4</option>
+        <option>D-5</option>
+        <option>D-6</option>
+        <option>D-7</option>
+        <option>D-8</option>
+        <option>D-9</option>
+        <option>D-10</option>
+        <option>D-11</option>
+        <option>E-4</option>
+        <option>E-5</option>
+        <option>E-6</option>
+        <option>E-7</option>
+        <option>E-8</option>
+        <option>E-9</option>
+        <option>E-10</option>
+        <option>E-11</option>
+        <option>F-4</option>
+        <option>F-5</option>
+        <option>F-6</option>
+        <option>F-7</option>
+        <option>F-8</option>
+        <option>F-9</option>
+        <option>F-10</option>
+        <option>F-11</option>
+
+        
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="seatgr" id="seatp">
+    <select  id="site2">
+        
+        <option>일등석</option>
+        <option>A-1</option>
+        <option>A-2</option>
+        <option>A-3</option>
+        <option>C-1</option>
+        <option>C-2</option>
+        <option>C-3</option>
+        <option>D-1</option>
+        <option>D-2</option>
+        <option>D-3</option>
+        <option>F-1</option>
+        <option>F-2</option>
+        <option>F-3</option>        
+    </select>    
+   
+</td>
+<td><button onclick="add();">등록</button></td>
+</tr>
+
+</table>
+<button id="seat">좌석배치도</button>
+<div id="rightboxfoot">
+<div style='background-color:rgb(255, 247, 236);'> <b style='background-color:rgb(255, 247, 236);'>총 구매금액 </b> <span id="order_price">0</span>원
+<button onclick="update();">구매하기</button>
+</div>
+</div>
+<div id="searchbtn">
+    
+</div>
+
+</div>
+<button id="searchbtn" type="button" onclick="window.location='search.html'" value="검색화면으로">
+</button>
+
+</main>
+</div>
+
+</body>
+</html>

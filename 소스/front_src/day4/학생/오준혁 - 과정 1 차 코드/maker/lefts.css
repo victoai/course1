@@ -1,0 +1,43 @@
+.co-ops{
+    width:256px;
+    height:192px;
+    display: block;
+    background-image:url("co-ops.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.muta{
+    width:256px;
+    height:91px;
+    display: block;
+    background-image:url("mutation.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top:1px;
+}
+.search{
+    width:254px;
+    height:48px;
+    position: absolute;
+    bottom: 0px;
+    border:1px solid black;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.nothing{
+    text-align: center;
+    height:44px;
+    width:204px;
+    border:1px solid black;
+}
+.not{
+    width:44px;
+    height:46px;
+    display: block;
+    border:1px solid black;
+    background-color: blue;
+}
+.not:hover{
+    background-color: red;
+}

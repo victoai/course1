@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+      
+        #wrap {  /*배경색*/
+            background-color: rgb(0,0,0,0.1);
+        }
+        /*상단 메뉴보드*/
+        .menu {
+            background-color: #FFDAB9;
+			list-style-type: none;
+			margin-left: 10px;
+            display :flex;
+            
+        }
+        .menu li a {
+            display: block;
+			color: #000000;
+			padding: 8px;
+			text-decoration: none;
+			text-align: center;
+			font-weight: bold;
+            margin : 0px;
+            padding:20px 50px 20px 50px;
+        }
+        .menu li a:hover{ 
+			background-color: #EDBF90;
+			color: white;
+		}
+
+
+    /* 내용, 상품목록 css */
+        .btn li:hover{
+           background-color:rgba(255, 255, 255, 0.421);
+        }
+        .search-bar{
+            width:500px;
+            margin-left: 40px;
+             
+        }
+
+        .search-bar input {            
+            width:340px;
+            height:30px;
+            border:0.1px solid rgb(173, 172, 172);
+            padding-left:40px;          
+            border-radius: 50px;  
+            margin-top:20px;  
+            background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png');
+            background-size:contain;  /*이미지 크기 한도내에서 제일 크게 설정*/
+            background-repeat: no-repeat; /*이미지 반복x*/
+        }
+        .search-bar input:hover {       
+            box-shadow: 0px 0px 10px 0px rgb(173, 172, 172);
+        }
+
+        .search-bar input:focus{  /* 클릭시 바깥쪽 테두리 없애기 */
+            outline:none;
+        }
+
+        main ul{ 
+           list-style: none;
+           display:flex;
+           flex-wrap: wrap; /*여러 행에 걸쳐 배치*/
+       }
+        main ul li{
+           width:300px;
+           height:300px;
+           border:2px solid rgba(255, 253, 253, 0.591);
+           text-align: center;
+           font-size:13px;
+           margin-top:10px;
+           margin-left:15px;
+           border-radius:20px;
+       }
+        img{
+           width:200px;
+           height:150px;
+           display:block;
+           margin:10px auto;
+       }
+       .btn{
+            border: 1px solid white;
+		    outline: none;
+            border-radius: 5px;
+       }
+       .btn:active { border :1px solid gray; }
+     
+
+       /*카테고리*/
+     
+        .category ul{
+            list-style-type: none;
+            text-align: left;
+			padding: auto;
+            width: 70px;
+            
+        }
+        li { 
+           float: left;
+         }
+        .category li a{
+            text-decoration: none;
+            line-height: 40px;
+            color:black;
+            font-size:15px;
+        }
+        .cate li a:hover{
+            color:white;
+        }
+      
+    
+       
+       /* footer  css  */
+        footer .item{
+            width:96%;
+            height:130px;
+            margin-left:20px;
+            margin-top:60px;
+        }
+        .item p{
+            font-size:12px;
+            color:#bab9b6;
+        }
+        hr{
+            width:100%
+        }
+        .item2{
+            padding:0px;
+            display :flex;
+        }
+        .item2 a{
+            width:30px;
+            height: 30px;
+            display: flex;
+            padding:10px;
+            margin-left:15px;
+            border-radius: 50px;
+            background: white;
+            background-image:url('images/search.png');
+            background-size:contain;  
+            background-repeat: no-repeat;
+            margin-bottom: 5px;
+            margin-top:10px;
+        }
+        h1{
+            margin-left:20px;
+        }
+
+        
+
+      </style>
+</head>
+<body>    
+    <!-- header -->
+      <header>
+      <div><h1>Chae Won</h1></div>
+      <div class="header_wrap">
+            <ul class="menu">
+                <li><a href="main1.html">Home</a></li>
+                <li><a href="log.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="cs.html">고객센터</a></li>
+                <li><a href="">장바구니</a></li>
+                <li><a href="">마이페이지</a></li>
+            </ul>
+      </div>
+      </header>
+      <!-- 내용- -->
+    <div id="wrap">
+        <div class="search-bar">
+            <input type="text" placeholder="search" > 
+        </div>  
+         <div class="category">
+              
+                <ul class="cate">
+                     <h4>카테고리</h4>
+                    <li><a href="">분류1</a></li>
+                    <li><a href="">분류1</a></li>
+                    <li><a href="">분류1</a></li>
+                    <li><a href="">분류1</a></li>
+                    <li><a href="">분류1</a></li>
+                    <li><a href="">분류1</a></li>
+                    <li><a href="">분류1</a></li>
+                  
+                </ul>
+            </div>
+        <div >
+           
+      <main >
+        <ul class="pro" >
+         <li>
+             <img src="images/image.jpg"><br>
+             <p>가격</p>
+             <p>상품이름</p>
+             <p><button class="btn">구매</button></p>
+             
+         </li> 
+         <li>
+              <img src="images/image.jpg"><br>
+            <p>가격</p>
+            <p>상품이름</p>
+            <p><button class="btn">구매</button></p>
+         </li>
+         <li>
+            <img src="images/image.jpg"><br>
+            <p>가격</p>
+            <p>상품이름</p>
+            <p><button class="btn">구매</button></p>
+         </li>
+         <li>
+            <img src="images/image.jpg"><br>
+            <p>가격</p>
+            <p>상품이름</p>
+            <p><button class="btn">구매</button></p>
+        </li>
+        <li>
+             <img src="images/image.jpg"><br>
+            <p>가격</p>
+            <p>상품이름</p>
+            <p><button class="btn">구매</button></p>
+        </li>
+        <li>
+            <img src="images/image.jpg"><br>
+            <p>가격</p>
+            <p>상품이름</p>
+            <p><button class="btn">구매</button></p>
+        </li>   
+        <li>
+            <img src="images/image.jpg"><br>
+            <p>가격</p>
+            <p>상품이름</p>
+            <p><button class="btn">구매</button></p>
+        </li>   
+        <li>
+            <img src="images/image.jpg"><br>
+            <p>가격</p>
+            <p>상품이름</p>
+            <p><button class="btn">구매</button></p>
+        </li>
+
+      </ul>
+    </div>
+
+    
+       
+      
+      </main>
+      
+      <!-- footer -->
+      <footer >
+        <div class="item">
+            <hr>
+            <h4>100% AUTHENTIC</h4>
+            <p>회사는 이용자가 개인정보 수집ㆍ이용 동의와 관련 “동의합니다” 또는 “동의하지 않습니다”를 선택할 수 있는 절차를 마련하고 있으며, 이용자는 개인정보 제공에 대한 동의를 거부할 수 있으나 이 경우 회사의 서비스 이용 등이 제한될 수 있습니다. </p>
+            <p>주식회사 2222 (22222 Co., Ltd.) | 서울특별시 강남구 신사동 640-2 로빈명품우관 지하1층 | 사업자등록번호 : 222-22-222222 |
+                통신판매업 : 2012-서울강남-01897 | 대표 : 231223 | 개인정보관리책임자 : 232(asdfas@naver.com) ｜ 호스팅사업자 : (주)12122</p>
+            <hr>
+        </div>
+         <div>
+        <div class="item2">
+            <a href="http://naver.com" class="naver"></a>
+            <a href="http://google.com" class="google"></a>
+            <a href="http://youtube.com" class="youtube"></a>
+        </div>
+        <hr>
+         </div>
+      </footer>
+
+     
+    
+</body>
+</html>

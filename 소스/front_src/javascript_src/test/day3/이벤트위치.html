@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <script>
+        function changeColor( p_color)
+        {            
+            var t= document.getElementById("target");
+            if(p_color=="black"){
+                t.style.backgroundColor="black";
+                t.style.color="white";
+            }               
+            else if(p_color=="white")
+            {
+                t.style.backgroundColor="white";
+                t.style.color="green";
+            }               
+        }
+    </script>
+</head>
+<body id="target"  > 
+    <input type="button" value="black" onclick="changeColor('black')">
+    <input type="button"  value="white" onclick="changeColor('white')">
+    <br>
+    javaScript
+</body>
+ </html>
+

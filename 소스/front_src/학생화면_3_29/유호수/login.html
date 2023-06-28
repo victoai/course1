@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <title>Login</title>
+    
+    <style>
+        .img{
+            width:500px;
+            height:500px;
+            margin: 50px auto;
+            
+            background-image: url('https://cdns-images.dzcdn.net/images/artist/6c0c60976285b22c719814c7dd303496/500x500.jpg');
+            background-position: center;
+            background-size:cover;
+            box-shadow: 0px 0px 10px 0px;
+            
+            
+        }
+        h1{
+            font-family: 'Arvo', serif;
+            margin:auto;
+            text-align: center;
+            margin-top:60px;
+            text-decoration-line: underline;
+            
+        }
+        .log{
+            width:500px;
+            height:200px;
+            text-align: center;
+            font-family: 'Arvo', serif;
+            font-size:30px;
+            margin:auto;
+            display:flex;
+            
+            
+        }
+        ul li{
+            list-style: none;
+        }
+        input{
+            height:30px;
+            width:200px;
+            border-radius: 30px;
+            font-size:18px;
+            
+        }
+        .btn{
+            margin-top:0px;
+            height: 100px;
+            width:100px;
+            
+            margin:auto;
+            
+        }
+
+        button{
+            width:100px;
+            height:50px;
+            margin:auto;
+            left:20px;
+            border-radius: 30px;
+            background-color: black;
+            color:white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: brown;
+            width:100px;
+            height:50px;
+            margin-top:0px;
+            
+        }
+        .info:hover #index{
+            display:flex;
+            font-size:10px;
+            width:100px;
+            height:50px;
+            color:red;
+            background-color: yellow;
+            line-height: 12px;
+            
+        }
+        #index{
+            width:100px;
+            height:50px;
+            display: none;
+            line-height: 50px;
+            text-align: center;
+
+        }
+        form{
+            margin: auto;
+            font-family: 'Arvo', serif;
+            font-weight: bold;
+        }
+        .wrap{
+            width:800px;
+            height:1100px;
+            border:0.1px dotted blue;
+            margin:auto;
+        }
+        .info{
+            width:300px;
+            height:100px;
+            margin:auto;
+            display:flex;
+        }
+        fieldset{
+            border:0px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <h1>Lakey corp.</h1>
+        <div class="in_wrap">
+      <div class="img"> </div>
+        <div class="log">
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+            <ul>
+                <li><label for="ID">&nbsp;ID</label>&nbsp;&nbsp;&nbsp;<input id="ID" type="text"></li>
+                <li><label for="PW">PW</label>&nbsp;&nbsp;<input id="PW" type="password"></li>
+            </ul>
+            <div class="info">
+            <div class="btn"><button>로그인</button></div>
+            <div id="index">ID/PW 입력 후 로그인해주세요</div>
+            </div>
+        </div>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

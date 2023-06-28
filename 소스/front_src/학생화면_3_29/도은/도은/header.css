@@ -1,0 +1,83 @@
+/* 크기 및 위치구현 */
+header{
+    display: flex;
+    position: relative;
+
+    height: 80px;
+    margin: 0px;
+
+    /* background-color: aquamarine; */
+}
+header .maintitle{
+    width: 400px;
+    height: 60px;
+
+    margin: 0px;
+    margin-top: 8px;
+    padding-left: 100px;
+    line-height: 30px;
+
+    font-size: 16pt;
+}
+header .header_menu{
+    width: 600px;
+    height: 30px;
+
+    position: absolute;
+    top: 20px;
+    right: 100px;
+
+    display: flex;
+
+    font-size: 14pt;
+    font-weight: bold;
+
+    border-bottom: 3pt solid beige;
+    
+}
+
+ /* 메뉴창 기능구현 */
+
+.header_menu .menu1:hover ul li{
+    display: block;
+    border-bottom: 0.5pt solid beige;
+    margin-right: 10px;
+}
+.header_menu .menu1 li{
+    /* 안보이게 */
+    display: none;
+}
+
+/* 세부메뉴 사이즈구현  */
+.header_menu .menu1:hover ul{
+    width: 150px;
+    height: 80px;
+    line-height: 23px;
+    border-radius: 10px;
+    padding-left: 10pt;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+
+}
+
+
+
+/* 메뉴폰트 및 사이즈 구현 */
+.header_menu ul li{
+    font-size: 12pt;
+    font-weight: lighter;
+
+}
+
+.header_menu li{
+    margin-left: 10px;
+}
+
+.header_menu .menu1{
+    width: 300px;
+    /* height: 30px; */
+
+    padding: 0px 70px;
+}

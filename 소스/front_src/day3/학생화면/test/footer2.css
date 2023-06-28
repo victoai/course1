@@ -1,0 +1,12 @@
+.footer{        
+    display: flex; 
+    font-size: 12px;
+    
+}
+.footer .info{
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 210px; 
+    
+   
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/buttonStyle.css">
+    <style>
+        .container > a {
+            width: 500px;
+            color: blueviolet;
+            font-size: 30px;
+            margin-top: 100px;
+        }
+
+        button {
+            width: 300px;
+            height: 60px;
+            margin: 50px auto;
+            background-color: rebeccapurple;
+            color: white;
+            font-size: larger;
+            position:relative;
+            pointer-events: all; 
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius:3px;
+        }
+        .submitBtnContainer {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        #logoImg {
+            width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+        #text {
+            width: 400px;
+            height: 45px;
+            display: block;
+            margin: 0 auto;
+            background-color: white;
+            color: blueviolet;
+            padding-top: 30px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius:3px;
+
+        }
+        input {
+            width: 180px;
+            height: 50px;
+        }
+        input:hover {
+            border-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="logoImg" src="../images/MK.jpeg">
+        <p id="text">회원 가입 신청 하기</p>
+        <nav>
+            <ul>
+                <li>
+                    <a>이름</a>
+                        <ul>
+                            <li>
+                                <input type="text">
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <a>ID</a>
+                        <ul>
+                            <li>
+                                <input type="text">
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <a>Password</a>
+                        <ul>
+                            <li>
+                                <input type="password">
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <a>E-mail</a>
+                        <ul>
+                            <li>
+                                <input type="email">
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <a>생년월일</a>
+                        <ul>
+                            <li>
+                                <input type="text">
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <a>전화번호</a>
+                        <ul>
+                            <li>
+                                <input type="text">
+                            </li>
+                        </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="submitBtnContainer">
+            <button type="submit">가입신청</button>
+        </div>
+    </div>
+</body>
+</html>

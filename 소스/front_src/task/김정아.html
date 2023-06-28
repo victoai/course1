@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .out{
+            margin:auto;
+            border: 1px solid black;
+            height: 900px;
+            width: 400px;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 10px;
+            background-color: rgb(195, 236, 233);
+        }
+        .inner{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+        }
+        .image{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            margin-top: 50px;
+            background-image: url(http://thumbnail.10x10.co.kr/webimage/image/basic600/179/B001799753-1.jpg?cmd=thumb&w=500&h=500&fit=true&ws=false);
+            background-position: center;
+            background-size: cover;
+        }
+        .text{
+            border: none;
+            width: 300px;
+            height: 500px;
+            margin: auto;
+        }
+        input{
+            height: 30px;
+            width: 290px;
+            background-color:rgb(195, 236, 233);
+        }
+        select{
+            height: 35px;
+            width: 300px;
+            background-color:rgb(195, 236, 233);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="box">
+            <div class="image">
+
+            </div>
+        </div>
+        <p></p>
+        <p></p>
+       
+        <div class="text">
+            <!-- 상품정보 -->
+        <div>
+            <div><h1>텀블러</h1></div>
+            <div><h2>Stainless steel 텀블러 3종</h2></div>
+            <div>가격 20000원</div><br>
+            <br>
+        </div>
+        
+        <!-- 주문내역 정보 -->
+        <div>
+            <div> 주문자이름 <br> <input type="text"> </div><br>
+            <div>색상<br>
+                <select>
+                    <option>색상을 선택하세요</option>
+                    <option>핑크</option>
+                    <option>옐로우</option>
+                    <option>블루</option>
+                </select>
+            </div><br>
+            <div>수량<br>
+                <select>
+                    <option>수량을 선택하세요</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div><br>
+            <div>주문금액 <br> <input type="text"> </div><br>
+            <div>전화번호 <br> <input type="text"> </div><br>
+            <div><button>order</button></div><br>
+        </div>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+            margin:auto;
+        }
+        .dots{
+            width: 1px;
+            height: 1px;
+            position: absolute;
+            background-color: red;
+            top:1px;
+            left:1px;
+        }
+    </style>
+    <script>
+        for(let x=1; x<1000; x++){
+            document.write('<style>');
+                if(x<10){
+                    document.write('.dot00'+x+'{');
+                }else if(x<100){
+                    document.write('.dot0'+x+'{');
+                }else{
+                    document.write('.dot'+x+'{');
+                }
+                document.write('width: 1px; height: 1px; position: absolute; background-color: blue;');
+                document.write('top:'+x+'px; left:'+x+'px; }');
+                document.write('</style>');
+                document.write('<div class="dot');
+                if(x<10){
+                    document.write('00'+x+'"></div>');
+                }else if(x<100){
+                    document.write('0'+x+'"></div>');
+                }else{
+                    document.write(x+'"></div>');
+                }
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

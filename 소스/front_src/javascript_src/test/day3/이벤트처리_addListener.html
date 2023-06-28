@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <script>
+        // 3. addListener 메소드를 사용
+        function init()
+        {
+            var t = document.getElementById("btn");
+            t.addEventListener("click", handler)
+        }
+
+        function handler()
+        {
+            var t = document.getElementById("user_id");
+           if(t.value =="")
+           {
+               alert("아이디를 입력하세요");
+           }
+        }
+    </script>
+</head>
+<body onload="init()">   
+    <input type="text" id="user_id">
+    <input type="button" value="가입" id="btn" >
+</body>
+</html>

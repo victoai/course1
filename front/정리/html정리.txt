@@ -1,0 +1,40 @@
+
+1.  html  (hyper text  markup language) 
+    hyper text:건너편의 텍스트   (링크문서)
+
+2.  링크문서를 가능하게 해 주는 태그 : <a href=""> </a>
+
+3.  tag 종류
+    block태그 : 줄 전체를 차지,   <h2> <p>  <div> <ul>  (크기를 가질수 있다)
+    inline-block태그  :img , <input >     , 줄에 같이 만들어지는 태그들(크기를 가질 수 있다.)
+    inline태그 : span , 줄에 같이 만들어지면서 크기를 가질 수 없다.
+
+4. 웹페이지의 레이아웃 , 공간 쪼개기
+   <div> , <ul> 태그 사용
+
+5. 여백( padding, margin)
+         사각형, 박스를 기준으로 위, 오른쪽, 아래쪽, 왼쪽순으로 여백을 지정함 
+  - 위아래 여백이 만나면 큰여백으로 흡수됨 
+  - 왼쪽 오른쪽은 각각 적용됨
+
+6.  공간을 원하는 위치에 두기
+    left, top , bottom, right 속성사용하기
+    => position속성을  absolute로 변경해야 위치속성이 적용됨
+         position:absolute는 문서를 기준으로 top, bottom, left, rigtht가 적용됨
+    * 자신이 속한 범위(공간)안을 기준으로 위치를 정하고 싶을때 
+      부모의 position을 relative로 변경해 주어야 함 
+
+7.  flex사용하기
+    block 속성의 div를 한 줄씩 아니라 옆으로 나오게 하고 싶을 때 
+    부모의 속성에 display:flex 적용함 
+
+
+8. css 선택자 
+   공용선택자:  *
+   태그선택자 :   자식,  자손 선택자
+   class 선태자:
+   id 선택자:
+
+
+예제 하나씩 만들고 연습하기
+

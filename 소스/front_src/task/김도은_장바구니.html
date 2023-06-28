@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            
+            width: 600px;
+
+            
+            
+            margin: auto;
+            margin-top:100px;
+            
+            border-collapse: collapse;/*줄하나로 합치기*/
+
+            text-align: center;
+
+        }
+        thead{
+            border-top: 3px solid gray;
+            border-bottom: 5px double gray;
+        }
+        td, th{
+            border:1px solid gray;
+
+        }
+        thead tr{
+            height: 40px;
+            background-color: rgb(104, 209, 160);
+        }
+        tr{
+            height: 35px;
+        }
+        tfoot{
+            border-top: 3px solid gray;
+            border-bottom: 3px solid gray;
+        }
+
+
+
+
+        .delete{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        #order{
+            background-color: rgb(252, 54, 54);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+
+
+
+        .carticon{
+            width: 45px;
+            height: 40px;
+            
+        }
+        .homeicon{
+            border: 1px solid gray;
+            width: 50px;
+            height: 50px;
+
+            cursor: pointer;
+        }
+
+        .title{
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <a href="http://www.naver.com"><img class="homeicon"  src="../../images/home"> </a>
+    <table>
+        <caption>
+            <span class="title">CARTLIST</span><img class="carticon" src="../../images/장바구니로고.png">
+        </caption>
+        <thead>
+            <th>주문날짜</th>
+            <th>제품명</th>
+            <th>단가</th>
+            <th>수량</th>
+            <th>금액</th>
+            <th>삭제</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+                <td>내용4</td>
+                <td>내용5</td>
+                <td class="delete"><input type="checkbox"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">주문한 상품의 개수는 n개 이며, 총 금액은 @,@@@원입니다.</td>
+                <td id="order">order</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

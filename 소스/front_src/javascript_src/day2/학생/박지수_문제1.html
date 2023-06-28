@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let password = prompt("암호를 입력하세요.");
+        let pw = parseInt(password);
+        if(pw==1234){
+            alert("정확한 암호가 입력되었습니다.");
+        }else if (isNaN(pw)){
+            alert("숫자암호를 입력하세요.");
+        }else {
+            alert("암호가 틀렸습니다.");
+        }
+    </script>
+</head>
+<body>
+    정확한 암호가 입력될 때 까지 계속
+    prompt()를 출력하여 암호를 입는 받는 웹페이지를 작성하시오
+
+</body>
+</html>

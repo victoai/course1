@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        function addEvent(){
+            
+            let lis = document.getElementsByTagName("li");
+            
+            for(let i=0; i <lis.length ; i++){//배열이기때문에 반복문
+            lis[i].addEventListener("click", fontBig);
+            }
+        }
+
+        function alarm(){
+                alert("이거맞아?");
+            }
+
+        function fontBig(){
+            let liS = document.getElementsByTagName("li");
+            // alert(liS);
+            // alert(liS[2]);
+            for(let i=0; i <liS.length ; i++){//배열이기때문에 반복문
+                liS[i].style.fontSize = "1.5em";
+            }
+            
+
+        }
+
+        // function fontBig(){
+
+        //     let lis = document.getElementsByTagName("li");
+        //     for(let i=0; i <lis.length ; i++){
+        //             lis.style.fontSize="1.3em"; // 함수는 ()하지 않기!
+        //     }
+        // }
+
+    </script>
+</head>
+<body onload="addEvent();">
+    
+    <p> 점심에 먹고 싶은 메뉴</p>
+    <ul>
+        <li class="li">김밥</li>
+        <li class="li">스파게티</li>
+        <li class="li">스시</li>
+        <li class="li">콩나물해장국</li>
+    </ul>
+</body>
+</html>

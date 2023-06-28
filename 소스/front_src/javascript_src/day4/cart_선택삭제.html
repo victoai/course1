@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width:460px;
+            border:1px solid black;
+        }
+        td{
+            border:1px solid black;
+            width:150px;
+        }
+    </style>
+    <script>
+
+       
+
+        function allDel(){
+            let tbody = document.getElementById("cart");        
+            let trs = tbody.getElementsByTagName("tr");
+
+            // tr 삭제  , 부모dml  removerChild()  매소드 
+            // 삭제는 역순으로 
+
+            for( let i=trs.length-1; i>=0 ; i--){ 
+                  tbody.removeChild(trs[i]);
+             }
+          }        
+
+
+
+        function selDel(){
+           let tbody = document.getElementById("cart");
+           let  boxs =document.getElementsByName("ck");         
+         
+           for( let i=boxs.length-1; i>=0 ; i--){
+               let checkbox = boxs[i];
+               if(checkbox.checked== true) {
+                let tr = checkbox.parentNode.parentNode;
+                tbody.removeChild(tr);
+             }
+           }  
+        }
+
+       
+    </script>
+</head>
+<body>
+    
+    <table>
+        <tbody id="cart">
+            <tr>
+                <td> 
+                    <input type="checkbox"  name="ck">
+                </td>
+                <td>   1</td>
+                <td>  1000</td>
+            </tr>
+
+            <tr>
+                <td> <input type="checkbox"  name="ck"></td>
+                <td>   1</td>
+                <td>  1000</td>
+            </tr>
+
+            <tr>
+                <td> <input type="checkbox"  name="ck"></td>
+                <td>   1</td>
+                <td>  1000</td>
+            </tr>
+       
+        </tbody>
+    </table>
+
+    <button  onclick="selDel();"> 선택삭제</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 2. css에서 스타일변경 */
+    .style1{
+        color: green;
+    }    
+    </style>
+</head>
+<body>  
+
+<!-- 1. 태그자체에다 스타일 변경-->
+<p style="color:blue;" > 스타일변경1</p>
+<p style="color:rgb(200, 255, 0);" > 스타일변경2</p>	 
+<p class="style1">스타일변경3</p>
+<p id="p2">스타일변경4</p>
+
+
+<script>
+    /*   자바스크립트에서 태그의 스타일변경 , 동적으로 변경   */
+    document.body.style.backgroundColor="red";
+    let p2= document.getElementById("p2");
+    p2.style.color="grey";
+ </script>
+
+</body>
+</html>

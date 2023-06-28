@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outbox{ 
+            width: 800px;
+            height:1000px;
+            border:1px solid black;
+            margin:auto;
+            text-align: center;
+            position:relative;
+            background-color: rgb(252, 238, 225);
+        }
+        .image{
+            width:300px;
+            height:300px;
+            background-image:url('/images/book2_pro360_15_burgundy01.webp');
+            background-position:center ;
+            background-size: cover;  
+            border-radius:20px;
+            border:1px solid darkblue;
+            margin:auto;          
+        }
+        .data{
+            width:500px;
+            height:100px;
+            margin:auto;
+            line-height: 50px;
+        }
+        .info{
+            width:500px;
+            height:300px;
+            position:absolute;
+            bottom:100px;
+            left:180px;
+            text-align: left;
+        }
+        ul li{
+            list-style:none;
+            font-weight: bold;
+        }
+        button{
+            width:300px;
+            height:50px;
+            position:absolute;
+            left:70px;
+            margin:auto;          
+            font-size:15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        select{
+            height: 30px;
+            width:200px;
+            text-align: center;
+            background-color: rgb(210, 237, 250);
+        }
+        input{
+            width:200px;
+            height: 30px;
+            text-align: center;
+            background-color: gray;
+        }
+        
+        span{
+            
+            position: absolute;
+            bottom:0px;
+            margin:auto;
+            text-align: center;
+            display:block;
+        }
+        .b{
+            position: absolute;
+            bottom:0px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="outbox">
+        <!--큰틀--><h1>삼성 갤럭시북2 프로360</h1><br>
+          <div class="image">
+                          <!--사진정보-->
+
+          </div>
+          <div class="data">
+            <!--제품설명-->
+            
+            <p></p>
+            학생부터 직장인까지 효율적인 작업이 가능한 2022년 신제품<br>
+            가격 : 3,000,000원/1EA<br>
+          </div>
+          <h2>----주문 내역----</h2>
+          <div class="info">
+            
+            <!-- 주문정보-->
+            <ul>
+            <li>주문자이름 <input type="text"></li><br>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;수량 &nbsp;&nbsp;&nbsp;&nbsp;
+                <select>
+                    <option>수량을 선택하세요</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </li><br>
+            <li> 추가 옵션 &nbsp;
+                <select>
+                    <option>추가 옵션</option>
+                    <option>MS Office</option>
+                    <option>모니터</option>
+                    <option>라우터</option>
+                </select>
+            </li><br>
+            <li>전화번호&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+            </li></ul> 
+            <button>Order</button>
+            
+
+
+          </div>
+          
+          <span>Copyright by 삼성2323</span>
+    </div>
+    
+</body>
+</html>

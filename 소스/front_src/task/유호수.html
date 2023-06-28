@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .home{
+        width:40px;
+        height:40px;
+        cursor: pointer;        
+    }
+    table{
+        width:700px;
+        height:200px;
+        margin:auto;
+    }
+    button{
+        cursor: pointer;
+
+    }
+    table{
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th, td{
+        border:1px solid rgb(248, 244, 21);
+        width:100px;
+    }
+    thead tr{
+        height:30%;
+        background-color: rgb(0, 7, 75);
+        color:white;
+    }
+    tbody tr{ 
+        height:30%;
+    }
+    tfoot tr{
+        height:30%;
+        font-weight: bold;      
+        background-color: bisque;  
+    }
+    #order{
+        display:flex;
+        flex-wrap: wrap;
+        font-size:5px;
+        line-height: 20px;
+        color:brown;
+    }
+    button{
+        height:30px;
+        width:70px;
+        font-weight: bold;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <a href="/day2/유호수.html"><img class="home" src="/images/hom.jpg"></a>홈으로
+    <table>
+        <caption><strong>CART LIST</strong><img src="/images/cart.png"></caption>
+        <thead>
+            <tr>
+                <th>주문날짜</th>
+                <th>제품명</th>
+                <th>단가</th>
+                <th>수량</th>
+                <th>금액</th>
+                <th>삭제</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="text"></td>
+                <td></td>
+                <td><button>삭제</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="text"></td>
+                <td></td>
+                <td><button>삭제</button></td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">합계</td>
+                <td></td>
+                <td></td>
+                <td id="order"><button>order</button>
+                <p>주문</p></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>

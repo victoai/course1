@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container{margin-bottom: 80px;}
+        #photo{
+            display: block;
+            width: 600px;
+            height:800px;
+            border: 10px solid black;
+            margin: 0 auto;
+            box-shadow: 4px 4px 4px 0pxrgba(0, 0, 0, 0.6);
+        }
+        #gallery{text-align: center;}
+        
+        #gallery > li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        #gallery > li > img{
+            display: block;
+            width: 200px;
+            height:300px;
+            border: 5px solid black;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        window.onload= function(){   
+
+            var photo = document.getElementById("photo");
+            var thumbnail = document.querySelectorAll("#gallery > li > img");        
+            for ( var i = 0; i < thumbnail.length; i++ )
+                 thumbnail[i].addEventListener("click", function () {        
+                 photo.setAttribute("src", this.getAttribute("src"));        
+                });
+        }
+       
+      </script>
+      
+</head>
+<body>
+    <div id="container">
+        <img src="media/Penguins.png" alt="photo" id="photo">
+    </div>
+     
+    <ul id="gallery">
+        <li><img src="media/Penguins.png"    onmouseover="loadImg(this)"></li>
+        <li><img src="media/Lighthouse.png"  onmouseover="loadImg(this)" alt="thumbnail"></li>
+        <li><img src="media/Chrysanthemum.png"  onmouseover="loadImg(this)" alt="thumbnail"></li>
+    </ul>
+</body>
+</html>

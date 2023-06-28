@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <script>
+
+        
+        function createButton()
+        {
+         
+            let tags = document.getElementsByTagName("body");          
+            let button = document.createElement("button");
+            
+            //버튼의 내용넣기
+            button.innerHTML="새로운 버튼입니다";     
+            tags[0].appendChild(button);
+
+            
+        }
+    </script>
+</head>
+<body>    
+
+    <div id="wrap">
+        <a href="javascript:createButton();">button 생성</a>
+    </div>
+
+</body>
+</html>

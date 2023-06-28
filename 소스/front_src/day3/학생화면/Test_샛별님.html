@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAETBYUL JU</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .topBar {
+            background-color: black;
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+            min-width: 1000px;
+
+        }
+        .topBarDiv {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: black;
+
+        }
+        .topBarBtn {
+            width: 24%;
+            height: 100px;
+            background-color: black;
+            border: 5px dotted blanchedalmond;
+            border-radius: 20px;
+            color: blanchedalmond;
+            float: left;
+        }
+        contentBody {
+            width: 100%;
+        }
+        .sideBarView {
+            width: 200px;
+            height: 600px;
+            background-color: rgb(194, 177, 177);
+            border: 2px solid black;
+            float: left;
+        }
+        .contentView {
+            width: 50%;
+            height: 440px;
+            background-color: black;
+            border: 2px solid black;
+            float: left;
+            padding: 5%;
+
+        } 
+        .sideBarContainer {
+            width: 80%;
+            height: 300px;
+            border: 1px solid black;
+            margin-left: 9%;
+            margin-top: 40%;
+        }
+        .sideBarContainerImg {
+            width: 80%;
+            height: 60%;
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+        h2, h4, h3, ul {
+            color: blanchedalmond;
+        }
+        .name {
+            text-align: center;
+            color: black;
+        }
+        .detail {
+            text-align: center;
+            color: black;
+        }
+        ul {
+            line-height: 2em;
+        }
+        hr {
+            width: 50%;
+            margin-left: 0%;
+        }
+        .footerDiv {
+            background-color: black;
+            width: 100%;
+            height: 200px;
+            float: left;
+            margin: 0 auto;
+            text-align: center;
+            padding: auto;
+            min-width: 1000px;
+        }
+
+        .resumeBtn, .coverLetterBtn {
+            width: 49%;
+            height: 80%;
+            margin-top: 1%;
+            background-color: black;
+            color: blanchedalmond;
+            border-radius: 12px;
+            border: 4px solid blanchedalmond;
+            float: left;
+
+        }
+        p {
+            width: 100%;
+            height: 50%;
+            margin-top: 10%;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header class="topBar">
+        <div class="topBarDiv"> 
+            <div class="topBarBtn"><p>개발자 소개</p></div>
+            <div class="topBarBtn"><p>개발자 경력</p></div>
+            <div class="topBarBtn"><p>개발자 학력</p></div>
+            <div class="topBarBtn"><p>참여 프로젝트</p></div> 
+        </div>
+    </header>
+    <div class="contentBody">
+        <div class="sideBarView">
+            <div class="sideBarContainer">
+                <img class="sideBarContainerImg" src="PR.webp">
+                <h2 class="name"> Saetbyul Ju</h2>
+                <h4 class="detail">A student of Acron</h4>
+            </div>
+        </div>
+        <div class="contentView">
+            <h3>Who am I?</h3>
+            <h4>I do love programming</h4>
+            <hr>
+            <h3>Experience</h3>
+            <ul>
+                <li>VC NYC</li>
+                    <ul>
+                        <li>Refectoring</li>
+                        <li>Development</li>
+                        <li>UI/Unit Testing</li>
+                    </ul>
+                <li>Dapp</li>
+                    <ul>
+                        <li>Software Design</li>
+                        <li>Build the team</li>
+                        <li>Preset Schedules</li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footerDiv">
+            <div class="resumeBtn"><p>Download Resume</p></div>
+            <div class="coverLetterBtn"><p>Download Cover Letter</p></div>
+        </div>
+    </footer>
+</body>
+</html>

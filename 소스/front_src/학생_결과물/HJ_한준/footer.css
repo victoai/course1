@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    
+}
+footer div{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+.footer_name{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}

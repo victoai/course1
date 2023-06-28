@@ -1,0 +1,25 @@
+        let star=5;
+        let i;
+        let j;
+        
+        for(i=1; i<=star; i++){
+            document.write("*");            
+        }
+
+        document.write("<br>");
+
+        for(i=1; i<=star; i++){
+            for(j=1; j<=star; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+
+        for(i=1; i<=star; i++){
+            for(j=1; j<=i; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }

@@ -1,0 +1,15 @@
+        function pDan(){   
+            let dan=prompt();                                                                  
+            if(isNaN(dan)||dan<1||dan>19){
+                alert("1~19 사이의 숫자를 입력하세요");
+            }else{
+                for(i=1; i<=9; i++){                    
+                    document.write(dan+" x "+i+" = "+dan*i+"<br>");                    
+                }                
+            }
+        }
+
+    <h2>입력받은 수에 해당되는 단 출력</h2>
+    <script>
+        let result=pDan2();        
+    </script>

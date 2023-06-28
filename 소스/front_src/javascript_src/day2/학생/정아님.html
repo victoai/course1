@@ -1,0 +1,28 @@
+<script>
+    /*
+    (1-19단)
+    원하는 단을 입력받아서 해당 단을 출력
+    함수로 만들어서 사용해보세요.
+    */
+
+  
+ 
+    function getProduct(dan){
+        let product=0;
+        for(let i=1; i<=9; i++){
+                product = dan*i;
+                document.write(   product +"<br>");
+        }          
+    }
+       
+
+
+</script>
+</head>
+<body>
+
+<script>
+    let dan = prompt("원하는 단의 수를 입력하세요");
+    dan = parseInt(dan);
+    getProduct(dan);   
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let pw = "1234";
+        while(true){
+            let user = prompt("비밀번호 입력");
+            if(user==pw){
+                break;
+            }
+        }
+        alert("성공적으로 입력되었습니다.");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let day =prompt("월화수목금토일 중 월 목은 출근, 나머지는 휴일");
+        switch(day){
+            case "월":  case "화":  case "수":  case "목":
+                alert("출근");
+                break;
+            case "금": case "토": case "일":
+                alert("휴일");
+                break;
+            default:
+                alert("잘못입력");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

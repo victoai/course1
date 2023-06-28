@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+        1번 5입력 => 별5개 
+
+        2번 5입력 => 5줄 별5개씩
+
+        3번 5입력 => 5줄, 하나씩 증가 
+        */
+
+        let number = 5;
+        let star = "*";
+
+
+        for(let i=1; i<=number; i++){
+            document.write(star);
+        }
+        
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        for(let j=1; j<=number; j++){
+            for(let i=1; i<=number; i++){
+                document.write(star);
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        for(let j=1; j<=number; j++){
+            for(let i=1; i<=j; i++){
+                document.write(star);
+            }
+            document.write("<br>");
+        }
+
+
+
+    </script>
+
+
+
+
+    
+</head>
+<body>
+    
+
+    
+
+
+</body>
+</html>

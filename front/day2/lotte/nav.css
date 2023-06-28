@@ -1,0 +1,70 @@
+nav{
+    height:60px;   
+    font-size:12px;  
+   
+}
+
+ul{
+   list-style: none;
+   padding:0px;
+   margin:0px;
+  
+}
+li{
+    padding:0px;
+    margin:0px;
+    
+ 
+}
+
+   
+
+/* 세부 메뉴 숨기기*/
+.menu1 li{
+    display:none;
+}
+
+ 
+/*
+메뉴바 전체 너비 지정
+*/
+nav .menubar{
+    display:flex;
+    width:950px;
+    
+}
+   
+ 
+ 
+/* 메뉴바의 첫번째 메뉴의 크기 , 여백 설정 */ 
+nav .menubar> .menu1{
+    margin:0px  40px;
+    width:50px;
+    height:25px;     
+    text-align: center;     
+}
+
+ 
+
+/* 첫번째 메뉴가 hover 마우스로 선택되었을 때 ( 마우스가 올라왔을 때)
+  하위 메뉴에 색상주기 및
+  하위 메뉴가 보임
+  */
+.menu1:hover>ul{  
+    width:100px;
+    height:80px;
+    background-color: burlywood;   
+    margin-top:10px; 
+    display:flex;
+    flex-direction: column;
+             
+}
+
+.menu1:hover>ul>li{
+    display:block;            
+    padding:5px 0px;   
+     
+              
+}
+
+ 

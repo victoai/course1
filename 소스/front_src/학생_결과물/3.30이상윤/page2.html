@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            margin-left: 250px;
+        }
+        main{
+            display: flex;
+            flex-wrap: nowrap;
+            position: absolute;
+            right: 15%;
+            top: 5%;
+        }
+        .left{
+            width: 300px;
+            height: 800px;
+            border: 1px solid black;
+            position: relative;
+            background-color: gray;
+        }
+        a{
+            text-decoration: none;
+        }
+        h1{
+            color: white;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        #bot{
+            position: absolute;
+            bottom: 10px;
+        }
+        .right{
+            width: 1000px;
+            height: 800px;
+            border: 1px solid black;
+            background-color: aquamarine;
+        }
+        iframe{
+            width: 1000px;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <header><a href="page1.html"><img src="images/hom.jpg" width="50px" height="50px"></a></header>
+    <main>
+        <div class="left">
+            <ul>
+            <li><a href="aos.html" target="right"><h1>AOS</h1></a></li>
+            <li><a href="mmorpg.html" target="right"><h1>MMORPG</h1></a></li>
+            <li id="bot"><a href="sub.html" target="right">처음으로</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <iframe src="sub.html" name="right"></iframe>
+
+        </div>
+    </main>
+    
+</body>
+</html>

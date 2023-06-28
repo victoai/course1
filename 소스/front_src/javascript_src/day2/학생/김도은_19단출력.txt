@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 원하는 단 출력하는 함수만들기
+        1~19까지 구할 수 있음
+        원하는 단을 입력 받아서 해당단을 출력
+        함수로 만들어서 사용해보세요. */
+
+        fieldset{
+            width: 500px;
+
+            text-align: center;
+            
+        }
+        fieldset legend{
+            text-align: left;
+            font-weight: 700;
+        }
+    </style>
+    <script>
+        function printDan(id){
+            let input = document.getElementById(id);
+            dan = input.value;
+            for(let i=1; i<=19; i++){
+                document.write(dan + " × " + i +" = " + dan*i + "<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>19단 출력하기</legend>
+    단 : <input type="text" id="dan">
+    <button onclick="printDan('dan')">출력</button>
+    </fieldset>
+    
+</body>
+</html>

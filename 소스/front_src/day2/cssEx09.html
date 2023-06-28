@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height: 100px;
+            background-color: aqua;
+            display: flex;
+            position: relative;          
+        }
+
+        /*  top, left ,bottom , right => poisition:absolute로 변경하셔야 합니다.  
+            자신의 부모를 기준으로 위치를 정하고 싶을때는 부모의 position: relative로 하셔야 합니다.
+            그렇지 않으면 문서를 기준으로 위치를 갖습니다.
+        */
+        header nav{
+            position:absolute;
+            right: 10px;
+            bottom:10px;
+        } 
+        header .title{
+            color:red;
+            position:absolute;
+            top:10px;
+            left:20px;
+        }   
+        
+        #wrap{
+            height: 200px;
+            background-color:brown;
+            position:relative;
+
+        }
+
+        .search{
+            position:absolute;
+            right:0px;
+            bottom:0px;
+        }
+
+        .div1{
+            position:absolute;
+            left :300px;
+            top:30px;
+        }
+    </style>
+</head>
+<body>   
+
+    <header>
+        <div class="title">타이틀</div>
+        <nav>로그인 회원가입 홈으로</nav>
+    </header>
+    <!-- -->
+    <div id="wrap">
+        <div class="search"> 검색 </div>
+        <div class="div1">2</div>
+    </div>
+
+
+</body>
+</html>

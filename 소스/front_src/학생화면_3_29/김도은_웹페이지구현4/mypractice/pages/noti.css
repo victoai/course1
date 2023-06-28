@@ -1,0 +1,91 @@
+/* 전체적인 위치 및 배치구현 */
+main{
+    height : 1000px;
+    margin: 0px 120px;
+}
+
+/* noti_title 위치 및 배치구현 */
+.noti_title{
+    position: relative;
+}
+.noti_title .nav{
+    width: 500px;
+    display: flex;
+
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.noti_title .nav li{
+    width: 200px;
+}
+
+/* 검색바 스타일 */
+.noti_title .search{
+    width : 20%;
+    height: 35px;
+
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    display: flex;
+
+    padding: 3px 10px;
+    margin: 10px auto;
+
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+}
+.search .searchbar{
+
+    width : 80%;
+    height: 35px;
+    margin: 0px auto;
+
+    font-size: 16pt;
+
+    border: none;
+    
+}
+
+.searchbar:focus{
+    outline: none;
+}
+
+.search .search_btn{
+    width: 30px;
+    height: 30px;
+
+    margin: auto;
+
+    background-image: url("../images/검색.png");
+    background-position: center;
+    background-size: 160%;
+
+    border: 0.5px solid rgb(168, 168, 168);
+    border-radius: 50%;
+}
+
+.search-btn :hover{
+    box-shadow: 0px 0px 10px 0px rgb(168, 168, 168);
+}
+
+
+.noti_list{
+    width: 90%;
+
+    margin: 50px auto;
+
+}
+.noti_list li{
+    line-height: 100px;
+    margin: 10px 0px;
+    padding-left: 40px;
+
+    font-size: 16pt;
+    
+    list-style: circle inside;
+
+    background-color: rgb(155, 195, 255);
+    border-radius: 10px;
+    
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 900px;
+            margin: auto;
+            border: 0.5px solid black;
+            margin-top: 100px ;
+             border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+            height: 35px;
+        }
+        #del{
+            text-align: center;
+        }
+        #order{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+        }
+        caption{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        #img1{
+            width: 75px;
+            height: 75px;
+
+        }
+        p{
+            margin-bottom: 50px;
+
+        }
+        th{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <p><img id="img1" src="../images/hom.jpg">홈으로</p>
+    <table>
+        <caption>Cartlist<img src="../images/cart.png">   </caption>
+    
+    <thead>
+        
+        <tr>
+            <th>주문날짜</th>
+            <th>제품명</th>
+            <th>단가</th>
+            <th>수량</th>
+            <th>금액</th>
+            <th>삭제</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="del">삭제</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5" ></td>
+            
+            <td id="order">주문하기</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>

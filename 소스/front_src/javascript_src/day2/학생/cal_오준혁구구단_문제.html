@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19단 입력~</title>
+    <style>
+        body{
+            background-color: rgb(255,255,0);
+        }
+        .box{
+            width:200px;
+            height:30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color:rgb(255,255,0);
+            background-color: rgb(0,0,255);
+            border:1px solid black;
+        }
+    </style>
+    <script>
+    function cals(){
+        let tx = prompt("1 ~ 19 단 입력할 숫자를 줘봐라.");
+        let e = parseInt(tx);
+        if(isNaN(tx) || e<1 || e>19){
+            alert("That's no no!!");
+        }else{
+            for(let k=1; k<20; k++){
+                document.write();
+                
+                document.write('<div class="box">');
+                if(e>9){
+                    document.write(e+" * ");
+                }else{
+                    document.write("0"+e+" * ");
+                }
+
+                if(k>9){
+                    document.write(k+" = ");
+                }else{
+                    document.write("0"+k+" = ");
+                }
+
+                if(k*e>99){
+                    document.write(k*e);
+                }else if(k*e>9){
+                    document.write("0"+k*e);
+                }else{
+                    document.write("00"+k*e);
+                }
+                document.write('</div>');
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <button onclick="tell()">클릭</button>
+    <script>
+        function tell(){
+            cals();
+        }
+    </script>
+    
+</body>
+</html>

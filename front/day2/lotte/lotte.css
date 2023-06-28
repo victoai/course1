@@ -1,0 +1,31 @@
+.banner{
+    height:84px;
+    background-color: #c6bae3;
+}
+
+ 
+.banner .section1{
+    width:90%;
+    margin:0 auto;
+}
+ 
+.h_wrap{
+
+    width:70%;
+    margin:30px auto;
+    
+
+}
+ 
+.menu1{
+    width:200px;
+    float:left;
+}
+.menu2{
+    width:300px;
+    float:left;
+}
+
+.menu3{
+    
+}

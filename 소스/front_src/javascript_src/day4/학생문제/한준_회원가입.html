@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+            height: 310px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        td{
+            height: 60px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        td:nth-child(1){
+            width: 200px;
+        }
+        input{
+            width: 85%;
+            height: 50%;
+        }
+        button{
+            width: 50%;
+            height: 60%;
+            border-radius: 10px;
+            background-color: darkseagreen;
+        }
+    </style>
+
+    <script>
+        function check(){
+            let frm = document.frm;
+            let userId = frm.userId;
+            let userPw = frm.userPw;
+            let userPw_Check = frm.userPw_Check;
+            let userEmail = frm.userEmail;
+            let userEmailValue = userEmail.value;
+
+
+ 
+
+          
+            if(userId.value == 0){
+                alert("아이디를 입력하세요");
+            }else if(userPw.value==0){
+                alert("비밀번호를 입력하세요");
+            }else if(userPw_Check.value==0 | userPw_Check.value!=userPw.value){
+                alert("재입력 비밀번호를 확인하세요");
+            }else if(userEmail.value==""){
+
+                alert("이메일 주소를 입력하세요");
+            }else{
+                alert("가입이 완료되었습니다");
+
+            }
+
+ 
+
+        }
+    </script>
+</head>
+<body>
+    
+    <form name="frm">
+        <table>
+            <tbody>
+                <caption>회원가입</caption>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" name="userId"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="userPw"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input type="password" name="userPw_Check"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="email" name="userEmail"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" onclick="check()">가입</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </form>
+</body>
+</html>

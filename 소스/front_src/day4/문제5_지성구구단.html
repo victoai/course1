@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function multi(a){
+            for(i=1;i<=19;i++){
+                document.write(a + " * " + i + " = " + a*i+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>원하는 단 출력하는 함수 만들기</h3>
+    (1~19) 까지 구할 수 있음
+    원파는 단을 입력받아서 해당단을 출력
+    함수로 만들어서 사용해보세요 ~~,<br>
+    <script>
+        while(true){
+            let a=prompt("19단 입력: 원하는 단을 입력하세요");
+            if(isNaN(a)||a<1 || a>19){
+                alert("범위를 벗어났거나 올바른 입력이 아닙니다.");
+            }
+            else{
+                let result = multi(a);
+                break;
+            }
+        }
+
+    </script>
+</body>
+</html>

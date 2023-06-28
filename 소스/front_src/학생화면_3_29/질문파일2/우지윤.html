@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            position: relative;
+            background-color: antiquewhite;
+            
+        }
+        .titlename{
+            width: 300px;
+            height:100px;
+            background-color: aqua;
+            margin:auto;
+            background-image: url('/images/ten.jpg');
+            background-position: center;
+            background-size: 100%;
+        }
+        .infobox{    
+            
+            list-style: none;
+            width:270px;
+            height: 200px;
+            border: 0.5px solid black;
+         
+        }
+        label{
+            width:120px;  
+            display: inline-block;
+        }
+        .menu{ 
+            margin-left:30px;
+            width:270px;
+            
+            list-style:square;
+            
+            line-height: 80px;
+            font-weight: bold;
+            font-size : 25px;
+        }
+        .mainimg{
+            
+            width: 200px;
+            position: relative;
+            margin:auto;
+            display: block;
+            display:flex;
+                       
+        }
+        .userinfo{
+            
+            list-style: none;
+            line-height: 25px;
+          
+            
+        }
+        .login_button{
+            width:178px;    
+        }
+        .test{
+            display: flex;
+            position:relative;
+            width: 300px;
+            height:200px;
+            margin:0px auto;
+        }
+        .info_wrap{
+            display:flex;
+        }
+        .titleimg{
+            position: absolute;
+            width:550px;
+            height:400px;
+            background-image: url('/images/table.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-left:630px;   
+        }
+        .footer{ 
+            display:flex; 
+        }
+        .footer_ad1{
+            
+            width:200px;
+            height:60px;
+         
+        }
+        .footer_ad2{
+            
+            width:200px;
+            height:60px;
+            
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="main">
+        <div>홈으로</div>
+        <h1 class="titlename"></h1>
+        
+            <ul class="info_wrap">
+                <li class="infobox">
+                    
+                    <ul class="userinfo">
+                        <li class="aa"><label>ID <input type="text"></li>
+                        <li class="aa"><label>PW <input type="text"></li><br>
+                        <li class="aa"><button class="login_button">로그인</button></li>
+
+                    </ul>
+                    
+                </li>
+                <div class="titleimg"></div>
+            </ul>
+            <ul class="menu">
+                <li><a href="https://www.naver.com">게임 소개</a></li>
+                <li><a href="https://www.naver.com">규칙 소개</a></li>
+                <li><a href="https://www.naver.com">기타 내용</a></li>
+            </ul>
+
+            <ul class="footer">
+                <div class="footer_ad1"><a href="https://mahjongsoul.com/" height="5" width="10" target="_blank">
+                    <img src="../images/ad1.jpg" >
+                <a> </div>
+                <div class="footer_ad2"><a href="https://mahjongsoul.com/" height="200" width="60" target="_blank">
+                    <img src="../images/ad2.jpg"></div>
+                <div class="footer_ad3"></div>
+
+            </ul>
+    </div>
+</body>
+</html>

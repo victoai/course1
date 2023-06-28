@@ -1,0 +1,80 @@
+.left{
+    width:30vw;
+    height:700px;
+    background-color:rgb(192,192,192);
+    margin:auto;
+}
+.right{
+    width:70vw;
+    height:700px;
+    background-color:black;
+    margin:auto;
+}
+.mybox{
+    width:25vw;
+    height:35vw;
+    border:1px solid black;
+    margin:auto;
+    margin-top:5vh;
+}
+.pict{
+    width:0vw;
+    height:2vw;
+}
+.imgs{
+    width:12vw;
+    height:15vw;
+}
+.name{
+    font-size:3vw;
+    font-weight: bold;
+    color:red;
+}
+.mes{
+    font-size:2vw;
+    font-weight: bold;
+    color:blue;
+}
+.so{
+    font-size:2vw;
+    font-weight: bold;
+    color:black;
+}
+.whti{
+    font-size:2vw;
+    font-weight: bold;
+    color:white;
+}
+.whetc{
+    font-size:1vw;
+    font-weight: bold;
+    color:white;
+}
+.firstbox{
+    width:64vw;
+    height:9vw;
+    padding: 3vw;
+    margin:auto;
+}
+.secbox{
+    width:60vw;
+    padding: 5vw;
+    margin:auto;
+}
+.white{
+    background-color:white;
+    height:0.5vw;
+    width:60vw;
+    margin:auto;
+}
+.flex{
+    display:flex;
+    flex-wrap:nowrap;
+    margin:auto;
+}
+ul{
+    list-style: circle;
+}
+li{
+    color:white;
+}

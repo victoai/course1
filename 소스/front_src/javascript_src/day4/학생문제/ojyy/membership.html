@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Dokdo';
+            src: url("Dokdo-Regular.ttf");
+        }
+        @font-face {
+            font-family: 'Nanum';
+            src: url("NanumPenScript-Regular.ttf");
+        }
+        body{
+            font-family: 'Dokdo';
+            margin:auto;
+        }
+        tr{
+            border:1px solid black;
+        }
+        td{
+            text-align:center;
+            font-size:25px;
+            border:1px solid black;
+            background-color: rgb(128,255,192);
+            color:rgb(128,0,48);
+        }
+        input{
+            font-family: 'Dokdo';
+            width:370px;
+            text-align: center;
+            font-size:20px;
+        }
+        .sht{
+            width:100px;
+        }
+        #sends{
+            width:450px;
+            font-family: 'Nanum';
+            font-size:50px;
+            font-weight:bold;
+            color: rgb(255,255,0);
+            background-color: rgb(0,0,255);
+        }
+    </style>
+    <script>
+        function check(){
+            let f = document.frm;
+            let ids = f.user;
+            let pws = f.pass;
+            let nms = f.ns;
+            let no1 = f.phonelist1;
+            let no2 = f.phonelist2;
+            let no3 = f.phonelist3;
+
+            if(ids.value==""){
+                alert("아이디를 입력하시오!");
+                ids.focus();
+            }else if(pws.value==""){
+                alert("패스워드를 입력하시오!");
+                pws.focus();
+            }else if(nms.value==""){
+                alert("이름을 입력하시오!");
+                nms.focus();
+            }else if(isNaN(no1.value) || no1.value.length!=3 || 
+                (no1.value!="010" && no1.value!="011" && no1.value!="016" 
+                && no1.value!="017" && no1.value!="018" && no1.value!="019")
+            ){
+                alert("전화번호의 첫 번호를 제대로 입력하시오.");
+                no1.focus();
+            }else if(isNaN(no2.value) || (no2.value.length!=3 && no2.value.length!=4)){
+                alert("전화번호의 가운데 번호를 제대로 입력하시오.");
+                no2.focus();
+            }else if(isNaN(no3.value) || no3.value.length!=4){
+                alert("전화번호의 마지막 번호를 제대로 입력하시오.");
+                no3.focus();
+            }else{
+                //f.summit();
+                alert("가입!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" placeholder="아이디" name="user"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" placeholder="비밀번호" name="pass"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" placeholder="이름" name="ns"></td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td>
+                    <center>
+                    <input class="sht" type="text" placeholder="☎" name="phonelist1" list="phones"> -
+                    <input class="sht" type="text" placeholder="☎" name="phonelist2"> - 
+                    <input class="sht" type="text" placeholder="☎" name="phonelist3">
+                    </center>
+
+                    <datalist id="phones">
+                        <option value="010"></option>
+                        <option value="011"></option>
+                        <option value="016"></option>
+                        <option value="017"></option>
+                        <option value="018"></option>
+                        <option value="019"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><center>
+                    <button id="sends" type="button" onclick="check()">회원가입</button>
+                </center></td>
+            </tr>
+
+
+
+        </table>
+
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* 전체 크기 및 위치구현 */
+header{
+    display: flex;
+    position: relative;
+
+    height: 100px;
+    margin: 0px;
+
+}
+/* 제목 크기 및 위치구현*/
+header .maintitle{
+    width: 800px;
+    height: 100px;
+
+    margin: 0px;
+    margin-top: 8px;
+    padding-left: 100px;
+    line-height: 90px;
+
+    font-size: 30pt;
+    /* 제목글꼴 */
+    font-family: 'Do Hyeon', sans-serif;
+
+}
+
+/* 관련 SNS 크기 및 위치구현 */
+header ul{
+    position: absolute;
+    right:80px;
+    bottom: 10px;
+
+    display: flex;
+}
+/* 대략적 크기 지정 */
+header ul li{
+    width: 50px;
+}
+/* 크기 및 모양 지정 */
+header ul li a{
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+/* 마우스 올릴 때 기능구현 */
+header ul li a:hover{
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+
+/* 이미지넣기 */
+header ul li .facebook{
+    background-image: url("images/페이스북로고.png");
+    background-size: cover;
+    background-position: center;
+}
+header ul li .youtube{
+    background-image: url("images/유투브로고.png");
+    background-size: cover;
+    background-position: center;
+}
+header ul li .post{
+    background-image: url("images/포스트로고.jpg");
+    background-size: cover;
+    background-position: center;
+}
+header ul li .twitter{
+    background-image: url("images/트위터로고.png");
+    background-size: cover;
+    background-position: center;
+}

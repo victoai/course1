@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @font-face {
+            font-family: "Fredoka One";
+            src: url("FredokaOne-Regular.ttf");
+            font-family: "Gaegu";
+            src: url("Gaegu-Regular.ttf");
+            src: url("Gaegu-Bold.ttf");
+            src: url("Gaegu-Light.ttf");
+         }
+
+        body {  
+
+            font-family: 'Fredoka One' ;
+            font-family: 'Gaegu' ;
+         }
+
+         .wrap{
+             width:500px;
+             height:500px;
+             margin:auto;
+             border:1px ridge black;
+             text-align: left;
+             padding-left:50px;
+             line-height: 60px;
+
+         }
+    </style>
+    <script>
+        
+        let string=[];
+        let stringcol="";
+        let cnt=0;
+        function check(){
+            let frm=document.frm;
+            let ck=document.getElementsByName("ck");
+            let span=document.getElementsByTagName("span");
+            for(let i=0; i<ck.length;i++){
+                if(ck[i].value==""){
+                    ck[i].focus();
+                    
+                    string[cnt]=span[i].innerHTML;
+                    stringcol+=string[cnt]+",";
+                    cnt++
+                }
+                
+            }        
+           
+           //마지막 글자 ","지우기
+           //stringcol.replace(substring(stringcol.length-1,stringcol.length),"");
+            if(ck[1].value!=ck[2].value){
+                alert("PW 및 PW재확인이 일치하는지 확인해주세요");
+            }else if(stringcol==""){
+                alert("로그인 중입니다.");
+            }else{
+                alert(stringcol+"를 입력해주세요");
+            }
+           
+           stringcol="";
+            
+        }
+        
+    
+        
+    </script>
+</head>
+<body>
+
+    <form name="frm">
+        <div class="wrap">
+        <div><span>ID</span><input name="ck" type="text"></div>
+        <div><span>PW</span><input name="ck"type="password"></div>
+        <div><span>PW재확인</span><input name="ck"type="password"></div>
+        <div><span>이름</span><input name="ck"type="text"></div>
+        <div>성별<select>
+            <option>남</option>
+            <option selected>여</option>
+        </select>
+        </div>
+        <div><span>생년월일</span><input type="date" name="ck" min="1980-01-01" max="2022-04-05"></div>
+        <div>
+            <span>학과</span>:<input type="text" name="ck" list="list1" placeholder="직접입력">
+
+
+            <datalist id="list1">
+                <option>컴공</option>
+                <option>상경</option>
+                <option>인문</option>
+                <option>디자인</option>
+
+            </datalist>
+        </div>
+        
+        <button type="button" onclick="check();">가입</button>
+        <input type="reset">
+    </div>
+    </form>
+</body>
+</html>

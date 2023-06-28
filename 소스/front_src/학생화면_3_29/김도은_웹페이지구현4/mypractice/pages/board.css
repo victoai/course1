@@ -1,0 +1,197 @@
+/* 전체적인 위치 및 배치구현 */
+.home_main{
+    margin: 50px 0px;
+}
+main{
+    height : 1300px;
+}
+
+/* board_title 위치 및 배치구현 */
+.board_title .nav{
+    width: 300px;
+    display: flex;
+
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.board_title .nav li{
+    width: 100px;
+}
+
+
+
+/* photo_board 위치 및 배치구현 */
+.board_photo{
+    height: 60%;
+    display: inline-block;
+
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.photo_board{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 30px;
+    padding-left: 5%;
+    
+    /* border: 1px solid gray; */
+}
+
+.photo_board div{
+    display: inline-block;
+
+    width: 30%;
+    height: 300px;
+
+    margin: 8px 10px;
+    /* border: 1px solid gray; */
+    box-shadow: 0px 0px 5px 0px gray;
+    border-radius: 10px;
+}
+.photo_board div a{
+    width: 94%;
+    height: 80%;
+
+    margin-top: 3px;
+    margin-left: 3%;
+
+    display: inline-block;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+.photo_board div .explain{
+    margin: 0px 20px;
+    color: gray;
+    font-weight: 600;
+}
+.photo_board #test_photo1{
+    background-image: url("../images/진단검사1.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.photo_board #test_photo2{
+    background-image: url("../images/진단검사2.jpg");
+    background-size: cover;
+}
+.photo_board #test_photo3{
+    background-image: url("../images/진단검사3.jpg");
+    background-size: cover;
+}
+.photo_board #test_photo4{
+    background-image: url("../images/진단검사4.png");
+    background-size: cover;
+}
+.photo_board #test_photo5{
+    background-image: url("../images/진단검사5.jpg");
+    background-size: cover;
+}
+
+
+
+
+.photo_board #cure_photo1{
+    background-image: url("../images/재택치료1.png");
+    background-size:cover;
+}
+.photo_board #cure_photo2{
+    background-image: url("../images/재택치료2.png");
+    background-size: cover;
+}
+.photo_board #cure_photo3{
+    background-image: url("../images/재택치료3.png");
+    background-size: cover;
+}
+.photo_board #cure_photo4{
+    /* background: #FFF url("../images/재택치료4.jpg") repeat-x fixed left bottom; */
+    background-image: url("../images/재택치료4.jpg");
+    /* 너비안맞음 */
+    background-size:cover;
+    background-position: center;
+}
+.photo_board #cure_photo5{
+    background-image: url("../images/재택치료5.png");
+    background-size: cover;
+}
+
+
+
+
+
+
+
+/* board_download 위치 및 배치구현 */
+.board_download{
+    height: 15%;
+    display: inline-block;
+
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.board_download ul{
+    padding-top: 20px;
+}
+
+.board_download ul li{
+    
+    margin: 8px 10px;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+
+/* board 전체 위치 및 배치구현 */
+.board{
+    display: flex;
+}
+
+
+
+/* board_QA 위치 및 배치구현 */
+.board_QA {
+    height: 15%;
+    display: inline-block;
+
+    padding-top: 20px;
+    padding-right: 200px;
+    margin-left: 100px;
+    margin: auto;
+
+    border-right: 1pt dotted gray;
+}
+.board_QA ul{
+    padding-top: 20px;
+}
+
+.board_QA ul li{
+    
+    margin: 8px 10px;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+
+
+
+
+/* board_medicine 위치 및 배치구현 */
+.board_medicine {
+    height: 15%;
+    display: inline-block;
+
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.board_medicine ul{
+    padding-top: 20px;
+}
+
+.board_medicine ul li{
+    
+    margin: 8px 10px;
+    padding-left: 30px;
+    line-height: 30px;
+}

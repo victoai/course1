@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            font-size: 80px;
+            font-weight: bold;
+            letter-spacing: -7px;
+        }
+        span:nth-child(1){
+            color: rgb(234 67 53);;
+        }
+        span:nth-child(2){
+            color: orange;
+        }
+        span:nth-child(3){
+            color: rgb(52 168 83);
+        }
+        span:nth-child(4){
+            color: rgb(66 133 244);
+        }
+        span:nth-child(5){
+            color: palevioletred;
+        }
+        span:nth-child(6){
+            color: green;
+        }
+        span:nth-child(7){
+            color: rgb(251 188 5);
+        }
+        span:nth-child(8){
+            color: orangered;
+        }
+
+        .title{
+            width: 300px;
+            margin: auto;
+            display: flex;
+            padding-right: 86px;
+        }
+        .d{
+            height: 150px;
+            position: relative;
+            display: flex;
+        }
+        .login{
+            width: 70px;
+            height: 30px;
+            background-color: orange;
+            border-radius: 5px;
+            position: absolute;
+            right: 130px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            line-height: 30px;
+            margin-top: 90px;
+            cursor: pointer;
+            margin-right: 17px;
+
+        }
+        .ghl{
+            width: 70px;
+            height: 30px;
+            background-color: orange;
+            border-radius: 5px;
+            position: absolute;
+            right: 50px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            line-height: 30px;
+            margin-top: 90px;
+            cursor: pointer;
+            margin-right: 17px;
+        }
+        .wrap{
+            width: 380px;
+            height: 450px;
+            border: 2px solid orange;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 20px;
+        }
+        .info_div{
+            width: 200px;
+            height: 100px;
+            border: 0px solid orange; 
+            margin: auto;
+            font-weight: bold;
+            color: orange;
+            margin-top: 30px;
+            
+        }
+        input{
+            width: 180px;
+            height: 30px;
+            border: 1px solid orange;
+            border-radius: 5px;
+            padding-left: 20px;
+            margin: auto;
+        }
+        button{
+            margin-top: 10px;
+            width: 200px;
+            height: 40px;
+            margin: auto;
+            margin-top: 15px;
+            border: 1px solid orange;
+            background-color: orange;
+            border-radius: 5px; 
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+        img{
+            width: 60px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .menu img{
+            width: 200px;
+            height: 200px;
+            margin-top: 40px;
+            margin-left: 90px;
+            border-radius: 20px;
+        }
+        h3{
+            text-align: center;
+            color: orange;
+        }
+        select{
+            margin-left: 10px;
+            color: orange;
+            
+            border: 1px solid orange;
+        }
+        select:hover{
+            border: 2px solid orange;
+        }
+        select:focus{
+            outline: 0px solid orange;
+        }
+
+        </style>
+
+</head>
+<body>
+    <div class="d">
+        <a href="페이지만들기1_정해윤.html"><img src="../images/hhhhome.JPG"></a>
+        <div class="title">
+            <span>F</span>
+            <span>a</span>
+            <span>s</span>
+            <span>t</span>
+            <span>f</span>
+            <span>o</span>
+            <span>o</span>
+            <span>d</span>
+        </div>
+         <a href="로그인페이지_정해윤.html">
+            <div class="login">로그인</div>
+         </a>
+        <div class="ghl">회원가입</div>
+    </div>
+
+            <!-- 상품정보 -->
+            <div class="wrap">
+                <!-- 이미지영역-->
+                <div class="menu"><img src="../images/피자.JPG"></div>
+                <dic><h3>조각피자</h3></dic>
+                <!-- 주문정보 -->
+                <div class="info_div">
+                    <div>수량
+                        <select>
+                            <option>수량을 선택하세요</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>직접입력</option>
+                        </select>
+                        <P></P>
+                        <a href="주문페이지_정해윤.html"><button>주문하기</button></a>
+                </div>
+            </div>
+
+</body>
+</html>

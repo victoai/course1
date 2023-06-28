@@ -1,0 +1,55 @@
+문제1)
+
+정확한 암호가 입력될 때 까지 계속   prompt()를 출력하여 암호를 입는 받는 웹페이지를 작성하시오
+
+<script>
+    
+        let check=null;        
+        while(check!="1234"||check==null){
+
+            check=prompt('비밀번호를 입력하시오');
+            if(check==null){
+                alert("취소하셨습니다.");
+                break;
+            }else{
+                if(check==""){
+                    alert("비밀번호를 입력하세요.");
+                }else if(check!="1234"){
+                    alert("비밀번호가 잘못되었습니다.");
+                }else{
+                    alert("정상 로그인 되셨습니다.")
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+
+문제2)
+
+prompt() 함수를 이용하여 월,화, 수,목,금, 토,일 중 하나를 입력받아 월~목은 출근 다른날은 휴일을 출력하는 자바스크립트
+코드를작상하여 웹페이지를 완성하시오
+
+
+    <script>
+        let day=prompt("요일을 입력하세요(월,화,수,목,금,토,일)");
+
+        switch(day){
+            case "월" :
+            case "화" :
+            case "수" :
+            case "목" :
+                alert("출근하셔야 합니다.");
+                break;
+            case "금":
+            case "토" :
+            case "일" :
+                alert("휴일입니다.");
+                break;
+            default :
+                alert("오입력하셨습니다");
+        }
+    </script>

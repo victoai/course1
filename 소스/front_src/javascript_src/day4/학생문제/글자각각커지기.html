@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let count =0;
+        function fontBig(li){
+            count++;
+            if(count%2==1){
+                li.style.fontSize="1.3em";
+            }else{
+                li.style.fontSize="1em";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <p> 점심에 먹고 싶은 메뉴</p>
+    <ul>
+        <li onclick="fontBig(this)">김밥</li>
+        <li onclick="fontBig(this)">스파게티</li>
+        <li onclick="fontBig(this)">스시</li>
+        <li onclick="fontBig(this)">콩나물해장국</li>
+    </ul>
+</body>
+</html>

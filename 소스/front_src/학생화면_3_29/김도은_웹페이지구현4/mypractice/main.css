@@ -1,0 +1,364 @@
+/* 전체적인 위치 및 배치구현 */
+main{
+
+    margin: 50px 80px;
+    height : 1000px;
+}
+
+
+
+
+/* main_article 위치 및 배치구현 */
+main .main_article{
+    height: 150px;
+    margin: 20px 0px;
+    display: flex;
+}
+
+.main_article .menu1{
+    width: 30%;
+    
+    margin: 3px 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+    font-weight: bold;
+}
+
+
+#photo_article{
+    width: 40%;
+
+    margin: 2px 5px;
+
+}
+#photo_link{
+    display: inline-block;
+
+    width: 100%;
+    height: 150px;
+
+    background-image: url("http://ncov.mohw.go.kr/upload/ncov/20220301093119.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.menu1 ul li{
+
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+    font-size: 10pt;
+    font-weight: 600;
+
+
+    list-style: circle;
+}
+
+
+
+
+
+
+/* main_vaccine 위치 및 배치구현 */
+.vaccine_table{
+    width: 100%;
+
+    margin: 15px 0px;
+
+    border: 1pt solid gray;
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+.vaccine_table th,td{
+    border: 1pt solid gray;
+
+    padding: 5px;
+}
+
+.vaccine_table caption{
+    position: relative;
+
+    margin: 5px 0px;
+    padding: 5px;
+    padding-left: 30px;
+
+    text-align: left;
+    font-weight: bold;
+
+    /* border: 1pt solid gray; */
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+.vaccine_table .table_index{
+font-size: small;
+}
+.vaccine_table caption a{
+
+    position: absolute;
+    right: 30px;
+    line-height: 100%;
+
+    font-size: 10pt;
+    font-weight: 600;
+    padding: 3px 6px;
+
+    display: inline-block;
+    background-color: rgb(128, 134, 120);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+/* main_vaccine 기능구현 */
+.vaccine_table caption .details:hover{
+    background-color: rgb(197, 187, 175);
+}
+
+
+
+
+
+
+/* main_situation 위치 및 배치구현 */
+.main_situation{
+
+    margin: 15px 0px;
+
+    display: flex;
+    height: 450px;
+}
+
+.situadtion_day{
+    width: 60%;
+    /* border: 1px solid gray; */
+
+    padding-right: 10px;
+}
+
+.situadtion_week{
+    width:40%;
+    border-collapse: collapse;
+}
+
+
+
+
+/* situadtion_day 위치 및 배치구현 */
+.situadtion_day .occur_table{
+    width: 100%;
+    height:40%;
+    margin-bottom: 20px;
+    /* border: 1pt solid gray; */
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+.occur_table th,td{
+    border: 1pt solid gray;
+
+    padding: 5px;
+}
+.occur_table caption{
+    position: relative;
+
+    margin: 3px 0px;
+    padding: 5px;
+    padding-left: 20px;
+
+    font-size: 11pt;
+    text-align: left;
+    font-weight: bold;
+
+    /* border: 1pt solid gray; */
+    background-color: rgb(141, 177, 141);
+    border-radius: 5px;
+}
+.occur_table .table_index{
+    font-size: smaller;
+    }
+.occur_table caption a{
+
+    position: absolute;
+    right: 20px;
+    line-height: 100%;
+
+    font-size: 9pt;
+    font-weight: 600;
+    padding: 3px 6px;
+
+    display: inline-block;
+    background-color: rgb(128, 134, 120);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+
+
+.situadtion_day .seat_table{
+    width: 100%;
+    height: 40%;
+    /* border: 1pt solid gray; */
+    margin: 10px 0px;
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+.seat_table th,td{
+    border: 1pt solid gray;
+
+    padding: 5px;
+}
+.seat_table caption{
+
+    margin: 3px 0px;
+    padding: 5px;
+    padding-left: 20px;
+
+    font-size: 11pt;
+    text-align: left;
+    font-weight: bold;
+
+    /* border: 1pt solid gray; */
+    background-color:rgb(141, 177, 141);
+    border-radius: 5px;
+}
+.seat_table .table_index{
+    font-size: smaller;
+}
+
+
+
+
+
+
+
+/* situadtion_week 위치 및 배치구현 */
+.situadtion_week caption{
+
+    margin: 3px 0px;
+    padding: 5px;
+    padding-left: 20px;
+
+    font-size: 11pt;
+    text-align: left;
+    font-weight: bold;
+
+    /* border: 1pt solid gray; */
+    background-color:rgb(141, 177, 141);
+    border-radius: 5px;
+}
+.situadtion_week .table_index{
+    font-size: small;
+}
+.situadtion_week .graph_title{
+    position:absolute;
+    left: 30px;
+    top:3px;
+
+    font-size: smaller;
+    font-weight: 600;
+
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 0px gray;
+    padding:1px 3px;
+}
+#disease_title{
+    position:absolute;
+    left: 43px;
+    top:3px;
+}
+#death{
+    position: relative;
+    background-image:url("images/사망그래프.png") ;
+    /* background-position: center; */
+    background-size:contain;
+}
+#hospital{
+    position: relative;
+    background-image:url("images/신규입원그래프.png") ;
+    /* background-position: center; */
+    background-size:contain;
+}
+#hard_disease{
+    position: relative;
+    background-image:url("images/재원위중증그래프.png") ;
+    /* background-position: center; */
+    background-size:contain;
+}
+#disease{
+    position: relative;
+    background-image:url("images/확진그래프.png") ;
+    /* background-position: center; */
+    background-size:contain;
+}
+
+
+/* situadtion_day 기능구현 */
+.occur_table caption .details:hover{
+    background-color: rgb(172, 180, 162);
+}
+
+
+
+
+
+
+
+/* main_video 위치 및 배치구현 */
+.main_video{
+    height:200px;
+
+    margin-top: 40px;
+
+    display: flex;
+}
+.main_video .line{
+
+    width: 25%;
+    line-height: 30px;
+
+    padding-top: 15px;
+    padding-left: 20px;
+    background-color: rgb(141, 177, 141);
+
+    border-radius: 10px 0px 0px 10px;
+}
+.main_video .video_list{
+    width: 75%;
+    display: flex;
+
+    background-color: rgb(128, 134, 120);
+    border-radius: 0px 10px 10px 0px;
+    
+    padding: 0px 5px;
+}
+.video_list .video{
+    
+    display: inline-block;
+
+    width:33%;
+    margin : 10px 5px;
+}
+#video1{
+    background-image: url("http://ncov.mohw.go.kr/upload/ncov/20220210105252.jpg");
+    background-size: cover;
+}
+#video2{
+    background-image: url("http://ncov.mohw.go.kr/upload/ncov/20211029142041.png");
+    background-size: cover;
+}
+#video3{
+    background-image: url("http://ncov.mohw.go.kr/upload/ncov/20210907135518.jpg");
+    background-size: cover;
+}

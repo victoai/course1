@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            width:1000px;
+            margin: auto;
+        }
+        
+        ul li{
+            width:200px;
+            height: 50px;
+            display: inline-block;
+            background-color: aqua;
+        }
+
+        
+
+                
+        ul li:hover {                      
+           background-color: bisque;
+        }
+
+        ul li div{
+            display: none;
+        }
+                   
+        ul li:hover div{   
+           display: block;                   
+           width:400px;  
+           height:400px;
+           background-color: blueviolet;
+           position: absolute;  /*고정위치를 위해서  position 변경 */
+           left:500px;    /*  원하는 위치 설정 */
+           top:200px;  
+                  
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <div>
+        <ul>
+            <li>1 
+                <div style="background-image:url('../images/ad1.jpg')"> 첫내용의 내용</div>   
+            </li> 
+            <li>1 
+                <div style="background-image:url('../images/ad2.jpg')"> 첫내용의 내용</div>   
+            </li> 
+            <li>1 
+                <div style="background-image:url('../images/ad1.jpg')"> 첫내용의 내용</div>   
+            </li> 
+            <li>1 
+                <div style="background-image:url('../images/ad1.jpg')"> 첫내용의 내용</div>   
+            </li> 
+                       
+            
+        </ul>
+
+    </div>
+</body>
+</html>

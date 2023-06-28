@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap{
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            margin: auto;
+            background-color: aliceblue;
+        }
+        .logo{
+            font-size: 180px;
+            display: flex;
+            margin-left: 95px;
+            margin-top: 15px;
+        }
+        .logo span:nth-child(1){
+            color: white;
+            background-color: rgb(0, 59, 114);
+            width: 130px;
+            text-align: right;
+        }
+        .logo span:nth-child(2){
+            color: rgb(93, 250, 255);
+            background-color: rgb(0, 59, 114);
+            width: 120px;
+            text-align: right;
+        }
+        .logo span:nth-child(3){
+            color: rgb(66, 194, 162);
+            background-color: rgb(0, 59, 114);
+            width: 160px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .info{
+            height: 250px;
+            width: 410px;
+            margin: auto;
+        }
+        .inputtext{
+            width: 400px;
+            height: 30px;
+        }
+        #button{
+            height: 25px;
+            width: 80px;
+            margin-top: 30px;
+            margin-left: 350px;
+        }
+        .bottom{
+            margin-right: 10px; 
+            display: flex;
+        }
+        a{
+            color: black;
+        }
+        .separation{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="logo">
+            <span>L</span>
+            <span>S</span>
+            <span>N</span>
+        </div>
+        <h1>로그인</h1><br>
+        <div class="info">
+            <div>
+                아이디 <input class="inputtext" type="text">
+            </div><br>
+            <div>
+                비밀번호 <input class="inputtext" type="password">
+            </div>
+            <div id="button">
+                <button>로그인</button>
+            </div><br>
+            <div class="bottom">
+                <a href="">아이디찾기</a> 
+                <div class="separation"> | </div> 
+                <a href="">비밀번호찾기</a>
+                <div class="separation"> | </div> 
+                <a href="signup.html">회원가입</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

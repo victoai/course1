@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+         prompt() => 자바스크립트가 제공하는 내장함수, 기능 
+         사용자의 입력을 받는기능
+         사용자가 입력한 입력값을 반환함
+         취소버튼클릭시  null 값 반환
+        */
+        let  name = prompt( "이름을 입력하세요 ");                                             
+
+        if( name== null){
+           alert("취소버튼을 누르셨군요") ;
+        }else if ( name ==""){
+           alert("이름을 입력하셔야 합니다.");
+        }else{
+           alert("이름은" +name);
+        }       
+    </script>
+</head>
+<body>
+    
+    자바스크립트 
+    입력 : prompt() ,  confirm()
+    출력 : alert(),  
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header img{
+            width: 70px;
+            height: 70px;
+        }
+        table{
+            width: 950px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+            
+        }
+        table caption img{
+            width: 80px;
+            height: 80px;
+        }
+        table thead tr{
+            width: 50px ;
+        }
+        
+        td, th{
+            border: 1px solid black;
+            width: 150px;
+        }
+        .amount{
+            width: 250px;
+        }
+        thead tr{
+            height:45px;
+            background-color: rgb(144, 158, 158);
+        }
+        tbody tr td{
+            height: 40px;
+          
+        }
+        tofoot tr td{
+            height: 40px;
+            
+        }
+
+        #order{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            height: 40px;
+         
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/hom.jpg">홈으로
+        
+    </header>
+    <table>
+        <caption>CART LIST <img src="../images/cart.png"></caption>
+        <thead>
+            <tr>
+                <th>주문날짜</th>
+                <th>제품명</th>
+                <th>단가</th>
+                <th class="amount">수량</th>
+                <th>금액</th>
+                <th>삭제</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="text"></td>
+                <td></td>
+                <td class="delete">삭제</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="5"></td>
+                <td id="order">주문하기</td>
+            </tr>
+
+
+        </tfoot>
+
+
+
+    </table>
+</body>
+</html>

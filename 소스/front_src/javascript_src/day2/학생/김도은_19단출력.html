@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19단 출력프로그램</title>
+    <style>
+        /* 원하는 단 출력하는 함수만들기
+        1~19까지 구할 수 있음
+        원하는 단을 입력 받아서 해당단을 출력
+        함수로 만들어서 사용해보세요. */
+
+        fieldset{
+            width: 500px;
+
+            text-align: center;
+
+            margin: 30px auto;
+            
+        }
+        fieldset legend{
+            text-align: left;
+            font-weight: 700;
+        }
+
+        p{
+            text-align: center;
+        }
+    </style>
+    <script>
+
+        function reset(id){// 단 초기화하기
+            let input=document.getElementById(id);
+            input.value="";
+        }
+
+        function printDan(id){//단 출력하기
+
+            let input = document.getElementById(id);
+            dan = input.value;
+            let rtn=">>" + dan + "단을 출력합니다.<br>";
+            if(isNaN(dan) || dan==""){
+                alert("숫자를 입력하세요");
+                input.focus();
+                return;
+            }else if(dan<1 || dan>19){
+                alert("1과 19사이의 수를 입력해주세요");
+                return;
+            }else{
+                for(let i=1; i<=19; i++){
+                    rtn += dan + " × " + i +" = " + dan*i + "<br>";
+                }
+            }
+        
+            document.getElementById("danPrint").innerHTML =rtn;
+        }
+        
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>19단 출력하기</legend>
+    단 : <input type="text" id="dan" onclick="reset('dan')">
+    <button onclick="printDan('dan')">출력</button>
+    </fieldset>
+    <p id="danPrint"></p>
+    
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .num01{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(255,128,128);
+            margin:1px;
+        }
+        .num02{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(255,192,128);
+            margin:1px;
+        }
+        .num03{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(255,255,128);
+            margin:1px;
+        }
+        .num04{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(128,255,128);
+            margin:1px;
+        }
+        .num05{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(128,255,255);
+            margin:1px;
+        }
+        .num06{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(128,128,255);
+            margin:1px;
+        }
+        .num07{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(192,128,255);
+            margin:1px;
+        }
+        .num08{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(255,128,255);
+            margin:1px;
+        }
+        .num09{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            padding:15px 20px 25px 20px;
+            font-weight: bold;
+            font-size:50px;
+            border:1px solid black;
+            background-color: rgb(255,128,192);
+            margin:1px;
+        }
+        .numbox{
+            width:612px;
+            height:102px;
+            display: flex;
+            border:1px solid black;
+            background-color: rgb(224,224,224);
+            margin:2px;
+        }
+        header{
+            height:100px;
+            margin:auto;
+            background-color:rgb(0,0,0);
+        }
+    </style>
+    <script>
+    function lotto(){
+            let num = [0,0,0,0,0,0];
+            let res = [0,0,0,0,0,0];
+            let t = document.getElementById("times");
+            let time = parseInt(t.value);
+
+        document.write('<input type="number" id="times" min="1" max="100"><button onclick="lotto()">로또 추첨!</button>');
+        for(let a=0; a<time; a++){
+
+            for(let x=0; x<6; x++){
+                num[x] = parseInt(Math.random()*45)+1;
+                let error = 0;
+                for(let y=0; y<x; y++){
+                    if(num[x]==num[y]){
+                        error++;
+                    }
+                }
+                if(error>0){
+                    x--;
+                }
+            }
+            for(let x=0; x<6; x++){
+                for(let y=x+1; y<6; y++){
+                    if(num[x]>num[y]){
+                        let temp = num[x];
+                        num[x] = num[y];
+                        num[y] = temp;
+                    }
+                }
+            }
+            for(let x=0; x<6; x++){
+                res[x] = parseInt(num[x]/9)+1;
+            }
+
+            document.write('<div class="numbox">');
+            for(let x=0; x<6; x++){
+
+                document.write('<div class="num0'+res[x]+'">');
+                if(num[x]>9){
+                    document.write(num[x]+'</div>');
+                }else{
+                    document.write('0'+num[x]+'</div>');
+                }
+            }
+            document.write('</div>');
+        
+        }
+
+    }
+    </script>
+
+</head>
+<body>
+    <input type="number" id="times" min="1" max="100"><button onclick="lotto()">로또 추첨!</button>
+    <div class="numbox">
+        <div class="num01">01</div>
+        <div class="num02">08</div>
+        <div class="num03">15</div>
+        <div class="num05">23</div>
+        <div class="num06">28</div>
+        <div class="num09">42</div>
+    </div>
+</body>
+</html>

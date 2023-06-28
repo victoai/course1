@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        function addEvent(){
+            
+            let lis = document.getElementsByTagName("li");
+            
+            for(let i=0; i <lis.length ; i++){//배열이기때문에 반복문
+            lis[i].addEventListener("click", fontBig);
+            }
+        }
+
+        function alarm(){
+                alert("이거맞아?");
+            }
+
+        function fontBig(){
+            let liS = document.getElementsByTagName("li");
+            for(let i=0; i <liS.length ; i++){//배열이기때문에 반복문
+                liS[i].style.fontSize = "1.5em";
+            }
+            
+
+        }
+
+    </script>
+</head>
+<body onload="addEvent();">
+    
+    <p> 점심에 먹고 싶은 메뉴</p>
+    <ul>
+        <li>김밥</li>
+        <li>스파게티</li>
+        <li>스시</li>
+        <li>콩나물해장국</li>
+    </ul>
+</body>
+</html>

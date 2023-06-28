@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 500px;
+            height: 950px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .img_div{
+            width: 380px;
+            height: 400px;
+            margin: auto;
+            margin-top: 10px;
+            background-image : url('../images/durian.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .info_div{
+            width: 450px;
+            height: 150px;
+            
+            margin: auto;
+            margin-top: 10px;
+        }
+        .order_div{
+            width: 450px;
+            height: 380px;
+            
+            margin: auto;
+            margin-top: 10px;
+            
+        }
+        
+        .info_div div{
+            margin-bottom: 20px;
+        }
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+            height: 50px;
+        }
+        .order_div div{
+            margin-top: 10px;
+        }
+        input{
+            width: 98%;
+            height: 30px;
+        }
+        select{
+            width: 100%;
+            height: 40px;
+        }
+        button{
+            width: 100%;
+            height: 60px;
+            border-radius: 10px;
+            background-color: darkcyan;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="img_div"></div>
+        <!--  상품정보-->
+        <div class="info_div">  
+            <div class="title">냉동 두리안</div>
+            
+            <div>태국농장에서 직수입하여 급속냉동한 고급 두리안입니다</div>
+            
+            <div>가격 : 78,000원 / 5kg </div>
+        </div>
+
+        <!--  주문내역정보-->
+        <div class="order_div">
+            <div>--주문내역--</div>
+            <div>주문자이름 <br><input type="text"></div>
+            <div>수량<br> 
+                <select>
+                    <option>수량을 선택하세요</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div>주문금액<br> <input type="text"></div>
+            <div>전화금액<br> <input type="text"></div>
+            <div> <button>order</button></div>
+        </div>
+    </div>
+
+</body>
+</html>

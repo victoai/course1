@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>즐거운 음악이 머무는 곳 Music Stay</title>
+    <style>
+        .header{    /*header전체*/
+            width: 1900px;
+            display: flex;
+            position: relative;
+            height: 120px;
+            
+        }
+     
+
+        .header .logo .logo_img{           /*header 로고 이미지*/ 
+            position: absolute;
+            width: 220px;
+            height: 130px;
+            margin: auto;       
+            margin-top: 5px;     
+            left: 300px;
+            text-align: left;
+            
+        }
+    
+        .header .search-bar{     /*header 검색바*/ 
+            margin: auto;
+            margin-top: 40px;
+            
+            
+        }
+        .header .search-bar input {          /*header 검색바 input*/    
+            width:  600px;
+            height:30px;
+            border:0.1px solid rgba(173, 172, 172, 0.336);
+            padding-left:20px;          
+                 
+        }
+        .header .search-bar input:hover {        /*header 검색바*/ 
+            box-shadow: 0px 0px 5px 0px rgba(173, 172, 172, 0.247);
+        }
+
+        .header .search-bar input:focus{         /*header 검색바*/ 
+            outline:none;
+        }
+
+
+        .header .info_div{               /*header btn*/ 
+           
+            position: absolute;
+            top: 10px;
+            right: 300px;
+            text-align: right;
+            
+        }
+        .login_btn{                     /*header btn*/ 
+            border: 0px solid black;
+            border-radius: 0px;
+            background-color: white;
+        
+        }
+        .login_btn input:focus{         /*header btn*/ 
+            outline: none;
+        }
+      
+       nav{
+           margin-left: 20px;
+           height: 60px;
+           border: 0.5px solid rgba(0, 0, 0, 0.11);
+           background-color: rgba(241, 247, 253, 0.842); 
+           border-radius: 5px;   
+       }
+       .menubar{
+           
+           display: flex;
+           list-style: none;
+           text-align: center;
+           
+       }
+
+       .menu1{
+            font-weight: 600;
+            z-index: 1;
+           width: 200px;
+           height: 200px;
+           margin: 0px 15px;
+                   
+       }
+       .menu1 li{
+           display: none;
+           text-align: left;
+       }
+       
+       .menu1:hover ul{
+           width: 150px;
+           height: 200px;
+           background-color: aliceblue;
+           padding-top: 30px;
+           border: 0.5px solid rgba(0, 0, 0, 0.011);
+           border-top: none;
+       }
+       .menu1:hover ul li{
+           display: block;
+           padding: 10px;
+       }
+
+       .menu2{
+        font-weight: 600;
+            z-index: 1;
+           width: 200px;
+           
+           margin: 0px 20px;
+          
+       }
+       .menu2 li{
+           display: none;
+           text-align: left;
+       }
+       .menu2:hover ul{
+           width: 110px;
+           height: 200px;
+           background-color: aliceblue;
+           padding-top: 30px;
+           border: 0.5px solid rgba(0, 0, 0, 0.011);
+           border-top: none;
+       }
+     
+       .menu2:hover ul li{
+           display: block;
+           padding: 10px;
+       }
+       .page_bgd{
+           
+           background-color: rgb(245, 245, 245);
+           margin-top: 20px;
+       }
+<!--블록-->
+       .block{
+           margin-left: 20px;
+           display: flex;
+       }
+       .block h2{
+           margin-top: 40px;
+           margin-left: 40px;
+       }
+       .block img{
+           margin-left: 40px;
+           margin-top: 10px;
+           width: 250px;
+           height: 250px;
+           
+       }
+
+        .hr{
+            width: 1800px;
+            margin-left: 20px;
+        }
+<!--메인 스타일-->
+
+        .section{
+            
+            height: 100px;
+        }
+        .section_ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            
+            font-size: 20px;
+            
+            
+        }
+        .section li{
+            
+            padding-top: 10px;
+
+        }
+        .section img{
+            
+            width: 280px;
+            height: 350px;
+            padding: 10px;
+        }
+        .section span{
+            color:rgb(248, 151, 6);
+        }
+        .section h2{
+            margin-left: 40px;
+        }
+        .page{
+            text-align: right;
+        }
+  /* footer  css  */
+         footer{
+            
+            display:flex;  
+            font-size: 12px;
+            text-align: center;
+            padding-top: 15px;
+        }
+        footer .item{
+            
+            width:800px;
+            height: 100px;
+            border: 3px solid rgba(218, 242, 252, 0.534);
+            margin-left:30px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header >
+        <!--logo 영역-->
+        <div class="header">
+            <table class="t1">
+                <div class="logo">
+                    <img class="logo_img" src='https://cdn.crowdpic.net/detail-thumb/thumb_d_5F2B3998278BC2CA3FB1890FC0D026F5.png' alt="음악세상">
+                </div>
+            </table>    
+            <!--검색바 영역-->
+            <table class="t2">
+                <div class="search-bar">
+                    <input type="text" >
+                </div>    
+            </table>    
+            <!--네비게이션 영역-->
+            <table class="t3">
+                <div class="info_div">
+                    <button class="login_btn">로그인</button> |
+                    <button class="login_btn">회원가입</button> | 
+                    <button class="login_btn">고객센터</button>
+                    
+                
+                </div>
+            </table>   
+    </header>
+    <div class="page_bgd">
+        <nav>
+            <div>
+                <ul class="menubar">
+                    <li class="menu1">전체 메뉴
+                        <ul>
+                            <li>악보</li>
+                            <li>악기</li>
+                            <li>음반</li>
+                        </ul>
+                    </li>
+        
+        
+                    <li class="menu2">악보
+                        <ul>
+                            <li>클래식</li>
+                            <li>팝</li>
+                            <li>재즈</li>
+                        </ul>
+                    </li>
+                    <li class="menu2">악기
+                        <ul>
+                            <li>현악기</li>
+                            <li>관악기</li>
+                            <li>타악기</li>
+                        </ul>
+                    </li>
+                    <li class="menu2">음반
+                        <ul>
+                            <li>최신 가요</li>
+                            <li>추천 TOP 100</li>
+                            <li>명곡 TOP 100</li>
+                        </ul>
+                    </li>
+                    <li class="menu2">MR
+                        <ul>
+                            <li>최신 가요</li>
+                            <li>추천 TOP 100</li>
+                            <li>명곡 TOP 100</li>
+                        </ul>
+                    </li>
+                    <li class="menu2">동영상 악보
+                        <ul>
+                            <li>최신 가요</li>
+                            <li>추천 TOP 100</li>
+                            <li>명곡 TOP 100</li>
+                        </ul>
+                    </li>
+                    <li class="menu2">내가 만든 곡
+                        <ul>
+                            <li>최신 가요</li>
+                            <li>추천 TOP 100</li>
+                            <li>명곡 TOP 100</li>
+                        </ul>
+                    </li>
+                    <li class="menu2">저작권협회
+                        <ul>
+                            <li>최신 가요</li>
+                            <li>추천 TOP 100</li>
+                            <li>명곡 TOP 100</li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> 마이페이지
+                        <ul>
+                            <li>로그인 정보</li>
+                            <li>저장 목록</li>
+                            <li>회원 탈퇴</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+            </div>
+            
+        </nav>
+    
+         
+        <div class=block>
+            <h2>BEST ALBUM</h2>
+            <img src='https://w.namu.la/s/6eda5f5f65ef97a1aad21f87b7b3a82a69f74555be8da7671eac40a43226768bdaa50d19c1292979c7acd4f97615a6b8d0816ee0440c7fa9c007740a26aeca56e279ddabacbbffb640d08ea46bbbb97d9e1c000d039fa46e847bba8c25c8050e'>
+            <img src='https://image.bugsm.co.kr/album/images/500/3220/322075.jpg'>
+            <img src='https://ww.namu.la/s/9fd1638cb5e396620cff77765fcc4ccb475a37f82a5a4a749c74a232fd1ecc388b7ddedbd7a8cf487312172ba4fb0008a52b68d4c63de3157ce6193f76967f8d7680f8497a30e101b3df13c50753b465'>
+            <img src='https://w.namu.la/s/de0fa23b8b358b3c38e72b2e3a16df6d1fed5ef3a670b3d54ad8a5183772c90322a63a58cd33cbbfc2ddc01adba1139b5435fb71e9fc44ca06d082a64e9703a214365f27dc58ed5a6a21010c4fa44456ad9961fa6d992a2c4db58b86cd553200'>
+            <img src='https://file.mk.co.kr/meet/neds/2021/01/image_readtop_2021_24929_16100856664500501.jpg'>
+            <img src='https://newsimg.sedaily.com/2021/06/25/22NRUYLGXH_1.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            <img src='http://image.yes24.com/momo/TopCate245/MidCate009/362445.jpg'>
+            
+        </div>
+        <br>
+        <hr class="hr">
+        <section>
+            <div class="section">
+                <h2 class="section_h2">SCORE</h2>
+                <ul class="section_ul">
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                    <li>
+                        <img class="section_img" src='https://www.researchgate.net/profile/Antonio-Baldassarre-2/publication/282721507/figure/fig2/AS:297954536640512@1448049305074/Ludwig-van-Beethoven-Symphony-No-5-C-Minor-Op-67-Breitkopf-Haertel-Leipzig-1862_Q640.jpg'>
+                        <p> <span>곡이름 : </span>베토벤 교향곡 5번</p>
+                        <p> <span>가격 :</span> 30000원</p>
+                    </li>
+                  
+                  
+                   
+                 </ul>
+            </div>
+    
+        </section>
+        <div class="page">
+            <a href="악보페이지">악보구매 페이지로>>>></a>
+            <br>
+            <a href="악기판매페이지">악기구매 페이지로>>>></a>
+         </div>
+    </div>
+    
+  <!-- footer -->
+    <footer>
+        <div class="item">
+            회사 이름: 음악세상(주)
+
+        </div>
+        <div class="item">
+            회사 주소: <br>
+            서울특별시 강남구 신사동 6000길 10 
+        </div>
+        <div class="item">
+            고객센터 (평일 9AM ~ 6PM)<br>
+            일반문의 02-0000-0000<br>
+            악기제작/악보 문의 02-0000-0000</div>
+    </footer>
+</body>
+</html>

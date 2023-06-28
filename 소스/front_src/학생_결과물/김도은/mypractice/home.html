@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김도은 _ 웹페이지 구현</title>
+
+    <!-- 글꼴파일 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+
+    <!-- css 파일 (페이지간 통일성을 위해 같은 파일을 참조)-->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+    <!-- 사이트 맨 위 (페이지간 통일성을 위해 복붙) -->
+    <header>
+        <!-- 사이트이름 -->
+        <h1 class="maintitle"><a href="">코로나바이러스감염증-19(COVID-19)</a></h1>
+        <!-- 관련 SNS // li 너비지정후 a 이미지 넣어 동그라미로 구현 -->
+        <ul>
+            <li><a class="facebook" href="http://www.facebook.com/koreadca"></a></li>
+            <li><a class="youtube" href="https://youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw"></a></li>
+            <li><a class="post" href="https://post.naver.com/my.nhn?memberNo=20182790"></a></li>
+            <li><a class="twitter" href="http://twitter.com/koreadca"></a></li>
+        </ul>   
+    </header>
+
+    <!-- 사이트 메뉴바 (페이지간 통일성을 위해 복붙) -->
+    <nav>
+        <ul class="nav_menu" >
+            <!-- a태그를 통해 링크 걸고, 같은 위치끼리 같은 class지정 -->
+            <!-- 첫번째메뉴 -->
+            <li class="menu1"><a href="pages/일반인.html">공지사항</a>
+                <ul>
+                    <li><a href="pages/일반인.html">일반인</a></li>
+                    <li><a href="pages/입국자및해외여행객.html">입국자 및 해외여행객</a></li>
+                    <li><a href="pages/자가격리자.html">자가격리자</a></li>
+                </ul>
+            </li>
+            <!-- 두번째메뉴 -->
+            <li class="menu1"><a href="http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=11&ncvContSeq=&contSeq=&board_id=&gubun=">발생동향</a>
+                <ul>
+                    <li><a href="http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=11&ncvContSeq=&contSeq=&board_id=&gubun=">국내발생현황</a></li>
+                    <li><a href="http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=14&ncvContSeq=&contSeq=&board_id=&gubun=">국외발생현황</a></li>
+                    <li><a href="http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=13&ncvContSeq=&contSeq=&board_id=&gubun=">시도별발생동향</a></li>
+                </ul>
+            </li>
+            <!-- 세번째메뉴 -->
+            <li class="menu1"><a href="http://ncov.mohw.go.kr/supportPolicyBoardList.do?brdId=5&brdGubun=51"></a>피해지원정책
+                    <ul>
+                    <li><a href="http://ncov.mohw.go.kr/supportPolicyBoardList.do?brdId=5&brdGubun=51">일반인(대국민)</a></li>
+                    <li><a href="http://ncov.mohw.go.kr/supportPolicyBoardList.do?brdId=5&brdGubun=52">취약계층</a></li>
+                    <li><a href="http://ncov.mohw.go.kr/supportPolicyBoardList.do?brdId=5&brdGubun=53">소상공인</a></li>
+                    <li><a href="http://ncov.mohw.go.kr/supportPolicyBoardList.do?brdId=5&brdGubun=54">의료기관</a></li>
+                </ul>
+            </li>
+            <!-- 네번째메뉴 -->
+            <li><a href="pages/코로나19검사.html">코로나19검사</a></li>
+            <!-- 다섯번째메뉴 -->
+            <li><a href="pages/재택치료.html">재택치료</a></li>
+        </ul>
+    </nav>
+
+    <!-- 사이트 내용부분 (페이지마다 따로구현) -->
+    <main>
+        <!-- 사이트 내용 맨 위 //기사 및 광고 -->
+        <ul class="main_article">
+            <!-- 링크는 걸려 있지 않지만 같은 위치끼리 같은 class지정하여 통일감줌 -->
+           
+            <!-- 첫번째 사진광고 -->
+            <!-- 사진은 특이한 부분이라 특정 id부여하여 구현 -->
+            <li id="photo_article"><a id="photo_link" href="https://ncv.kdca.go.kr/ncov/"></a></li>
+            <!-- 두번째 뉴스 -->
+            <li class="menu1"> <span class="article_title">뉴스와 이슈</span>
+                <ul>
+                    <li>동네 병의원에서도 코로나 대면 진료추진</li>
+                    <li>코로나19 먹는 치료제, 4월 말까지 총 46만 명분 도입 추진</li>
+                    <li>코로나 응급 환자 신속 이송을 위한 추가 조치</li>
+                </ul>
+            </li>
+            <!-- 세번째 보도자료 -->
+            <li class="menu1"> <span class="article_title">보도자료 </span>
+                <ul>
+                    <li>코로나19 국내 발생 및 예방접종 현황(3.29.)</li>
+                    <li>코로나19 주간 신규 발생 13.2% 감소(3.28.)</li>
+                    <li>오늘부터 5~11세 소아 기초접종 사전예약 실시(3.24.목, 정례브리핑)</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        
+
+
+
+        <!-- 사이트 중간 //예방접종현황표 -->
+        <div class="main_vaccine">
+            <table class="vaccine_table">
+                <!-- 표이므로 table로 구현 -->
+                <caption>예방접종현황 <span class="table_index">(03.29. 00시 기준, '21.2.26. 이후 누계, 단위: %, 명)</span><a class="details" href="https://ncv.kdca.go.kr/mainStatus.es?mid=a11702000000">자세히보기</a></caption>
+                <thead>
+                    <th>1차접종</th>
+                    <th>2차접종</th>
+                    <th>3차접종</th>
+                    <td colspan="2">청소년 접종률</td>
+                </thead>
+                <tbody>
+                    <td>87.6%</td>
+                    <td>86.7%</td>
+                    <td>63.7%</td>
+                    <td><span class="vaccine_count">1차접종</span>83.1%</td>
+                    <td><span class="vaccine_count">2차접종</span>80.3%</td>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="main_situation">
+            <div class="situadtion_day">
+                <table class="occur_table">
+                    <caption>발생현황 <span class="table_index">(03.29. 00시 기준, '21.2.26. 이후 누계, 단위: %, 명)</span><a class="details" href="http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=11&ncvContSeq=&contSeq=&board_id=&gubun=">자세히보기</a></caption>
+                    <thead>
+                        <th>구분</th>
+                        <th>사망</th>
+                        <th>재원 위중증</th>
+                        <th>신규 입원</th>
+                        <th>확진</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>일일</th>
+                            <td>237</td>
+                            <td>1,215</td>
+                            <td>1,604</td>
+                            <td>347,554</td>
+                        </tr>
+                        <tr>
+                            <th>최근 7일간
+                                일평균</th>
+                            <td>326</td>
+                            <td>1,159</td>
+                            <td>1,790</td>
+                            <td>344,898</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td colspan="2">(누적)사망15,423</td>
+                        <td colspan="3">(누적)확진12,350,428</td>
+                    </tfoot>
+
+                </table>
+                <table class="seat_table">
+                    <caption>병상현황 <span class="table_index">(03.29. 00시 기준, '21.2.26. 이후 누계, 단위: %, 명)</span></caption>
+                    <thead>
+                        <th>구분</th>
+                        <th>가동률</th>
+                        <th>보유병상</th>
+                        <th>가용병상</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>중환자 병상</th>
+                            <td>66.4%</td>
+                            <td>2,825</td>
+                            <td>949</td>
+                        </tr>
+                        <tr>
+                            <th>일반 병상</th>
+                            <td>43.6%</td>
+                            <td>24,697</td>
+                            <td>13,941</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table class="situadtion_week">
+                <caption>주간발생추이 <span class="table_index">(단위:명)</span></caption>
+                    <tr>
+                        <td id="death"><div class="graph_title">사망</div></td>
+                        <td id="hospital"><div class="graph_title">재원위중증</div></td>
+                    </tr>
+                    <tr>
+                        <td id="hard_disease"><div class="graph_title">신규입원</div></td>
+                        <td id="disease"><div id="disease_title" class="graph_title">확진</div></td>
+                    </tr>
+            </table>
+        </div>
+
+        <div class="main_video">
+            <div class="line">
+                <h3>소중한 사람과 함께하는<br>
+                    일상이 '우리에게 다시'<br>
+                    우리 모두 함께<br>
+                    단계적 일상회복을 향해 나아갑니다.</h3>
+            </div>
+            <div class="video_list">
+                <a href="https://www.youtube.com/watch?v=RO8H8Fjahp0" id="video1" class="video"></a>
+                <a href="https://www.youtube.com/watch?v=GcVRcT6TzQI&t=1s" id="video2" class="video"></a>
+                <a href="https://youtu.be/hlcrgEeF9nQ" id="video3" class="video"></a>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- 사이트 바닥부분(페이지간 통일성을 위해 복붙) -->
+    <footer>
+        <nav>
+            <ul class="footer_menu1">
+            <li><a href="https://www.kdca.go.kr/index.es?sid=a2">질병관리청</a></li>
+            <li><a href="https://kosis.kr/covid/covid_index.do">통계청</a></li>
+            <li><a href="https://www.who.int/">세계보건기구</a></li>
+            </ul>
+
+            <ul class="footer_menu2" >
+                <li class="menu1"> <a href="http://ncov.mohw.go.kr/">참고페이지</a>
+                <li class="menu1"> 관련 페이지
+                    <ul>
+                        <li><a href="https://ncv.kdca.go.kr/">코로나예방접종</a></li>
+                        <li><a href="http://www.mohw.go.kr/react/index.jsp">중앙사고수습본부</a></li>
+                        <li><a href="https://www.kdca.go.kr/index.es?sid=a2">중앙방역대책본부</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer_bottom">
+            <p>신고상담 &nbsp;|&nbsp; 보건소 &nbsp;|&nbsp; 질병관리청 콜센터 1339 &nbsp;|&nbsp; 지역번호 + 120 &nbsp;|&nbsp; 지역번호 + 114</p>
+            <p class="copyright">Copyright ⓒ By MOHW. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

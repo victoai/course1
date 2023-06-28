@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML DOM 트리</title>
+
+<style>
+	p{
+		width:500px;
+		height:300px;
+		padding:10px;
+		margin:10px;
+		border:2px solid black;
+		background-color: yellow;
+	}
+
+</style>
+
+</head>
+<body>
+<h3>DOM 객체 p의 프로퍼티, 스타일, 이벤트 리스너</h3>
+<hr>
+<p id="firstP"  onclick="this.style.color='green';this.style.fontSize='20px';">이것은
+	<span style="color:red">문장입니다.</span>
+</p>
+<script>
+	let p = document.getElementById("firstP");
+	let text = "p.id = " + p.id + "\n";
+	text += "너비 = " + p.offsetWidth + "\n";
+	text += "높이 = " + p.offsetHeight + "\n";
+	alert(text);	
+</script>
+
+
+offsetWidth 속성은  box(block의 너비)+패딩너비+border 너비를 합한 것 
+<br>
+500+ 10+ 10+2+2 = 524
+</body>
+</html>

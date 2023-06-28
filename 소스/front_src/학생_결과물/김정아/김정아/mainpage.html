@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header{
+            background-color: rgb(0, 59, 114);
+            height: 200px;
+            width: 1300px;
+            position:relative;
+        }
+        main{
+            background-color: rgb(255, 255, 255);
+            height: 800px;
+            width: 1300px;
+        }
+        footer{ 
+            background-color: rgb(0, 59, 114);
+            height: 200px;
+            width: 1300px;
+        }
+        ul li{
+            list-style: none;
+        }
+        .topmenu{
+            position: absolute;
+            display: flex;
+            margin-left: 1000px;
+            margin-top: 5px;
+        }
+        a{
+            text-decoration: none;
+            margin-right: 8px;
+            color: grey;
+        }
+        .logo{
+            font-size: 180px;
+            display: flex;
+        }
+        .logo span:nth-child(1){
+            color: white;
+        }
+        .logo span:nth-child(2){
+            color: rgb(93, 250, 255)
+        }
+        .logo span:nth-child(3){
+            color: rgb(66, 194, 162)
+        }
+        .search_wrap{
+            display: flex;
+            height: 50px;
+            width: 500px;
+            border: 1px solid navy;
+            margin-top: 110px;
+            margin-left: 50px;
+        }
+        .search{
+            height: 26px;
+            width: 430px;
+            background-color: white;
+            padding: 10px 20px;
+        }
+        .search:focus{
+            outline: none;
+        }
+        .search_btn{
+            width: 47px;
+            height: 47px;
+            margin-bottom: 50px;
+            margin: auto;
+            background-image: url('images/search.png');
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            border: 1px solid navy;
+        }
+        .menubar{
+            display: flex;
+            width: 900px;
+            height: 70px;
+            text-align: center;
+            margin:auto;
+            background-color: rgb(132, 132, 214);
+            border: 2px solid black;
+        }
+        .menu1 li{
+            display: none;
+        }
+        .menu1:hover ul li{
+            display: block;
+            background-color: rgb(132, 132, 214);
+        }
+        .menu2 li{
+            display: none;
+        }
+        .menu2:hover ul li{
+            display: block;
+            background-color: rgb(132, 132, 214);
+        }
+        .menu3 li{
+            display: none;
+        }
+        .menu3:hover ul li{
+            display: block;
+            background-color: rgb(132, 132, 214);
+        }
+        .menu4 li{
+            display: none;
+        }
+        .menu4:hover ul li{
+            display: block;
+            background-color: rgb(132, 132, 214);
+        }
+        .menu5 li{
+            display: none;
+        }
+        .menu5:hover ul li{
+            display: block;
+            background-color: rgb(132, 132, 214);
+        }
+        .menu6 li{
+            display: none;
+        }
+        .menu6:hover ul li{
+            display: block;
+            background-color: rgb(132, 132, 214);
+        }
+        .menu1{
+            margin-top: 5px;
+            width: 130px;
+            height: 80px;
+        }
+        .menu2{
+            margin-top: 5px;
+            width: 130px;
+            height: 80px;
+        }
+        .menu3{
+            margin-top: 5px;
+            width: 130px;
+            height: 80px;
+        }
+        .menu4{
+            margin-top: 5px;
+            width: 150px;
+            height: 80px;
+        }
+        .menu5{
+            margin-top: 5px;
+            width: 130px;
+            height: 80px;
+        }
+        .menu6{
+            margin-top: 5px;
+            width: 130px;
+            height: 80px;
+        }
+        .product1{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product1 li{
+            width: 170px;
+            height: 250px;
+            margin: auto;
+            margin-right: 50px;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+        }
+        .product2 li{
+            width: 170px;
+            height: 250px;
+            margin: auto;
+            margin-right: 50px;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+        }
+        img{
+            height: 200px;
+            width: 170px;
+            border: 0.5px solid black;
+            background-size: cover;
+            background-position: center;
+        }
+        h1{
+            margin-left: 70px;
+        }
+        .footer li{
+            height: 190px;
+            width: 450px;
+            margin-top: 3px;
+            margin-right: 250px;
+        }
+        .footer{
+            display: flex;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="whole">
+        <header>
+            <div class="topmenu">
+                <a href="cart.html">내 장바구니</a>
+                <a href="login.html">로그인</a>
+                <a href="signup.html">회원가입</a>
+                <a href="myaccount.html">내 계정</a>
+            </div>
+            <div class="logo">
+                <span>L</span>
+                <span>S</span>
+                <span>N</span>
+                <div class="search_wrap">
+                    <input class="search" type="text">
+                    <button class="search_btn"></button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <ul class="menubar">
+                <li class="menu1">
+                    <ul><h3>패션의류</h3>
+                        <li>여성의류</li>
+                        <li>남성의류</li>
+                        <li>유아의류</li>
+                    </ul>
+                </li>
+                <li class="menu2">
+                    <ul><h3>식품</h3>
+                        <li>신선식품</li>
+                        <li>건강식품</li>
+                        <li>가공식품</li>
+                    </ul>
+                </li>
+                <li class="menu3">
+                    <ul><h3>홈데코</h3>
+                        <li>가구</li>
+                        <li>침구</li>
+                        <li>생활용품</li>
+                        <li>주방용품</li>
+                    </ul>
+                </li>
+                <li class="menu4">
+                    <ul><h3>디지털/가전</h3>
+                        <li>노트북/PC</li>
+                        <li>카메라</li>
+                        <li>생활가전</li>
+                        <li>영상가전</li>
+                    </ul>
+                </li>
+                <li class="menu5">
+                    <ul><h3>스포츠</h3>
+                        <li>스포츠의류</li>
+                        <li>골프</li>
+                    </ul>
+                </li>
+                <li class="menu6">
+                    <ul><h3>여행</h3>
+                        <li>여행</li>
+                        <li>항공권</li>
+                    </ul>
+                </li>
+            </ul>
+           <br>
+           <br>
+           <br>
+           <br>
+           
+           <h1>HOT한 제품들</h1>
+            
+            <ul class="product1">
+                <li>
+                    <div> <img src="images/nintendo.jpeg"> </div>
+                    <div>닌텐도 스위치 <br> 450,000원</div>
+                </li>
+                <li>
+                    <div> <img src="images/skateboard.jpeg"> </div>
+                    <div>스케이트보드 <br> 100,000원</div>
+                </li>
+                <li>
+                    <div> <img src="images/jomalone.png"> </div>
+                    <div>조말론 향수 <br> 200,000원</div>
+                </li>
+                <li>
+                    <div> <img src="images/laneige.png"> </div>
+                    <div>라네즈 엠플 <br> 65,000원</div>
+                </li>
+                <li>
+                    <div> <img src="images/ipadpro.jpeg"> </div>
+                    <div>아이패드프로 10.9 <br> 900,000원</div>
+                </li>
+                
+            </ul>
+
+            <ul class="product2">
+                <li>
+                    <div> <img src="images/snacks.jpeg"> </div>
+                    <div>간식세트 <br> 20,000원</div>
+                </li>
+                <li>
+                    <div> <img src="images/water.jpeg.crdownload"> </div>
+                    <div>생수 1L x 6개입 <br> 5,000원</div>
+                </li>
+                <li>
+                    <div> <img src="images/dalgona.jpeg"> </div>
+                    <div>달고나 만들기 세트 <br> 15,000원</div>
+                </li>
+                <li>
+                    <div> <img src="images/lego.jpeg.crdownload"> </div>
+                    <div>호그와트 레고블럭 <br> 90,000원</div>
+                </li>
+                <li>
+                    <div> <img src="images/plates.jpeg"> </div>
+                    <div>그릇세트 <br> 45,000원</div>
+                </li>
+            </ul>
+        </main>
+        
+        <footer>
+            <ul class="footer">
+                <li>
+                    <h3>지마켓글로벌 유한책임회사</h3> <br>
+                    서울특별시 강남구 테헤란로 152 (역삼동, 강남파이낸스센터) <br>
+                    사업자등록번호 : 220-81-83676 | 통신판매업신고 : 강남 10630호 사업자정보확인 <br>
+                    업무집행자 : 전항일 <br>
+                </li>
+                <li>
+                    <h3>고객센터</h3> <br>
+                    경기도 부천시 부일로 223 9층 (상동) <br>
+                    Tel : 1566-5701 (평일 09:00 ~ 18:00) <br>
+                    스마일클럽 전용 Tel : 1522-5700 (365일 09:00 ~ 18:00) <br>
+                    Fax : 02-589-8842 | Mail : gmarket@corp.gmarket.co.kr <br>
+                </li>
+            </ul>
+        </footer>
+       
+
+    </div>
+
+</body>
+</html>
